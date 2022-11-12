@@ -1,4 +1,5 @@
 var films = [
+  ['https://letterboxd.com/hpfilho/film/all-quiet-on-the-western-front-2022/', 'https://a.ltrbxd.com/resized/film-poster/1/6/5/3/0/16530-all-quiet-on-the-western-front-0-600-0-900-crop.jpg?v=bff4d496a1'],
   ['https://letterboxd.com/hpfilho/film/free-guy/', 'https://a.ltrbxd.com/resized/film-poster/4/7/9/8/1/4/479814-free-guy-0-600-0-900-crop.jpg?v=0cd7303445'],
   ['https://letterboxd.com/hpfilho/film/the-last-duel-2021/', 'https://a.ltrbxd.com/resized/film-poster/5/4/4/3/8/0/544380-the-last-duel-0-600-0-900-crop.jpg?v=b3cf1ae7a1'],
   ['https://letterboxd.com/hpfilho/film/upstream-color', 'https://a.ltrbxd.com/resized/sm/upload/gp/ky/a2/x2/ckbUVwa9r7h348upwiRvjpl4sQp-0-600-0-900-crop.jpg?v=c08832ee85'],
@@ -15,6 +16,5 @@ var films = [
   ['https://letterboxd.com/hpfilho/film/what-ever-happened-to-baby-jane/', 'https://a.ltrbxd.com/resized/sm/upload/cq/ht/cp/b9/7Zr0EuDMcIvnJREsLmaAWi5x7mV-0-600-0-900-crop.jpg?v=2a2340c9fd'],
   ['https://letterboxd.com/hpfilho/film/palm-springs-2020/', 'https://a.ltrbxd.com/resized/film-poster/5/1/5/4/6/7/515467-palm-springs-0-600-0-900-crop.jpg?v=d3df94888b'],
   ['https://letterboxd.com/hpfilho/film/eternals/', 'https://a.ltrbxd.com/resized/film-poster/4/5/4/0/1/6/454016-eternals-0-600-0-900-crop.jpg?v=2578d04fd8'],
-  ['https://letterboxd.com/hpfilho/film/west-side-story-2021/', 'https://a.ltrbxd.com/resized/sm/upload/yd/j5/tz/up/xW3t04p24jH7aQyq1J63ApAP9gG-0-600-0-900-crop.jpg?v=a25d5f6f88'],
-  ['https://letterboxd.com/hpfilho/film/ghostbusters-afterlife/', 'https://a.ltrbxd.com/resized/film-poster/3/5/9/3/4/9/359349-ghostbusters-afterlife-0-600-0-900-crop.jpg?v=b306cafe34']
+  ['https://letterboxd.com/hpfilho/film/west-side-story-2021/', 'https://a.ltrbxd.com/resized/sm/upload/yd/j5/tz/up/xW3t04p24jH7aQyq1J63ApAP9gG-0-600-0-900-crop.jpg?v=a25d5f6f88']
 ]
