@@ -242,7 +242,7 @@
 
     </div>
 
-    <!-- Overlay overlay -->
+    <!-- Photo overlay -->
     <div id="overlay" class="overlay">
 
       <!-- Overlay content -->
@@ -296,7 +296,7 @@
       function openPhoto(number) {
         current_photo = number;
         var photo = document.getElementById('photo');
-        var url = 'img/IMG_'.concat(current_photo).concat('.JPG');
+        var url = 'img/IMG_'.concat(current_photo).concat('.jpg');
         photo.setAttribute('src', url);
         document.getElementById('overlay').style.height = "100%";
       }
@@ -307,7 +307,7 @@
           current_photo = 5;
         }
         var photo = document.getElementById('photo');
-        var url = 'img/IMG_'.concat(current_photo).concat('.JPG');
+        var url = 'img/IMG_'.concat(current_photo).concat('.jpg');
         photo.setAttribute('src', url);
       }
 
@@ -317,7 +317,7 @@
           current_photo = 1;
         }
         var photo = document.getElementById('photo');
-        var url = 'img/IMG_'.concat(current_photo).concat('.JPG');
+        var url = 'img/IMG_'.concat(current_photo).concat('.jpg');
         photo.setAttribute('src', url);
       }
 
