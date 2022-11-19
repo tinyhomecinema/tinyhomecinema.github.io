@@ -251,13 +251,13 @@
         <div class="overlay-grid-container">
 
           <div class="arr_back">
-            <img class="icon" src="icons/arrow_back.svg" onclick="previousPhoto()">
+            <img id="arr_back" class="icon" onclick="previousPhoto()">
           </div>
           <div class="photo">
-            <img  id="photo" class="photo" src="">
+            <img id="photo" class="photo">
           </div>
           <div class="arr_forward">
-            <img class="icon"src="icons/arrow_forward.svg" onclick="nextPhoto()">
+            <img id="arr_forward" class="icon" onclick="nextPhoto()">
           </div>
           <div class="close">
             <img class="icon" src="icons/close.svg" onclick="closePhoto()">
@@ -299,6 +299,20 @@
         var url = 'img/IMG_'.concat(current_photo).concat('.jpg');
         photo.setAttribute('src', url);
         document.getElementById('overlay').style.height = "100%";
+        if (current_photo > 1) {
+          document.getElementById('arr_back').setAttribute('src', 'icons/arrow_back.svg');
+          document.getElementById('arr_back').style.cursor = "pointer";
+        } else {
+          document.getElementById('arr_back').setAttribute('src', 'icons/blank.svg');
+          document.getElementById('arr_back').style.cursor = "default";
+        }
+        if (current_photo < 5) {
+          document.getElementById('arr_forward').setAttribute('src', 'icons/arrow_forward.svg');
+          document.getElementById('arr_forward').style.cursor = "pointer";
+        } else {
+          document.getElementById('arr_forward').setAttribute('src', 'icons/blank.svg');
+          document.getElementById('arr_forward').style.cursor = "default";
+        }
       }
 
       function nextPhoto() {
@@ -309,6 +323,15 @@
         var photo = document.getElementById('photo');
         var url = 'img/IMG_'.concat(current_photo).concat('.jpg');
         photo.setAttribute('src', url);
+        document.getElementById('arr_back').setAttribute('src', 'icons/arrow_back.svg');
+        document.getElementById('arr_back').style.cursor = "pointer";
+        if (current_photo < 5) {
+          document.getElementById('arr_forward').setAttribute('src', 'icons/arrow_forward.svg');
+          document.getElementById('arr_forward').style.cursor = "pointer";
+        } else {
+          document.getElementById('arr_forward').setAttribute('src', 'icons/blank.svg');
+          document.getElementById('arr_forward').style.cursor = "default";
+        }
       }
 
       function previousPhoto() {
@@ -319,6 +342,15 @@
         var photo = document.getElementById('photo');
         var url = 'img/IMG_'.concat(current_photo).concat('.jpg');
         photo.setAttribute('src', url);
+        if (current_photo > 1) {
+          document.getElementById('arr_back').setAttribute('src', 'icons/arrow_back.svg');
+          document.getElementById('arr_back').style.cursor = "pointer";
+        } else {
+          document.getElementById('arr_back').setAttribute('src', 'icons/blank.svg');
+          document.getElementById('arr_back').style.cursor = "default";
+      }
+        document.getElementById('arr_forward').setAttribute('src', 'icons/arrow_forward.svg');
+        document.getElementById('arr_forward').style.cursor = "pointer";
       }
 
       function closePhoto() {
