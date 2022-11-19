@@ -32,11 +32,11 @@
 
       <div class="photos">
         <div class="photos-grid">
-          <div><a href="img/IMG_1.jpg"><img src="img/IMG_1.jpg" width="180"></a></div>
-          <div><a href="img/IMG_2.jpg"><img src="img/IMG_2.jpg" width="180"></a></div>
-          <div><a href="img/IMG_3.jpg"><img src="img/IMG_3.jpg" width="180"></a></div>
-          <div><a href="img/IMG_4.jpg"><img src="img/IMG_4.jpg" width="180"></a></div>
-          <div><a href="img/IMG_5.jpg"><img src="img/IMG_5.jpg" width="180"></a></div>
+          <div><img class="photo_thumb" src="img/IMG_1.jpg" onclick="openPhoto(1)"></div>
+          <div><img class="photo_thumb" src="img/IMG_2.jpg" onclick="openPhoto(2)"></div>
+          <div><img class="photo_thumb" src="img/IMG_3.jpg" onclick="openPhoto(3)"></div>
+          <div><img class="photo_thumb" src="img/IMG_4.jpg" onclick="openPhoto(4)"></div>
+          <div><img class="photo_thumb" src="img/IMG_5.jpg" onclick="openPhoto(5)"></div>
         </div>
       </div>
 
@@ -242,9 +242,38 @@
 
     </div>
 
+    <!-- Overlay overlay -->
+    <div id="overlay" class="overlay">
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+
+        <div class="overlay-grid-container">
+
+          <div class="arr_back">
+            <img class="icon" src="icons/arrow_back.svg" onclick="previousPhoto()">
+          </div>
+          <div class="photo">
+            <img  id="photo" class="photo" src="">
+          </div>
+          <div class="arr_forward">
+            <img class="icon"src="icons/arrow_forward.svg" onclick="nextPhoto()">
+          </div>
+          <div class="close">
+            <img class="icon" src="icons/close.svg" onclick="closePhoto()">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
     <script>
 
       var film_posters = document.getElementById('film-posters');
+
+      var current_photo;
 
       for (var i = 0; i < 10; i++) {
         var url = films[i][0];
@@ -261,6 +290,45 @@
         link.appendChild(poster);
         film.appendChild(link);
         film_posters.append(film);
+      }
+
+
+      function openPhoto(number) {
+        current_photo = number;
+        var photo = document.getElementById('photo');
+        var url = 'img/IMG_'.concat(current_photo).concat('.JPG');
+        photo.setAttribute('src', url);
+        document.getElementById('overlay').style.height = "100%";
+      }
+
+      function nextPhoto() {
+        current_photo++;
+        if (current_photo > 5) {
+          current_photo = 5;
+        }
+        var photo = document.getElementById('photo');
+        var url = 'img/IMG_'.concat(current_photo).concat('.JPG');
+        photo.setAttribute('src', url);
+      }
+
+      function previousPhoto() {
+        current_photo--;
+        if (current_photo < 1) {
+          current_photo = 1;
+        }
+        var photo = document.getElementById('photo');
+        var url = 'img/IMG_'.concat(current_photo).concat('.JPG');
+        photo.setAttribute('src', url);
+      }
+
+      function closePhoto() {
+        document.getElementById('overlay').style.height = "0%";
+      }
+
+      window.onkeyup = function (event) {
+        if (event.keyCode == 27) {
+          closePhoto();
+        }
       }
 
     </script>
