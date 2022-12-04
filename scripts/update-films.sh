@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /home/pi/github/tinyhomecinema.github.io/scripts
+
 wget https://letterboxd.com/hpfilho/rss/
 mv index.html rss.html
 
