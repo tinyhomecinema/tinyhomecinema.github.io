@@ -97,9 +97,9 @@
           <li><a href="https://www.consumerreports.org/products/blu-ray-players-28956/blu-ray-player-28696/sony-bdp-s1700-386137/" target="_blank">Blu-ray Player Sony BDP-S1700</a> <i>[BD/DVD]</i></li>
           <li><a href="https://www.pioneerelectronics.com/PUSA/Home/Blu-ray-Disc/Pioneer-DVD-Players/DV-414" target="_blank">DVD Player Pioneer DV-414</a> <i>[CD]</i></li>
           <li>VHS VCR Philips VR755 <i>(decorative)</i></li>
-          <li><a href="https://store.google.com/sg/product/chromecast?hl=en-GB" target="_blank">Google Chromecast 3</a></li>
-          <li><a href="https://philco.com.br/tablet-philco-ptb7ssg-android-pie-9-go-quad-core-16gb-058203025/p" target="_blank">Tablet Philco 7" Android PTB7SSG</a></li>
           <li><a href="https://aataudio.com.br/condicionadores-de-energia/aat-pwc-1/" target="_blank">Power Conditioner AAT PWC-1</a></li>
+          <li><a href="https://store.google.com/sg/product/chromecast?hl=en-GB" target="_blank">Google Chromecast 3</a></li>
+          <li><a href="https://www.samsung.com/us/tablets/tab-a7/tab-a7-lite/" target="_blank">Galaxy Tab A7 Lite</a></li>
         </ul>
 
         <h4>Automation</h4>
@@ -236,7 +236,8 @@
 
       <div class="films">
         <div class="title" style="">NOW SHOWING</div>
-        <div class="films-grid" id="film-posters"></div>
+        <div class="film-posters" id="film-posters"></div>
+        <div class="film-ratings" id="film-ratings"></div>
         <div class="last-watched"><a href="https://letterboxd.com/hpfilho/tag/home-cinema/diary/">LAST WATCHED FILMS</a></div>
       </div>
 
@@ -272,14 +273,12 @@
     <script>
 
       var film_posters = document.getElementById('film-posters');
-
-      var current_photo;
+      var film_ratings = document.getElementById('film-ratings');
 
       for (var i = 0; i < 10; i++) {
+
         var url = films[i][0];
         var img = films[i][1];
-        console.log(url);
-        console.log(img);
         var film = document.createElement('DIV');
         var link = document.createElement('A');
         link.setAttribute('href', url);
@@ -290,8 +289,18 @@
         link.appendChild(poster);
         film.appendChild(link);
         film_posters.append(film);
+
+        var txt = films[i][2];
+        console.log(txt);
+        var rate = document.createElement('DIV');
+        rate.setAttribute('class', 'rating');
+        rate.innerText = txt;
+        film_ratings.append(rate);
+
       }
 
+
+      var current_photo;
 
       function openPhoto(number) {
         current_photo = number;

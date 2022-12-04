@@ -116,11 +116,23 @@ a:hover {
   grid-area: films;
 }
 
-.films-grid {
+.film-posters {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
   column-gap: 7px;
-  margin-bottom: 50px;
+}
+
+.film-ratings {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  column-gap: 7px;
+  margin-bottom: 62px;
+}
+
+.rating {
+  width: 85px;
+  font-size: 12px;
+  text-align: center;
 }
 
 .title {
