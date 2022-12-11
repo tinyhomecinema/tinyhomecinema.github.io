@@ -14,6 +14,6 @@ rm *.html
 
 git pull origin main
 git add ../data/films.js
-git commit -m "Updated last watched films"
+git commit -m "[auto] Updated last watched films"
 git push origin main
 
