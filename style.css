@@ -33,13 +33,6 @@ a:hover {
   text-align: left;
 }
 
-.location {
-  grid-area: location;
-  font-weight: bold;
-  margin-top: -40px;
-  text-align: right;
-}
-
 .last-watched {
   grid-area: last-watched;
   font-weight: normal;
@@ -161,7 +154,6 @@ a:hover {
   display: grid;
   grid-template-areas:
   'title title'
-  /* 'location location' */
   'photos photos'
   'description description'
   'room av_tech'
