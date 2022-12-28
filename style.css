@@ -23,7 +23,7 @@ a:hover {
 
 .page-title {
   grid-area: title;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   color: lightgrey;
   border-style: none none solid none;
