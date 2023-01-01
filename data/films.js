@@ -1,4 +1,5 @@
 var films = [
+  ['https://letterboxd.com/hpfilho/film/a-quiet-place-2018/1/', 'https://a.ltrbxd.com/resized/film-poster/3/7/9/6/8/7/379687-a-quiet-place-0-600-0-900-crop.jpg?v=895e756ae7', '★★★★'],
   ['https://letterboxd.com/hpfilho/film/a-wolf-at-the-door/', 'https://a.ltrbxd.com/resized/film-poster/1/5/2/1/0/8/152108-a-wolf-at-the-door-0-600-0-900-crop.jpg?v=d435ad520b', '★★★★'],
   ['https://letterboxd.com/hpfilho/film/arrival-2016/1/', 'https://a.ltrbxd.com/resized/sm/upload/3u/dy/qd/qd/4Iu5f2nv7huqvuYkmZvSPOtbFjs-0-600-0-900-crop.jpg?v=0fc28fdf2c', '★★★★★'],
   ['https://letterboxd.com/hpfilho/film/john-wick/', 'https://a.ltrbxd.com/resized/film-poster/1/7/2/0/7/6/172076-john-wick-0-600-0-900-crop.jpg?v=9e2acb1016', '★★★½'],
