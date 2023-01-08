@@ -1,4 +1,5 @@
 var films = [
+  ['https://letterboxd.com/hpfilho/film/x-2022/', 'https://a.ltrbxd.com/resized/film-poster/6/8/0/3/5/8/680358-x-0-600-0-900-crop.jpg?v=8ba5e11abf', '★★★½'],
   ['https://letterboxd.com/hpfilho/film/a-quiet-place-part-ii/', 'https://a.ltrbxd.com/resized/film-poster/4/5/0/3/3/7/450337-a-quiet-place-part-ii-0-600-0-900-crop.jpg?v=75a12b8eec', '★★★★'],
   ['https://letterboxd.com/hpfilho/film/a-quiet-place-2018/1/', 'https://a.ltrbxd.com/resized/film-poster/3/7/9/6/8/7/379687-a-quiet-place-0-600-0-900-crop.jpg?v=895e756ae7', '★★★★'],
   ['https://letterboxd.com/hpfilho/film/a-wolf-at-the-door/', 'https://a.ltrbxd.com/resized/film-poster/1/5/2/1/0/8/152108-a-wolf-at-the-door-0-600-0-900-crop.jpg?v=d435ad520b', '★★★★'],
@@ -28,5 +29,4 @@ var films = [
   ['https://letterboxd.com/hpfilho/film/palm-springs-2020/', 'https://a.ltrbxd.com/resized/film-poster/5/1/5/4/6/7/515467-palm-springs-0-600-0-900-crop.jpg?v=d3df94888b', '★★★★'],
   ['https://letterboxd.com/hpfilho/film/eternals/', 'https://a.ltrbxd.com/resized/film-poster/4/5/4/0/1/6/454016-eternals-0-600-0-900-crop.jpg?v=2578d04fd8', '★★★½'],
   ['https://letterboxd.com/hpfilho/film/west-side-story-2021/', 'https://a.ltrbxd.com/resized/sm/upload/yd/j5/tz/up/xW3t04p24jH7aQyq1J63ApAP9gG-0-600-0-900-crop.jpg?v=a25d5f6f88', '★★★★'],
-  ['https://letterboxd.com/hpfilho/film/ghostbusters-afterlife/', 'https://a.ltrbxd.com/resized/film-poster/3/5/9/3/4/9/359349-ghostbusters-afterlife-0-600-0-900-crop.jpg?v=b306cafe34', '★★★★'],
 ]
