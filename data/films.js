@@ -28,5 +28,4 @@ var films = [
   ['https://letterboxd.com/hpfilho/film/what-ever-happened-to-baby-jane/', 'https://a.ltrbxd.com/resized/sm/upload/cq/ht/cp/b9/7Zr0EuDMcIvnJREsLmaAWi5x7mV-0-600-0-900-crop.jpg?v=2a2340c9fd', '★★★★'],
   ['https://letterboxd.com/hpfilho/film/palm-springs-2020/', 'https://a.ltrbxd.com/resized/film-poster/5/1/5/4/6/7/515467-palm-springs-0-600-0-900-crop.jpg?v=d3df94888b', '★★★★'],
   ['https://letterboxd.com/hpfilho/film/eternals/', 'https://a.ltrbxd.com/resized/film-poster/4/5/4/0/1/6/454016-eternals-0-600-0-900-crop.jpg?v=2578d04fd8', '★★★½'],
-  ['https://letterboxd.com/hpfilho/film/west-side-story-2021/', 'https://a.ltrbxd.com/resized/sm/upload/yd/j5/tz/up/xW3t04p24jH7aQyq1J63ApAP9gG-0-600-0-900-crop.jpg?v=a25d5f6f88', '★★★★'],
 ]
