@@ -1,4 +1,5 @@
 var films = [
+  ['https://letterboxd.com/hpfilho/film/the-fabelmans/', 'https://a.ltrbxd.com/resized/film-poster/7/2/1/2/8/8/721288-the-fabelmans-0-600-0-900-crop.jpg?v=ae93837ec1', '★★★★★'],
   ['https://letterboxd.com/hpfilho/film/inception/', 'https://a.ltrbxd.com/resized/sm/upload/sv/95/s9/4j/inception-0-600-0-900-crop.jpg?v=30d7224316', '★★★★★'],
   ['https://letterboxd.com/hpfilho/film/finch/', 'https://a.ltrbxd.com/resized/film-poster/4/5/1/9/0/2/451902-finch-0-600-0-900-crop.jpg?v=d671921e0f', '★★★½'],
   ['https://letterboxd.com/hpfilho/film/john-wick-chapter-2/', 'https://a.ltrbxd.com/resized/sm/upload/wb/rc/zd/o6/fWz9LMfdES80BsJKucgzI5ZJhnB-0-600-0-900-crop.jpg?v=d5d6ba1b6e', '★★★½'],
