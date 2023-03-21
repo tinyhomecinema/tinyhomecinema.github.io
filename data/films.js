@@ -28,5 +28,4 @@ var films = [
   ['https://letterboxd.com/hpfilho/film/crimes-of-the-future-2022/', 'https://a.ltrbxd.com/resized/film-poster/7/3/6/3/1/8/736318-crimes-of-the-future-0-600-0-900-crop.jpg?v=ae8a4b1603', '★★★½'],
   ['https://letterboxd.com/hpfilho/film/devs/', 'https://a.ltrbxd.com/resized/film-poster/6/0/5/7/0/1/605701-devs-0-600-0-900-crop.jpg?v=85e89ce4e8', '★★★★½'],
   ['https://letterboxd.com/hpfilho/film/the-worlds-end/', 'https://a.ltrbxd.com/resized/film-poster/8/6/9/9/1/86991-the-world-s-end-0-600-0-900-crop.jpg?v=48a7252f0d', '★★★★'],
-  ['https://letterboxd.com/hpfilho/film/everything-everywhere-all-at-once/', 'https://a.ltrbxd.com/resized/film-poster/4/7/4/4/7/4/474474-everything-everywhere-all-at-once-0-600-0-900-crop.jpg?v=281f1a041e', '★★★★½'],
 ]
