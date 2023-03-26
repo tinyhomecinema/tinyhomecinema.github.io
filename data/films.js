@@ -1,5 +1,6 @@
 var films = [
-  ['https://letterboxd.com/hpfilho/film/luther-the-fallen-sun/', 'https://a.ltrbxd.com/resized/film-poster/6/4/4/8/1/9/644819-luther-the-fallen-sun-0-600-0-900-crop.jpg?v=5c5527de57', '★★★★'],
+  ['https://letterboxd.com/hpfilho/film/the-banshees-of-inisherin/', 'https://a.ltrbxd.com/resized/film-poster/5/9/8/8/8/2/598882-the-banshees-of-inisherin-0-600-0-900-crop.jpg?v=933f9af6e7', '★★★★'],
+  ['https://letterboxd.com/hpfilho/film/luther-the-fallen-sun/', 'https://a.ltrbxd.com/resized/film-poster/6/4/4/8/1/9/644819-luther-the-fallen-sun-0-600-0-900-crop.jpg?v=5c5527de57', '★★★½'],
   ['https://letterboxd.com/hpfilho/film/triangle-of-sadness/', 'https://a.ltrbxd.com/resized/film-poster/4/2/7/9/7/0/427970-triangle-of-sadness-0-600-0-900-crop.jpg?v=a9210ebfee', '★★★★'],
   ['https://letterboxd.com/hpfilho/film/the-fabelmans/', 'https://a.ltrbxd.com/resized/film-poster/7/2/1/2/8/8/721288-the-fabelmans-0-600-0-900-crop.jpg?v=ae93837ec1', '★★★★★'],
   ['https://letterboxd.com/hpfilho/film/inception/', 'https://a.ltrbxd.com/resized/sm/upload/sv/95/s9/4j/inception-0-600-0-900-crop.jpg?v=30d7224316', '★★★★★'],
