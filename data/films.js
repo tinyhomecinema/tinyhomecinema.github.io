@@ -28,5 +28,4 @@ var films = [
   ['https://letterboxd.com/hpfilho/film/drive-my-car/', 'https://a.ltrbxd.com/resized/film-poster/6/7/9/2/9/1/679291-drive-my-car-0-600-0-900-crop.jpg?v=9e1f7c9f35', '★★★★'],
   ['https://letterboxd.com/hpfilho/film/maelstrom/', 'https://a.ltrbxd.com/resized/film-poster/2/8/5/1/2/28512-maelstrom-0-600-0-900-crop.jpg?v=bbbd2f69ec', '★★★½'],
   ['https://letterboxd.com/hpfilho/film/crimes-of-the-future-2022/', 'https://a.ltrbxd.com/resized/film-poster/7/3/6/3/1/8/736318-crimes-of-the-future-0-600-0-900-crop.jpg?v=ae8a4b1603', '★★★½'],
-  ['https://letterboxd.com/hpfilho/film/devs/', 'https://a.ltrbxd.com/resized/film-poster/6/0/5/7/0/1/605701-devs-0-600-0-900-crop.jpg?v=85e89ce4e8', '★★★★½'],
 ]
