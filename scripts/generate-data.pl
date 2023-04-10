@@ -3,29 +3,6 @@
 use strict;
 use warnings;
 
-# SERVICES DATA
-
-my $stores = 'stores.html';
-open(STORES, $stores) or die("File $stores not found");
-
-my $services_data_file = '../data/services.js';
-open(SERVICES_DATA, '>', $services_data_file) or die("File $services_data_file not found");
-
-print SERVICES_DATA "var services = [\n";
-
-my @services;
-
-while (my $line = <STORES>) {
-    if ($line =~ /.*<p class=\"service\s(.*)\"/) {
-        print SERVICES_DATA "  [\'$1\'],\n";
-    }
-}
-
-print SERVICES_DATA "]\n";
-
-close(STORES);
-close(SERVICES_DATA);
-
 
 # COLLECTION DATA
 
@@ -48,32 +25,32 @@ print COLLECTION_DATA "var collection = [\n";
 my @collections;
 
 while (my $line = <COLLECTION>) {
-    if ($line =~ /.*<a href=\"(.*)\">My Film Collection</a>.*class=\"value\">(.*)&nbsp;films/) {
-        print COLLECTION_DATA "  [\'Films\', \'$2\', \'$base_url+$1\', \'collection\'],\n";
+    if ($line =~ /.*\<a href=\"(.*)\"\>My Film Collection\<\/a\>.*class=\"value\"\>(.*)&nbsp\;films/) {
+        print COLLECTION_DATA "  [\'Films\', $2, \'$base_url$1\', \'collection\'],\n";
     }
-    if ($line =~ /.*<a href=\"(.*)\">Miniseries</a>.*class=\"value\">(.*)&nbsp;films/) {
-        print COLLECTION_DATA "  [\'Miniseries\', \'$2\', \'$base_url+$1\', \'collection\'],\n";
+    if ($line =~ /.*\<a href=\"(.*)\"\>Miniseries\<\/a\>.*class=\"value\"\>(.*)&nbsp\;films/) {
+        print COLLECTION_DATA "  [\'Miniseries\', $2, \'$base_url$1\', \'collection\'],\n";
     }
 }
 
 while (my $line = <DISC>) {
-    if ($line =~ /.*<a href=\"(.*)\">Blu-ray</a>.*class=\"value\">(.*)&nbsp;films/) {
-        print COLLECTION_DATA "  [\'Blu-ray\', \'$2\', \'$base_url+$1\', \'disc\'],\n";
+    if ($line =~ /.*\<a href=\"(.*)\"\>Blu-ray\<\/a\>.*class=\"value\"\>(.*)&nbsp\;films/) {
+        print COLLECTION_DATA "  [\'Blu-ray\', $2, \'$base_url$1\', \'disc\'],\n";
     }
-    if ($line =~ /.*<a href=\"(.*)\">DVD</a>.*class=\"value\">(.*)&nbsp;films/) {
-        print COLLECTION_DATA "  [\'DVD\', \'$2\', \'$base_url+$1\', \'disc\'],\n";
+    if ($line =~ /.*\<a href=\"(.*)\"\>DVD\<\/a\>.*class=\"value\"\>(.*)&nbsp\;films/) {
+        print COLLECTION_DATA "  [\'DVD\', $2, \'$base_url$1\', \'disc\'],\n";
     }
-    if ($line =~ /.*<a href=\"(.*)\">BD + DVD</a>.*class=\"value\">(.*)&nbsp;films/) {
-        print COLLECTION_DATA "  [\'BD/DVD\', \'$2\', \'$base_url+$1\', \'disc\'],\n";
+    if ($line =~ /.*\<a href=\"(.*)\"\>Blu-ray\s\+\sDVD\<\/a\>.*class=\"value\"\>(.*)&nbsp\;films/) {
+        print COLLECTION_DATA "  [\'BD/DVD\', $2, \'$base_url$1\', \'disc\'],\n";
     }
 }
 
 while (my $line = <AUDIO>) {
-    if ($line =~ /.*<a href=\"(.*)\">Dolby Atmos</a>.*class=\"value\">(.*)&nbsp;films/) {
-        print COLLECTION_DATA "  [\'Dolby Atmos\', \'$2\', \'$base_url+$1\', \'audio\'],\n";
+    if ($line =~ /.*\<a href=\"(.*)\"\>Dolby Atmos\<\/a\>.*class=\"value\"\>(.*)&nbsp\;films/) {
+        print COLLECTION_DATA "  [\'Dolby Atmos\', $2, \'$base_url$1\', \'audio\'],\n";
     }
-    if ($line =~ /.*<a href=\"(.*)\">DTS:X</a>.*class=\"value\">(.*)&nbsp;films/) {
-        print COLLECTION_DATA "  [\'DTS X\', \'$2\', \'$base_url+$1\', \'audio\'],\n";
+    if ($line =~ /.*\<a href=\"(.*)\"\>DTS:X\<\/a\>.*class=\"value\"\>(.*)&nbsp\;films/) {
+        print COLLECTION_DATA "  [\'DTS X\', $2, \'$base_url$1\', \'audio\'],\n";
     }
 }
 
@@ -82,7 +59,7 @@ print COLLECTION_DATA "]\n";
 close(COLLECTION);
 close(DISC);
 close(AUDIO);
-close(COLLECTIONS_DATA);
+close(COLLECTION_DATA);
 
 
 # FILMS DATA

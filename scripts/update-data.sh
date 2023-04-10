@@ -2,9 +2,6 @@
 
 cd /home/pi/github/tinyhomecinema.github.io/scripts
 
-wget https://letterboxd.com/settings/stores/
-mv index.html stores.html
-
 wget https://letterboxd.com/hpfilho/tag/collection/lists/
 mv index.html collection.html
 
@@ -26,7 +23,6 @@ rm *.html
 
 git pull origin main
 git add ../data/collection.js
-git add ../data/services.js
 git add ../data/films.js
 git commit -m "[auto] Updated data"
 git push origin main
