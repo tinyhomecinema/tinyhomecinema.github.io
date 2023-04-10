@@ -6,7 +6,7 @@ use warnings;
 
 # COLLECTION DATA
 
-my $base_url = "https://letterboxd.com/";
+my $base_url = "https://letterboxd.com";
 
 my $collection = 'collection.html';
 open(COLLECTION, $collection) or die("File $collection not found");
