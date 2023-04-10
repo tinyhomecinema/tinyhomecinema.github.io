@@ -7,6 +7,8 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
 
   <script src="data/films.js"></script>
+  <script src="data/services.js"></script>
+  <script src="data/collection.js"></script>
 
   <!-- Mobile redirect script by https://www.pagecrafter.com -->
   <script type="text/javascript" src="js/redirection-mobile.js"></script>
@@ -126,9 +128,9 @@
 
         <br>
         <p style="font-size:10px;color:darkgrey">
-        <i>* for BD/DVD playback</i>,
-        <i>** for CD playback</i>,
-        <i>*** only decorative</i>
+          <i>* for BD/DVD playback</i>,
+          <i>** for CD playback</i>,
+          <i>*** only decorative</i>
         </p>
 
       </div>
@@ -137,18 +139,7 @@
         <div class="title" style="">Streaming</div>
 
         <h4>Current Services</h4>
-        <ul>
-          <li><a href="https://www.netflix.com/" target="_blank">Netflix</a></li>
-          <li><a href="https://www.primevideo.com/" target="_blank">Prime Video</a></li>
-          <li><a href="https://www.hbomax.com/" target="_blank">HBO Max</a></li>
-          <li><a href="https://www.apple.com/apple-tv-plus/" target="_blank">Apple TV+</a></li>
-          <li><a href="https://www.starplus.com/" target="_blank">STAR+</a></li>
-          <li><a href="https://www.disneyplus.com/" target="_blank">Disney+</a></li>
-          <!-- <li><a href="https://www.lionsgateplus.com/" target="_blank">Lionsgate+</a></li> -->
-          <!-- <li><a href="https://www.mubi.com/" target="_blank">MUBI</a></li> -->
-          <!-- <li><a href="https://www.paramountplus.com/" target="_blank">Paramount+</a></li> -->
-          <!-- <li><a href="https://www.telecine.com.br/" target="_blank">Telecine Play</a></li> -->
-          <!-- <li><a href="https://globoplay.globo.com/" target="_blank">Globoplay</a></li> -->
+        <ul id="services-list">
         </ul>
 
       </div>
@@ -157,15 +148,7 @@
         <div class="title" style="">Physical Media</div>
 
         <h4>Film Collection</h4>
-        <ul>
-          <li><b><a href="https://letterboxd.com/hpfilho/list/my-film-collection/detail/">Total: 317</a></b> *</li>
-          <br>
-          <li><a href="https://letterboxd.com/hpfilho/list/blu-ray/">Blu-ray: 109</a></li>
-          <li><a href="https://letterboxd.com/hpfilho/list/dvd/">DVD: 261</a></li>
-          <li><a href="https://letterboxd.com/hpfilho/list/blu-ray-dvd/">BD/DVD: 53</a></li>
-          <br>
-          <li><a href="https://letterboxd.com/hpfilho/list/dolby-atmos/">Dolby Atmos: 14</a></li>
-          <li><a href="https://letterboxd.com/hpfilho/list/dts-x/">DTS X: 5</a></li>
+        <ul id="collection-list">
         </ul>
 
         <h4>Others</h4>
@@ -175,11 +158,6 @@
           <li>Film Magazines</li>
           <li>Home Theater Magazines</li>
         </ul>
-
-        <br>
-        <p style="font-size:10px;color:darkgrey">
-        <i>* number of films, not discs (Total = Blu-ray + DVD - BD/DVD)</i>
-        </p>
 
       </div>
 
@@ -293,105 +271,154 @@
 
     <script>
 
-      var film_posters = document.getElementById('film-posters');
-      var film_ratings = document.getElementById('film-ratings');
+    var streaming_services = document.getElementById('services-list');
 
-      for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < services.length; i++) {
 
-        var url = films[i][0];
-        var img = films[i][1];
-        var film = document.createElement('DIV');
+      var service = services[i][0];
+      var url = services[i][1];
+      var status = services[i][2];
+
+      if (status == 'active') {
         var link = document.createElement('A');
         link.setAttribute('href', url);
         link.setAttribute('target', '_blank');
-        var poster = document.createElement('IMG');
-        poster.setAttribute('src', img);
-        poster.setAttribute('width', '85');
-        link.appendChild(poster);
-        film.appendChild(link);
-        film_posters.append(film);
-
-        var txt = films[i][2];
-        console.log(txt);
-        var rate = document.createElement('DIV');
-        rate.setAttribute('class', 'rating');
-        rate.innerText = txt;
-        film_ratings.append(rate);
-
+        var textNode = document.createTextNode(service);
+        link.appendChild(textNode);
+        var line = document.createElement('LI');
+        line.appendChild(link);
+        streaming_services.appendChild(line);
       }
 
+    }
 
-      var current_photo;
+    var film_collection = document.getElementById('collection-list');
+    var prev_type = "collection";
 
-      function openPhoto(number) {
-        current_photo = number;
-        var photo = document.getElementById('photo');
-        var url = 'img/IMG_'.concat(current_photo).concat('.jpg');
-        photo.setAttribute('src', url);
-        document.getElementById('overlay').style.height = "100%";
-        if (current_photo > 1) {
-          document.getElementById('arr_back').setAttribute('src', 'icons/arrow_back.svg');
-          document.getElementById('arr_back').style.cursor = "pointer";
-        } else {
-          document.getElementById('arr_back').setAttribute('src', 'icons/blank.svg');
-          document.getElementById('arr_back').style.cursor = "default";
-        }
-        if (current_photo < 5) {
-          document.getElementById('arr_forward').setAttribute('src', 'icons/arrow_forward.svg');
-          document.getElementById('arr_forward').style.cursor = "pointer";
-        } else {
-          document.getElementById('arr_forward').setAttribute('src', 'icons/blank.svg');
-          document.getElementById('arr_forward').style.cursor = "default";
-        }
+    for (var i = 0; i < collection.length; i++) {
+
+      var item = collection[i][0];
+      var quantity = collection[i][1];
+      var url = collection[i][2];
+      var type = collection[i][3];
+
+      if (type != prev_type) {
+        var line_break = document.createElement('BR');
+        film_collection.appendChild(line_break);
       }
 
-      function nextPhoto() {
-        current_photo++;
-        if (current_photo > 5) {
-          current_photo = 5;
-        }
-        var photo = document.getElementById('photo');
-        var url = 'img/IMG_'.concat(current_photo).concat('.jpg');
-        photo.setAttribute('src', url);
+      var link = document.createElement('A');
+      link.setAttribute('href', url);
+      var text = item.concat(': ').concat(quantity);
+      var textNode = document.createTextNode(text);
+      link.appendChild(textNode);
+      var line = document.createElement('LI');
+      line.appendChild(link);
+      film_collection.appendChild(line);
+
+      prev_type = type;
+
+    }
+
+    var film_posters = document.getElementById('film-posters');
+    var film_ratings = document.getElementById('film-ratings');
+
+    for (var i = 0; i < 10; i++) {
+
+      var url = films[i][0];
+      var img = films[i][1];
+      var film = document.createElement('DIV');
+      var link = document.createElement('A');
+      link.setAttribute('href', url);
+      link.setAttribute('target', '_blank');
+      var poster = document.createElement('IMG');
+      poster.setAttribute('src', img);
+      poster.setAttribute('width', '85');
+      link.appendChild(poster);
+      film.appendChild(link);
+      film_posters.append(film);
+
+      var txt = films[i][2];
+      console.log(txt);
+      var rate = document.createElement('DIV');
+      rate.setAttribute('class', 'rating');
+      rate.innerText = txt;
+      film_ratings.append(rate);
+
+    }
+
+
+    var current_photo;
+
+    function openPhoto(number) {
+      current_photo = number;
+      var photo = document.getElementById('photo');
+      var url = 'img/IMG_'.concat(current_photo).concat('.jpg');
+      photo.setAttribute('src', url);
+      document.getElementById('overlay').style.height = "100%";
+      if (current_photo > 1) {
         document.getElementById('arr_back').setAttribute('src', 'icons/arrow_back.svg');
         document.getElementById('arr_back').style.cursor = "pointer";
-        if (current_photo < 5) {
-          document.getElementById('arr_forward').setAttribute('src', 'icons/arrow_forward.svg');
-          document.getElementById('arr_forward').style.cursor = "pointer";
-        } else {
-          document.getElementById('arr_forward').setAttribute('src', 'icons/blank.svg');
-          document.getElementById('arr_forward').style.cursor = "default";
-        }
+      } else {
+        document.getElementById('arr_back').setAttribute('src', 'icons/blank.svg');
+        document.getElementById('arr_back').style.cursor = "default";
       }
-
-      function previousPhoto() {
-        current_photo--;
-        if (current_photo < 1) {
-          current_photo = 1;
-        }
-        var photo = document.getElementById('photo');
-        var url = 'img/IMG_'.concat(current_photo).concat('.jpg');
-        photo.setAttribute('src', url);
-        if (current_photo > 1) {
-          document.getElementById('arr_back').setAttribute('src', 'icons/arrow_back.svg');
-          document.getElementById('arr_back').style.cursor = "pointer";
-        } else {
-          document.getElementById('arr_back').setAttribute('src', 'icons/blank.svg');
-          document.getElementById('arr_back').style.cursor = "default";
-      }
+      if (current_photo < 5) {
         document.getElementById('arr_forward').setAttribute('src', 'icons/arrow_forward.svg');
         document.getElementById('arr_forward').style.cursor = "pointer";
+      } else {
+        document.getElementById('arr_forward').setAttribute('src', 'icons/blank.svg');
+        document.getElementById('arr_forward').style.cursor = "default";
       }
+    }
 
-      function closePhoto() {
-        document.getElementById('overlay').style.height = "0%";
+    function nextPhoto() {
+      current_photo++;
+      if (current_photo > 5) {
+        current_photo = 5;
       }
+      var photo = document.getElementById('photo');
+      var url = 'img/IMG_'.concat(current_photo).concat('.jpg');
+      photo.setAttribute('src', url);
+      document.getElementById('arr_back').setAttribute('src', 'icons/arrow_back.svg');
+      document.getElementById('arr_back').style.cursor = "pointer";
+      if (current_photo < 5) {
+        document.getElementById('arr_forward').setAttribute('src', 'icons/arrow_forward.svg');
+        document.getElementById('arr_forward').style.cursor = "pointer";
+      } else {
+        document.getElementById('arr_forward').setAttribute('src', 'icons/blank.svg');
+        document.getElementById('arr_forward').style.cursor = "default";
+      }
+    }
 
-      window.onkeyup = function (event) {
-        if (event.keyCode == 27) {
-          closePhoto();
-        }
+    function previousPhoto() {
+      current_photo--;
+      if (current_photo < 1) {
+        current_photo = 1;
       }
+      var photo = document.getElementById('photo');
+      var url = 'img/IMG_'.concat(current_photo).concat('.jpg');
+      photo.setAttribute('src', url);
+      if (current_photo > 1) {
+        document.getElementById('arr_back').setAttribute('src', 'icons/arrow_back.svg');
+        document.getElementById('arr_back').style.cursor = "pointer";
+      } else {
+        document.getElementById('arr_back').setAttribute('src', 'icons/blank.svg');
+        document.getElementById('arr_back').style.cursor = "default";
+      }
+      document.getElementById('arr_forward').setAttribute('src', 'icons/arrow_forward.svg');
+      document.getElementById('arr_forward').style.cursor = "pointer";
+    }
+
+    function closePhoto() {
+      document.getElementById('overlay').style.height = "0%";
+    }
+
+    window.onkeyup = function (event) {
+      if (event.keyCode == 27) {
+        closePhoto();
+      }
+    }
 
     </script>
 
@@ -407,12 +434,12 @@
     src="https://www.statcounter.com/counter/counter.js"
     async></script>
     <noscript><div class="statcounter"><a title="Web Analytics"
-    href="https://statcounter.com/" target="_blank"><img
-    class="statcounter"
-    src="https://c.statcounter.com/12825819/0/0ada8c3b/1/"
-    alt="Web Analytics"
-    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+      href="https://statcounter.com/" target="_blank"><img
+      class="statcounter"
+      src="https://c.statcounter.com/12825819/0/0ada8c3b/1/"
+      alt="Web Analytics"
+      referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+      <!-- End of Statcounter Code -->
 
     </body>
     </html>
