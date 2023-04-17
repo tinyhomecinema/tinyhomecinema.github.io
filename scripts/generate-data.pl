@@ -8,66 +8,130 @@ use warnings;
 
 my $base_url = "https://letterboxd.com";
 
-my $collection = 'collection.html';
-open(COLLECTION, $collection) or die("File $collection not found");
+my $films = 'html/films.html';
+open(FILMS, $films) or die("File $films not found");
 
-my $disc = 'disc.html';
-open(DISC, $disc) or die("File $disc not found");
+my $miniseries = 'html/miniseries.html';
+open(MINISERIES, $miniseries) or die("File $miniseries not found");
 
-my $audio = 'audio.html';
-open(AUDIO, $audio) or die("File $audio not found");
+my $bluray = 'html/blu-ray.html';
+open(BLURAY, $bluray) or die("File $bluray not found");
+
+my $dvd = 'html/dvd.html';
+open(DVD, $dvd) or die("File $dvd not found");
+
+my $bd_dvd = 'html/bd+dvd.html';
+open(BD_DVD, $bd_dvd) or die("File $bd_dvd not found");
+
+my $atmos = 'html/atmos.html';
+open(ATMOS, $atmos) or die("File $atmos not found");
+
+my $dtsx = 'html/dtsx.html';
+open(DTSX, $dtsx) or die("File $dtsx not found");
 
 my $collection_data_file = '../data/collection.js';
 open(COLLECTION_DATA, '>', $collection_data_file) or die("File $collection_data_file not found");
 
 print COLLECTION_DATA "var collection = [\n";
 
-my @collections;
+my $url;
+my $count;
 
-while (my $line = <COLLECTION>) {
-    if ($line =~ /.*\<a href=\"(.*)\"\>My Film Collection\<\/a\>.*class=\"value\"\>(.*)&nbsp\;films/) {
-        print COLLECTION_DATA "  [\'Films\', $2, \'$base_url$1\', \'collection\'],\n";
+while (my $line = <FILMS>) {
+    if ($line =~ /meta property=\"og\:url\" content=\"(.*)\"/) {
+        $url = $1;
     }
-    if ($line =~ /.*\<a href=\"(.*)\"\>Miniseries\<\/a\>.*class=\"value\"\>(.*)&nbsp\;films/) {
-        print COLLECTION_DATA "  [\'Miniseries\', $2, \'$base_url$1\', \'collection\'],\n";
+    if ($line =~ /A list of ([0-9]*) films/) {
+        $count = $1;
     }
 }
 
-while (my $line = <DISC>) {
-    if ($line =~ /.*\<a href=\"(.*)\"\>Blu-ray\<\/a\>.*class=\"value\"\>(.*)&nbsp\;films/) {
-        print COLLECTION_DATA "  [\'Blu-ray\', $2, \'$base_url$1\', \'disc\'],\n";
+print COLLECTION_DATA "  [\'Films\', $count, \'$url\', \'collection\'],\n";
+
+while (my $line = <MINISERIES>) {
+    if ($line =~ /meta property=\"og\:url\" content=\"(.*)\"/) {
+        $url = $1;
     }
-    if ($line =~ /.*\<a href=\"(.*)\"\>DVD\<\/a\>.*class=\"value\"\>(.*)&nbsp\;films/) {
-        print COLLECTION_DATA "  [\'DVD\', $2, \'$base_url$1\', \'disc\'],\n";
-    }
-    if ($line =~ /.*\<a href=\"(.*)\"\>Blu-ray\s\+\sDVD\<\/a\>.*class=\"value\"\>(.*)&nbsp\;films/) {
-        print COLLECTION_DATA "  [\'BD/DVD\', $2, \'$base_url$1\', \'disc\'],\n";
+    if ($line =~ /A list of ([0-9]*) films/) {
+       $count = $1;
     }
 }
 
-while (my $line = <AUDIO>) {
-    if ($line =~ /.*\<a href=\"(.*)\"\>Dolby Atmos\<\/a\>.*class=\"value\"\>(.*)&nbsp\;films/) {
-        print COLLECTION_DATA "  [\'Dolby Atmos\', $2, \'$base_url$1\', \'audio\'],\n";
+print COLLECTION_DATA "  [\'Miniseries\', $count, \'$url\', \'collection\'],\n";
+
+while (my $line = <BLURAY>) {
+    if ($line =~ /meta property=\"og\:url\" content=\"(.*)\"/) {
+        $url = $1;
     }
-    if ($line =~ /.*\<a href=\"(.*)\"\>DTS:X\<\/a\>.*class=\"value\"\>(.*)&nbsp\;films/) {
-        print COLLECTION_DATA "  [\'DTS X\', $2, \'$base_url$1\', \'audio\'],\n";
+    if ($line =~ /A list of ([0-9]*) films/) {
+        $count = $1;
     }
 }
+
+print COLLECTION_DATA "  [\'Blu-ray\', $count, \'$url\', \'disc\'],\n";
+
+while (my $line = <DVD>) {
+    if ($line =~ /meta property=\"og\:url\" content=\"(.*)\"/) {
+        $url = $1;
+    }
+    if ($line =~ /A list of ([0-9]*) films/) {
+        $count = $1;
+    }
+}
+
+print COLLECTION_DATA "  [\'DVD\', $count, \'$url\', \'disc\'],\n";
+
+while (my $line = <BD_DVD>) {
+    if ($line =~ /meta property=\"og\:url\" content=\"(.*)\"/) {
+        $url = $1;
+    }
+    if ($line =~ /A list of ([0-9]*) films/) {
+        $count = $1;
+    }
+}
+
+print COLLECTION_DATA "  [\'BD\/DVD\', $count, \'$url\', \'disc\'],\n";
+
+while (my $line = <ATMOS>) {
+    if ($line =~ /meta property=\"og\:url\" content=\"(.*)\"/) {
+        $url = $1;
+    }
+    if ($line =~ /A list of ([0-9]*) films/) {
+        $count = $1;
+    }
+}
+
+print COLLECTION_DATA "  [\'Dolby Atmos\', $count, \'$url\', \'audio\'],\n";
+
+while (my $line = <DTSX>) {
+    if ($line =~ /meta property=\"og\:url\" content=\"(.*)\"/) {
+        $url = $1;
+    }
+    if ($line =~ /A list of ([0-9]*) films/) {
+        $count = $1;
+    }
+}
+
+print COLLECTION_DATA "  [\'DTS X\', $count, \'$url\', \'audio\'],\n";
 
 print COLLECTION_DATA "]\n";
 
-close(COLLECTION);
-close(DISC);
-close(AUDIO);
+close(FILMS);
+close(MINISERIES);
+close(BLURAY);
+close(DVD);
+close(BD_DVD);
+close(ATMOS);
+close(DTSX);
 close(COLLECTION_DATA);
 
 
 # FILMS DATA
 
-my $rss = 'rss.html';
+my $rss = 'html/rss.html';
 open(RSS, $rss) or die("File $rss not found");
 
-my $diary = 'diary.html';
+my $diary = 'html/diary.html';
 open(DIARY, $diary) or die("File $diary not found");
 
 my $films_data_file = '../data/films.js';
