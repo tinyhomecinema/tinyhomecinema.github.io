@@ -1,25 +1,39 @@
 #!/bin/bash
 
-cd /home/pi/github/tinyhomecinema.github.io/scripts
+cd /home/pi/github/tinyhomecinema.github.io/scripts/html
 
-wget https://letterboxd.com/hpfilho/tag/collection/lists/
-mv index.html collection.html
+wget 'https://letterboxd.com/hpfilho/list/my-film-collection/'
+mv index.html films.html
 
-wget https://letterboxd.com/hpfilho/tag/disc/lists/
-mv index.html disc.html
+wget 'https://letterboxd.com/hpfilho/list/miniseries/'
+mv index.html miniseries.html
 
-wget https://letterboxd.com/hpfilho/tag/audio/lists/
-mv index.html audio.html
+wget 'https://letterboxd.com/hpfilho/list/blu-ray/'
+mv index.html blu-ray.html
 
-wget https://letterboxd.com/hpfilho/rss/
+wget 'https://letterboxd.com/hpfilho/list/dvd/'
+mv index.html dvd.html
+
+wget 'https://letterboxd.com/hpfilho/list/blu-ray-dvd/'
+mv index.html bd+dvd.html
+
+wget 'https://letterboxd.com/hpfilho/list/dolby-atmos/'
+mv index.html atmos.html
+
+wget 'https://letterboxd.com/hpfilho/list/dts-x/'
+mv index.html dtsx.html
+
+wget 'https://letterboxd.com/hpfilho/rss/'
 mv index.html rss.html
 
-wget https://letterboxd.com/hpfilho/tag/home-cinema/diary/
+wget 'https://letterboxd.com/hpfilho/tag/home-cinema/diary/'
 mv index.html diary.html
+
+cd /home/pi/github/tinyhomecinema.github.io/scripts
 
 ./generate-data.pl
 
-rm *.html
+rm /home/pi/github/tinyhomecinema.github.io/scripts/html/*
 
 git pull origin main
 git add ../data/collection.js
