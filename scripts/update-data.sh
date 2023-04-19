@@ -23,6 +23,9 @@ mv index.html atmos.html
 wget 'https://letterboxd.com/hpfilho/list/dts-x/'
 mv index.html dtsx.html
 
+wget 'https://letterboxd.com/hpfilho/list/watched-in-my-home-cinema/'
+mv index.html watched.html
+
 wget 'https://letterboxd.com/hpfilho/rss/'
 mv index.html rss.html
 
