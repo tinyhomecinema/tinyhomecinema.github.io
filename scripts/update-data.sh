@@ -2,6 +2,9 @@
 
 cd /home/pi/github/tinyhomecinema.github.io/scripts/html
 
+wget 'https://boxd.it/nHxry$uaqKBBxmKIM2EsFn'
+mv index.html shelf.html
+
 wget 'https://letterboxd.com/hpfilho/list/my-film-collection/'
 mv index.html films.html
 
