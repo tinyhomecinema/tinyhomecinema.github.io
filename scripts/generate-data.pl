@@ -49,7 +49,7 @@ while (my $line = <SHELF>) {
     }
 }
 
-print SHELF "  [\'Films / Miniseries\', $count, \'$url\', \'shelf\'],\n";
+print SHELF "  [\'Movies\', $count, \'$url\', \'shelf\'],\n";
 
 while (my $line = <FILMS>) {
     if ($line =~ /meta property=\"og\:url\" content=\"(.*)\"/) {
