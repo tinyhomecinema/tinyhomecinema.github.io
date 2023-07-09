@@ -2,7 +2,7 @@
 
 cd /home/pi/github/tinyhomecinema.github.io/scripts/html
 
-wget 'https://boxd.it/nHxry$uaqKBBxmKIM2EsFn'
+wget 'https://letterboxd.com/hpfilho/list/my-home-cinema-shelf/'
 mv index.html shelf.html
 
 wget 'https://letterboxd.com/hpfilho/list/my-film-collection/'
