@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#git pull origin main
+
 cd /home/pi/github/tinyhomecinema.github.io/scripts/html
 
 wget 'https://letterboxd.com/hpfilho/list/my-home-cinema-shelf/'
@@ -10,6 +12,9 @@ mv index.html films.html
 
 wget 'https://letterboxd.com/hpfilho/list/my-short-films-collection/'
 mv index.html shorts.html
+
+wget 'https://letterboxd.com/hpfilho/list/my-special-feature-documentaries-collection/'
+mv index.html documentaries.html
 
 wget 'https://letterboxd.com/hpfilho/list/my-miniseries-collection/'
 mv index.html miniseries.html
@@ -39,19 +44,18 @@ cd /home/pi/github/tinyhomecinema.github.io/scripts
 
 ./generate-data.pl
 
-rm /home/pi/github/tinyhomecinema.github.io/scripts/html/*
+#rm /home/pi/github/tinyhomecinema.github.io/scripts/html/*
 
-git pull origin main
-git add ../data/collection.js
-git add ../data/films.js
-git commit -m "[auto] Updated data"
-git push origin main
+#git add ../data/collection.js
+#git add ../data/films.js
+#git commit -m "[auto] Updated data"
+#git push origin main
 
-cd /home/pi/github/haraldofilho.github.io/pages/home-cinema
+#cd /home/pi/github/haraldofilho.github.io/pages/home-cinema
 
-cp -r /home/pi/github/tinyhomecinema.github.io/* .
+#cp -r /home/pi/github/tinyhomecinema.github.io/* .
 
-git pull origin master
-git add *
-git commit -m "[auto] Updated home-cinema page"
-git push origin master
+#git pull origin master
+#git add *
+#git commit -m "[auto] Updated home-cinema page"
+#git push origin master
