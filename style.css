@@ -26,7 +26,7 @@ a:hover {
   font-size: 50px;
   font-weight: bold;
   color: lightgrey;
-  border-style: solid;
+  border-style: solid none solid none;
   border-color: lightgrey;
   border-width: thin;
   padding-top: 5px;
