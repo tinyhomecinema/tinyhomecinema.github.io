@@ -226,9 +226,9 @@
       var item = document.createElement('LI');
       var type = document.createTextNode(speakers[i][0].concat(": "));
       var text = document.createTextNode(speakers[i][1]);
-      var url = document.createTextNode(speakers[i][2]);
+      var url = speakers[i][2];
 
-      var bold_type =document.createElement('B');
+      var bold_type = document.createElement('B');
       bold_type.appendChild(type);
       item.appendChild(bold_type);
 
@@ -252,7 +252,7 @@
       var item = document.createElement('LI');
       var text = document.createTextNode(electronics[i][0]);
       var note = document.createTextNode(" ".concat(electronics[i][1]));
-      var url = document.createTextNode(electronics[i][2]);
+      var url = electronics[i][2];
 
       if (url.length > 0) {
         var link = document.createElement('A');
