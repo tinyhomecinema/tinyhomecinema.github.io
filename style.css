@@ -143,7 +143,7 @@ a:hover {
   border-style: solid none solid none;
   border-color: grey;
   border-width: thin;
-  padding: 10px 100px 10px 100px;
+  padding: 10px 70px 10px 70px;
 
 }
 
@@ -158,12 +158,17 @@ a:hover {
   display: grid;
   column-gap: 15px;
   align-items: right;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
 }
 
 .logo {
   justify-content: center;
-  height: 12px;
+  height: 11px;
+}
+
+.logo-dayton {
+  justify-content: center;
+  height: 9px;
 }
 
 .logo-yamaha {
@@ -174,18 +179,17 @@ a:hover {
 
 .logo-onkyo {
   justify-content: center;
-  height: 10px;
+  height: 9px;
 }
 
 .logo-sony {
   justify-content: center;
-  height: 10px;
+  height: 9px;
 }
 
 .logo-lg {
   justify-content: center;
-  padding-top: 2px;
-  height: 15px;
+  height: 10px;
 }
 
 .rating {
