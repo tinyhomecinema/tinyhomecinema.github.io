@@ -36,15 +36,6 @@ a:hover {
   margin-top: -40px;
 }
 
-.last-watched {
-  grid-area: last-watched;
-  font-weight: normal;
-  font-size: 10px;
-  color: grey;
-  margin-top: -40px;
-  text-align: center;
-}
-
 .photos {
   grid-area: photos;
   margin-top: 50px;
@@ -133,6 +124,21 @@ a:hover {
   margin-bottom: 62px;
 }
 
+.rating {
+  width: 85px;
+  font-size: 12px;
+  color: darkgrey;
+  text-align: center;
+}
+
+.bottom-links {
+  font-weight: normal;
+  font-size: 10px;
+  color: darkgrey;
+  margin-top: -40px;
+  text-align: center;
+}
+
 .logos {
   grid-area: logos;
   display: grid;
@@ -143,7 +149,7 @@ a:hover {
   border-style: solid none solid none;
   border-color: grey;
   border-width: thin;
-  padding: 10px 70px 10px 70px;
+  padding: 10px 65px 10px 70px;
 
 }
 
@@ -161,9 +167,22 @@ a:hover {
   grid-template-columns: auto auto auto auto auto auto;
 }
 
-.logo {
+.logo-dolby {
   justify-content: center;
+  padding-top: 5px;
   height: 11px;
+}
+
+.logo-dts {
+  justify-content: center;
+  padding-top: 4px;
+  height: 12px;
+}
+
+.logo-yamaha {
+  justify-content: center;
+  padding-top: 4px;
+  height: 13px;
 }
 
 .logo-dayton {
@@ -171,15 +190,14 @@ a:hover {
   height: 9px;
 }
 
-.logo-yamaha {
-  justify-content: center;
-  padding-top: 3px;
-  height: 13px;
-}
-
 .logo-onkyo {
   justify-content: center;
   height: 9px;
+}
+
+.logo-pioneer {
+  justify-content: center;
+  height: 10px;
 }
 
 .logo-sony {
@@ -189,14 +207,8 @@ a:hover {
 
 .logo-lg {
   justify-content: center;
+  padding-top: 5px;
   height: 10px;
-}
-
-.rating {
-  width: 85px;
-  font-size: 12px;
-  color: grey;
-  text-align: center;
 }
 
 .title {
