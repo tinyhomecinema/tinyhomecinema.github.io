@@ -211,6 +211,22 @@ a:hover {
   height: 10px;
 }
 
+.title-grid-left {
+  display: grid;
+  grid-template-areas: 'auto auto';
+  justify-content: 'left right';
+  margin-bottom: -23px;
+  width: 950px;
+}
+
+.title-grid-right {
+  display: grid;
+  grid-template-areas: 'auto auto';
+  justify-content: 'left right';
+  margin-bottom: -23px;
+  width: 410px;
+}
+
 .title {
   font-size: 20px;
   font-weight: bold;
@@ -223,6 +239,21 @@ a:hover {
   text-align: left;
 }
 
+.more {
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  color: lightgrey;
+  border-style: none none solid none;
+  border-color: lightgrey;
+  border-width: thin;
+  margin-bottom: 23px;
+  padding-top: 10px;
+  text-align: right;
+  width: 50px;
+  cursor: pointer;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -231,8 +262,8 @@ a:hover {
   'description description'
   'room av_tech'
   'screen av_tech'
-  'gear streaming'
   'gear media'
+  'gear streaming'
   'decor stuff'
   'films films'
   'logos logos';

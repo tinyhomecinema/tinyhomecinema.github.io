@@ -1,5 +1,11 @@
-var collection = [
+var shelves = [
   ['Movies', 400, 'https://letterboxd.com/hpfilho/list/my-home-cinema-shelf/', 'shelf'],
+  ['TV Shows', 6, 'https://www.themoviedb.org/list/8256420', 'shelf'],
+  ['Soundtrack CDs', 35, 'https://tinyhomecinema.page/music/', 'shelf'],
+  ['Film Books', 26, 'https://www.librarything.com/catalog.php?view=hpfilho&collection=794026&shelf=shelf&sort=title&previousOffset=0&shelf_rows=3&collection=794026', 'shelf']
+]
+
+var collection = [
   ['Films', 334, 'https://letterboxd.com/hpfilho/list/my-film-collection/', 'collection'],
   ['Shorts', 69, 'https://letterboxd.com/hpfilho/list/my-short-films-collection/', 'collection'],
   ['Documentaries', 19, 'https://letterboxd.com/hpfilho/list/my-special-feature-documentaries-collection/', 'collection'],
