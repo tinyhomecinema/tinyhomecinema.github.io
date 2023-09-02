@@ -50,7 +50,7 @@ a:hover {
 .description {
   grid-area: description;
   margin-top: -30px;
-  width: 920px;
+  width: 925px;
   line-height: 25px;
   text-align: justify;
 }
@@ -216,7 +216,6 @@ a:hover {
   grid-template-areas: 'auto auto';
   justify-content: 'left right';
   margin-bottom: -23px;
-  width: 950px;
 }
 
 .title-grid-right {
@@ -224,23 +223,6 @@ a:hover {
   grid-template-areas: 'auto auto';
   justify-content: 'left right';
   margin-bottom: -23px;
-  width: 410px;
-}
-
-.title-grid-left-decor {
-  display: grid;
-  grid-template-areas: 'auto auto';
-  justify-content: 'left right';
-  margin-bottom: -23px;
-  width: 1000px;
-}
-
-.title-grid-right-stuff {
-  display: grid;
-  grid-template-areas: 'auto auto';
-  justify-content: 'left right';
-  margin-bottom: -23px;
-  width: 445px;
 }
 
 .title {
@@ -266,7 +248,6 @@ a:hover {
   margin-bottom: 23px;
   padding-top: 10px;
   text-align: right;
-  width: 50px;
   cursor: pointer;
 }
 

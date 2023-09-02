@@ -52,119 +52,6 @@ function closePhoto() {
   document.getElementById('overlay').style.height = "0%";
 }
 
-function moreEquipment(click) {
-
-  var gear_list = document.getElementById('gear-list');
-
-  var power_and_automation_header = document.createElement('H4');
-  var header_text = document.createTextNode("Power and Automation");
-  power_and_automation_header.appendChild(header_text);
-  gear_list.appendChild(power_and_automation_header);
-  var power_and_automation_list = document.createElement('UL');
-  addEquipment(power_and_automation, power_and_automation_list);
-  gear_list.appendChild(power_and_automation_list);
-
-  var climatization_header = document.createElement('H4');
-  var header_text = document.createTextNode("Climatization");
-  climatization_header.appendChild(header_text);
-  gear_list.appendChild(climatization_header);
-  var climatization_list = document.createElement('UL');
-  addEquipment(climatization, climatization_list);
-  gear_list.appendChild(climatization_list);
-
-  var more = document.getElementById('more-gear');
-  more.setAttribute('style', 'display: none');
-
-  var title = document.getElementById('title-gear');
-  title.setAttribute('style', 'width: 1000px')
-
-  if(click) {
-    moreMedia(false);
-  }
-
-}
-
-function moreMedia(click) {
-
-  var media = document.getElementById('media');
-
-  var collection_header = document.createElement('H4');
-  var header_text = document.createTextNode("Film Collection");
-  collection_header.appendChild(header_text);
-  media.appendChild(collection_header);
-
-  var film_collection = document.createElement('UL');
-  addMediaItems(collection, film_collection, 'collection');
-  media.appendChild(film_collection);
-
-  var more = document.getElementById('more-media');
-  more.setAttribute('style', 'display: none');
-
-  var title = document.getElementById('title-media');
-  title.setAttribute('style', 'width: 460px')
-
-  if(click) {
-    moreEquipment(false);
-  }
-
-}
-
-function moreDecor(click) {
-
-  var decor_list = document.getElementById('decor');
-
-  var miniatures_header = document.createElement('H4');
-  var header_text = document.createTextNode("Miniatures");
-  miniatures_header.appendChild(header_text);
-  decor_list.appendChild(miniatures_header);
-  var miniatures_list = document.createElement('UL');
-  addItems(miniatures, miniatures_list);
-  decor_list.appendChild(miniatures_list);
-
-  var tapes_header = document.createElement('H4');
-  var header_text = document.createTextNode("VHS Tapes");
-  tapes_header.appendChild(header_text);
-  decor_list.appendChild(tapes_header);
-  var tapes_list = document.createElement('UL');
-  addItems(tapes, tapes_list);
-  decor_list.appendChild(tapes_list);
-
-  var more = document.getElementById('more-decor');
-  more.setAttribute('style', 'display: none');
-
-  var title = document.getElementById('title-decor');
-  title.setAttribute('style', 'width: 1050px')
-
-  if(click) {
-    moreStuff(false);
-  }
-
-}
-
-function moreStuff(click) {
-
-  var stuff_list = document.getElementById('stuff');
-
-  var ambiance_header = document.createElement('H4');
-  var header_text = document.createTextNode("Ambiance");
-  ambiance_header.appendChild(header_text);
-  stuff_list.appendChild(ambiance_header);
-  var ambiance_list = document.createElement('UL');
-  addItems(ambiance, ambiance_list);
-  stuff_list.appendChild(ambiance_list);
-
-  var more = document.getElementById('more-stuff');
-  more.setAttribute('style', 'display: none');
-
-  var title = document.getElementById('title-stuff');
-  title.setAttribute('style', 'width: 495px')
-
-  if(click) {
-    moreDecor(false);
-  }
-
-}
-
 function addSpeakers(speakers, items) {
 
   for (var i = 0; i < speakers.length; i++) {
@@ -296,6 +183,119 @@ function addServices(services, items) {
       items.appendChild(line);
     }
 
+  }
+
+}
+
+function addMoreEquipment(click) {
+
+  var gear_list = document.getElementById('gear-list');
+
+  var power_and_automation_header = document.createElement('H4');
+  var header_text = document.createTextNode("Power and Automation");
+  power_and_automation_header.appendChild(header_text);
+  gear_list.appendChild(power_and_automation_header);
+  var power_and_automation_list = document.createElement('UL');
+  addEquipment(power_and_automation, power_and_automation_list);
+  gear_list.appendChild(power_and_automation_list);
+
+  var climatization_header = document.createElement('H4');
+  var header_text = document.createTextNode("Climatization");
+  climatization_header.appendChild(header_text);
+  gear_list.appendChild(climatization_header);
+  var climatization_list = document.createElement('UL');
+  addEquipment(climatization, climatization_list);
+  gear_list.appendChild(climatization_list);
+
+  var more = document.getElementById('more-gear');
+  more.setAttribute('style', 'display: none');
+
+  var title = document.getElementById('title-gear');
+  title.setAttribute('style', 'width: 997px')
+
+  if(click) {
+    addMoreMedia(false);
+  }
+
+}
+
+function addMoreMedia(click) {
+
+  var media = document.getElementById('media');
+
+  var collection_header = document.createElement('H4');
+  var header_text = document.createTextNode("Film Collection");
+  collection_header.appendChild(header_text);
+  media.appendChild(collection_header);
+
+  var film_collection = document.createElement('UL');
+  addMediaItems(collection, film_collection, 'collection');
+  media.appendChild(film_collection);
+
+  var more = document.getElementById('more-media');
+  more.setAttribute('style', 'display: none');
+
+  var title = document.getElementById('title-media');
+  title.setAttribute('style', 'width: 457px')
+
+  if(click) {
+    addMoreEquipment(false);
+  }
+
+}
+
+function addMoreDecor(click) {
+
+  var decor_list = document.getElementById('decor');
+
+  var miniatures_header = document.createElement('H4');
+  var header_text = document.createTextNode("Miniatures");
+  miniatures_header.appendChild(header_text);
+  decor_list.appendChild(miniatures_header);
+  var miniatures_list = document.createElement('UL');
+  addItems(miniatures, miniatures_list);
+  decor_list.appendChild(miniatures_list);
+
+  var tapes_header = document.createElement('H4');
+  var header_text = document.createTextNode("VHS Tapes");
+  tapes_header.appendChild(header_text);
+  decor_list.appendChild(tapes_header);
+  var tapes_list = document.createElement('UL');
+  addItems(tapes, tapes_list);
+  decor_list.appendChild(tapes_list);
+
+  var more = document.getElementById('more-decor');
+  more.setAttribute('style', 'display: none');
+
+  var title = document.getElementById('title-decor');
+  title.setAttribute('style', 'width: 1044px')
+
+  if(click) {
+    addMoreStuff(false);
+  }
+
+}
+
+function addMoreStuff(click) {
+
+  var stuff_list = document.getElementById('stuff');
+
+  var ambiance_header = document.createElement('H4');
+  var header_text = document.createTextNode("Ambiance");
+  ambiance_header.appendChild(header_text);
+  stuff_list.appendChild(ambiance_header);
+  var ambiance_list = document.createElement('UL');
+  addItems(ambiance, ambiance_list);
+  stuff_list.appendChild(ambiance_list);
+
+  var more = document.getElementById('more-stuff');
+  more.setAttribute('style', 'display: none');
+
+  var title = document.getElementById('title-stuff');
+  title.setAttribute('style', 'width: 497px')
+
+  if(click) {
+    addMoreDecor(false);
   }
 
 }
