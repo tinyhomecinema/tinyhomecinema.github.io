@@ -164,9 +164,9 @@ function addMediaItems(media, items, initial_type) {
 
 }
 
-function addServices(services, items) {
+function addServices() {
 
-  for (var i = 0; i < services.length; i++) {
+  for (var i = 0; i < initial_number_of_services; i++) {
 
     var service = services[i][0];
     var url = services[i][1];
@@ -180,7 +180,54 @@ function addServices(services, items) {
       link.appendChild(textNode);
       var line = document.createElement('LI');
       line.appendChild(link);
-      items.appendChild(line);
+      streaming_services.appendChild(line);
+    }
+
+  }
+
+  if (services.length > initial_number_of_services+2) {
+    var textNode = document.createTextNode('...');
+    var line = document.createElement('LI');
+    line.setAttribute('id', 'more-services');
+    line.setAttribute('onclick', 'addMoreServices()');
+    line.setAttribute('style', 'cursor: pointer');
+    line.appendChild(textNode);
+    streaming_services.appendChild(line);
+  }
+
+}
+
+function addMoreServices() {
+
+  var service = services[initial_number_of_services][0];
+  var url = services[initial_number_of_services][1];
+  var status = services[initial_number_of_services][2];
+
+  var link = document.createElement('A');
+  link.setAttribute('href', url);
+  link.setAttribute('target', '_blank');
+  var textNode = document.createTextNode(service);
+  link.appendChild(textNode);
+  var line = document.getElementById('more-services');
+  line.innerText = "";
+  line.setAttribute('onclick', '');
+  line.appendChild(link);
+
+  for (var i = initial_number_of_services+1; i < services.length; i++) {
+
+    var service = services[i][0];
+    var url = services[i][1];
+    var status = services[i][2];
+
+    if (status == 'active') {
+      var link = document.createElement('A');
+      link.setAttribute('href', url);
+      link.setAttribute('target', '_blank');
+      var textNode = document.createTextNode(service);
+      link.appendChild(textNode);
+      var line = document.createElement('LI');
+      line.appendChild(link);
+      streaming_services.appendChild(line);
     }
 
   }

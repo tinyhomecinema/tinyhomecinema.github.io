@@ -144,10 +144,6 @@
         <h4>Wall</h4>
         <ul id="decor-wall">
         </ul>
-<!--
-        <h4>Door</h4>
-        <ul id="decor-door">
-        </ul> -->
 
       </div>
 
@@ -161,10 +157,6 @@
         <ul id="stuff-furniture">
         </ul>
 
-        <!-- <h4>Wall Stands</h4>
-        <ul id="stuff-stands">
-        </ul>
- -->
       </div>
 
       <div class="films">
@@ -225,6 +217,8 @@
     var indexes = [1, 2, 3]; // fixed photos
     // indexes = getHeaderPhotosIndexes(number_of_photos); // random photos (comment to fix photos)
 
+    var initial_number_of_services = 6;
+
     var header_photos = document.getElementById('header-photos');
 
     for (var i = 0; i < 3 ; i++) {
@@ -255,7 +249,7 @@
     addMediaItems(shelves, shelves_list, 'shelf');
 
     var streaming_services = document.getElementById('services-list');
-    addServices(services, streaming_services);
+    addServices();
 
     var decor_wall = document.getElementById("decor-wall");
     addItems(wall, decor_wall);
