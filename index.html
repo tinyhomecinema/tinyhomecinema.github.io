@@ -141,13 +141,13 @@
           <div id="more-decor" class="more" onclick="addMoreDecor(true)">MORE</div>
         </div>
 
-        <h4>Door</h4>
-        <ul id="decor-door">
-        </ul>
-
         <h4>Wall</h4>
         <ul id="decor-wall">
         </ul>
+<!--
+        <h4>Door</h4>
+        <ul id="decor-door">
+        </ul> -->
 
       </div>
 
@@ -157,14 +157,14 @@
           <div id="more-stuff" class="more" onclick="addMoreStuff(true)">MORE</div>
         </div>
 
-        <h4>Wall Stands</h4>
-        <ul id="stuff-stands">
-        </ul>
-
         <h4>Furniture</h4>
         <ul id="stuff-furniture">
         </ul>
 
+        <!-- <h4>Wall Stands</h4>
+        <ul id="stuff-stands">
+        </ul>
+ -->
       </div>
 
       <div class="films">
@@ -257,14 +257,8 @@
     var streaming_services = document.getElementById('services-list');
     addServices(services, streaming_services);
 
-    var decor_door = document.getElementById("decor-door");
-    addItems(door, decor_door);
-
     var decor_wall = document.getElementById("decor-wall");
     addItems(wall, decor_wall);
-
-    var stuff_stands = document.getElementById("stuff-stands");
-    addItems(stands, stuff_stands);
 
     var stuff_furniture = document.getElementById("stuff-furniture");
     addItems(furniture, stuff_furniture);

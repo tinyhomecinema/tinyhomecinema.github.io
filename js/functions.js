@@ -248,6 +248,14 @@ function addMoreDecor(click) {
 
   var decor_list = document.getElementById('decor');
 
+  var door_header = document.createElement('H4');
+  var header_text = document.createTextNode("Door");
+  door_header.appendChild(header_text);
+  decor_list.appendChild(door_header);
+  var door_list = document.createElement('UL');
+  addItems(door, door_list);
+  decor_list.appendChild(door_list);
+
   var miniatures_header = document.createElement('H4');
   var header_text = document.createTextNode("Miniatures");
   miniatures_header.appendChild(header_text);
@@ -279,6 +287,14 @@ function addMoreDecor(click) {
 function addMoreStuff(click) {
 
   var stuff_list = document.getElementById('stuff');
+
+  var stands_header = document.createElement('H4');
+  var header_text = document.createTextNode("Wall Stands");
+  stands_header.appendChild(header_text);
+  stuff_list.appendChild(stands_header);
+  var stands_list = document.createElement('UL');
+  addItems(stands, stands_list);
+  stuff_list.appendChild(stands_list);
 
   var ambiance_header = document.createElement('H4');
   var header_text = document.createTextNode("Ambiance");
