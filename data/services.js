@@ -12,6 +12,6 @@ var services = [
   ['Telecine Play', 'https://letterboxd.com/hpfilho/tag/stream/films/on/telecineplay-br/', ''],
   ['Globoplay', 'https://letterboxd.com/hpfilho/tag/stream/films/on/globoplay-br/', ''],
   ['MGM', 'https://letterboxd.com/hpfilho/tag/stream/films/on/mgm-br/', ''],
-  ['Belas Artes', '', ''],
+  ['Belas Artes', 'https://letterboxd.com/hpfilho/tag/stream/films/on/belasartesalacarte-br/', ''],
   ['Filmicca', '', '']
 ]
