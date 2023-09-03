@@ -166,26 +166,30 @@ function addMediaItems(media, items, initial_type) {
 
 function addServices() {
 
-  for (var i = 0; i < initial_number_of_services; i++) {
+  for (var i = 0; i < services.length; i++) {
 
     var service = services[i][0];
     var url = services[i][1];
     var status = services[i][2];
 
-    if (status == 'active') {
-      var link = document.createElement('A');
-      link.setAttribute('href', url);
-      link.setAttribute('target', '_blank');
-      var textNode = document.createTextNode(service);
-      link.appendChild(textNode);
-      var line = document.createElement('LI');
-      line.appendChild(link);
-      streaming_services.appendChild(line);
+    if (status == 'current') {
+      current_services++;
+      if (current_services <= initial_number_of_services) {
+        var link = document.createElement('A');
+        link.setAttribute('href', url);
+        link.setAttribute('target', '_blank');
+        var textNode = document.createTextNode(service);
+        link.appendChild(textNode);
+        var line = document.createElement('LI');
+        line.appendChild(link);
+        streaming_services.appendChild(line);
+        next_service++;
+      }
     }
 
   }
 
-  if (services.length > initial_number_of_services+2) {
+  if (current_services > initial_number_of_services) {
     var textNode = document.createTextNode('...');
     var line = document.createElement('LI');
     line.setAttribute('id', 'more-services');
@@ -213,13 +217,13 @@ function addMoreServices() {
   line.setAttribute('onclick', '');
   line.appendChild(link);
 
-  for (var i = initial_number_of_services+1; i < services.length; i++) {
+  for (var i = next_service; i < services.length; i++) {
 
     var service = services[i][0];
     var url = services[i][1];
     var status = services[i][2];
 
-    if (status == 'active') {
+    if (status == 'current') {
       var link = document.createElement('A');
       link.setAttribute('href', url);
       link.setAttribute('target', '_blank');
