@@ -166,8 +166,8 @@ function addMediaItems(media, items, initial_type) {
 
 function addCurrentServices() {
 
-  if (initial_number_of_services == current_services.length - 1) {
-    initial_number_of_services++;
+  if (max_initial_number_of_services < current_services.length) {
+    max_initial_number_of_services -= 1;
   }
 
   for (var i = 0; i < current_services.length; i++) {
@@ -176,7 +176,7 @@ function addCurrentServices() {
     var url = current_services[i][1];
     var status = current_services[i][2];
 
-      if (i < initial_number_of_services) {
+      if (i < max_initial_number_of_services) {
         var link = document.createElement('A');
         link.setAttribute('href', url);
         var textNode = document.createTextNode(service);
@@ -188,11 +188,11 @@ function addCurrentServices() {
 
   }
 
-  if (i > initial_number_of_services) {
+  if (i > max_initial_number_of_services) {
     var textNode = document.createTextNode('...');
     var line = document.createElement('LI');
     line.setAttribute('id', 'more-services');
-    line.setAttribute('onclick', 'addMoreServices()');
+    line.setAttribute('onclick', 'addMoreCurrentServices()');
     line.setAttribute('style', 'cursor: pointer');
     line.appendChild(textNode);
     streaming_services.appendChild(line);
@@ -200,11 +200,11 @@ function addCurrentServices() {
 
 }
 
-function addMoreServices() {
+function addMoreCurrentServices() {
 
-  var service = current_services[initial_number_of_services][0];
-  var url = current_services[initial_number_of_services][1];
-  var status = current_services[initial_number_of_services][2];
+  var service = current_services[max_initial_number_of_services][0];
+  var url = current_services[max_initial_number_of_services][1];
+  var status = current_services[max_initial_number_of_services][2];
 
   var link = document.createElement('A');
   link.setAttribute('href', url);
@@ -215,7 +215,7 @@ function addMoreServices() {
   line.setAttribute('onclick', '');
   line.appendChild(link);
 
-  for (var i = initial_number_of_services+1; i < current_services.length; i++) {
+  for (var i = max_initial_number_of_services+1; i < current_services.length; i++) {
 
     var service = current_services[i][0];
     var url = current_services[i][1];
@@ -233,14 +233,14 @@ function addMoreServices() {
 
   }
 
-  past_services_visible = true;
+  all_current_services_visible = true;
 
 }
 
 function addPastServices() {
 
-  if (!past_services_visible) {
-    addMoreServices();
+  if (!all_current_services_visible && max_initial_number_of_services < current_services.length) {
+    addMoreCurrentServices();
   }
 
   var streaming = document.getElementById('streaming');
@@ -273,7 +273,7 @@ function addPastServices() {
   more.setAttribute('style', 'display: none');
 
   var title = document.getElementById('title-streaming');
-  title.setAttribute('style', 'width: 504px')
+  title.setAttribute('style', 'width: 504px');
 
 }
 
@@ -301,7 +301,7 @@ function addMoreEquipment(click) {
   more.setAttribute('style', 'display: none');
 
   var title = document.getElementById('title-gear');
-  title.setAttribute('style', 'width: 997px')
+  title.setAttribute('style', 'width: 997px');
 
   if(click) {
     addMoreMedia(false);
@@ -326,7 +326,7 @@ function addMoreMedia(click) {
   more.setAttribute('style', 'display: none');
 
   var title = document.getElementById('title-media');
-  title.setAttribute('style', 'width: 457px')
+  title.setAttribute('style', 'width: 457px');
 
   if(click) {
     addMoreEquipment(false);
@@ -366,7 +366,7 @@ function addMoreDecor(click) {
   more.setAttribute('style', 'display: none');
 
   var title = document.getElementById('title-decor');
-  title.setAttribute('style', 'width: 1044px')
+  title.setAttribute('style', 'width: 1044px');
 
   if(click) {
     addMoreStuff(false);
@@ -398,7 +398,7 @@ function addMoreStuff(click) {
   more.setAttribute('style', 'display: none');
 
   var title = document.getElementById('title-stuff');
-  title.setAttribute('style', 'width: 497px')
+  title.setAttribute('style', 'width: 497px');
 
   if(click) {
     addMoreDecor(false);

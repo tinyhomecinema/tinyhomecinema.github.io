@@ -220,11 +220,11 @@
     var indexes = [1, 2, 3]; // fixed photos
     // indexes = getHeaderPhotosIndexes(number_of_photos); // random photos (comment to fix photos)
 
-    var initial_number_of_services = 6;
+    var max_initial_number_of_services = 7;
 
     var current_services = [];
     var past_services = [];
-    var past_services_visible = false;
+    var all_current_services_visible = false;
 
     for (var i = 0; i < services.length; i++) {
       switch (services[i][2]) {
@@ -237,6 +237,14 @@
         default:
       }
     }
+
+    if (past_services.length == 0) {
+      var more = document.getElementById('past-services');
+      var title = document.getElementById('title-streaming');
+      more.setAttribute('style', 'display: none');
+      title.setAttribute('style', 'width: 504px');
+    }
+
 
     var header_photos = document.getElementById('header-photos');
 
