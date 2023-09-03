@@ -179,6 +179,7 @@ function addCurrentServices() {
       if (i < max_initial_number_of_services) {
         var link = document.createElement('A');
         link.setAttribute('href', url);
+        link.setAttribute('target', '_blank');
         var textNode = document.createTextNode(service);
         link.appendChild(textNode);
         var line = document.createElement('LI');
@@ -208,6 +209,7 @@ function addMoreCurrentServices() {
 
   var link = document.createElement('A');
   link.setAttribute('href', url);
+  link.setAttribute('target', '_blank');
   var textNode = document.createTextNode(service);
   link.appendChild(textNode);
   var line = document.getElementById('more-services');
@@ -224,6 +226,7 @@ function addMoreCurrentServices() {
     if (status == 'current') {
       var link = document.createElement('A');
       link.setAttribute('href', url);
+      link.setAttribute('target', '_blank');
       var textNode = document.createTextNode(service);
       link.appendChild(textNode);
       var line = document.createElement('LI');
@@ -261,6 +264,7 @@ function addPastServices() {
 
         var link = document.createElement('A');
         link.setAttribute('href', url);
+        link.setAttribute('target', '_blank');
         var textNode = document.createTextNode(service);
         link.appendChild(textNode);
         var line = document.createElement('LI');
