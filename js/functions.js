@@ -164,32 +164,27 @@ function addMediaItems(media, items, initial_type) {
 
 }
 
-function addServices() {
+function addCurrentServices() {
 
-  for (var i = 0; i < services.length; i++) {
+  for (var i = 0; i < current_services.length; i++) {
 
-    var service = services[i][0];
-    var url = services[i][1];
-    var status = services[i][2];
+    var service = current_services[i][0];
+    var url = current_services[i][1];
+    var status = current_services[i][2];
 
-    if (status == 'current') {
-      current_services++;
-      if (current_services <= initial_number_of_services) {
+      if (i < initial_number_of_services) {
         var link = document.createElement('A');
         link.setAttribute('href', url);
-        link.setAttribute('target', '_blank');
         var textNode = document.createTextNode(service);
         link.appendChild(textNode);
         var line = document.createElement('LI');
         line.appendChild(link);
         streaming_services.appendChild(line);
-        next_service++;
       }
-    }
 
   }
 
-  if (current_services > initial_number_of_services) {
+  if (i > initial_number_of_services) {
     var textNode = document.createTextNode('...');
     var line = document.createElement('LI');
     line.setAttribute('id', 'more-services');
@@ -203,13 +198,12 @@ function addServices() {
 
 function addMoreServices() {
 
-  var service = services[initial_number_of_services][0];
-  var url = services[initial_number_of_services][1];
-  var status = services[initial_number_of_services][2];
+  var service = current_services[initial_number_of_services][0];
+  var url = current_services[initial_number_of_services][1];
+  var status = current_services[initial_number_of_services][2];
 
   var link = document.createElement('A');
   link.setAttribute('href', url);
-  link.setAttribute('target', '_blank');
   var textNode = document.createTextNode(service);
   link.appendChild(textNode);
   var line = document.getElementById('more-services');
@@ -217,16 +211,15 @@ function addMoreServices() {
   line.setAttribute('onclick', '');
   line.appendChild(link);
 
-  for (var i = next_service; i < services.length; i++) {
+  for (var i = initial_number_of_services+1; i < current_services.length; i++) {
 
-    var service = services[i][0];
-    var url = services[i][1];
-    var status = services[i][2];
+    var service = current_services[i][0];
+    var url = current_services[i][1];
+    var status = current_services[i][2];
 
     if (status == 'current') {
       var link = document.createElement('A');
       link.setAttribute('href', url);
-      link.setAttribute('target', '_blank');
       var textNode = document.createTextNode(service);
       link.appendChild(textNode);
       var line = document.createElement('LI');
@@ -235,6 +228,48 @@ function addMoreServices() {
     }
 
   }
+
+  past_services_visible = true;
+
+}
+
+function addPastServices() {
+
+  if (!past_services_visible) {
+    addMoreServices();
+  }
+
+  var streaming = document.getElementById('streaming');
+
+  var past_services_header = document.createElement('H4');
+  var header_text = document.createTextNode("Past Services");
+  past_services_header.appendChild(header_text);
+  streaming.appendChild(past_services_header);
+
+  var past_services_list = document.createElement('UL');
+  streaming.appendChild(past_services_list);
+
+  for (var i = 0; i < past_services.length; i++) {
+
+    var service = past_services[i][0];
+    var url = past_services[i][1];
+    var status = past_services[i][2];
+
+        var link = document.createElement('A');
+        link.setAttribute('href', url);
+        var textNode = document.createTextNode(service);
+        link.appendChild(textNode);
+        var line = document.createElement('LI');
+        line.appendChild(link);
+        past_services_list.appendChild(line);
+
+  }
+
+  var more = document.getElementById('past-services');
+  more.setAttribute('style', 'display: none');
+
+  var title = document.getElementById('title-streaming');
+  title.setAttribute('style', 'width: 504px')
 
 }
 
