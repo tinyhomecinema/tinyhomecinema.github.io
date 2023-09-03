@@ -166,6 +166,10 @@ function addMediaItems(media, items, initial_type) {
 
 function addCurrentServices() {
 
+  if (initial_number_of_services == current_services.length - 1) {
+    initial_number_of_services++;
+  }
+
   for (var i = 0; i < current_services.length; i++) {
 
     var service = current_services[i][0];
