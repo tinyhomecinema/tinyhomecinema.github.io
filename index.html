@@ -40,6 +40,27 @@
         <div id="header-photos" class="photos-grid"></div>
       </div>
 
+      <!-- Photos Overlay -->
+
+      <div id="overlay" class="overlay">
+        <div class="overlay-content">
+          <div class="overlay-grid-container">
+            <div class="arr_back">
+              <img id="arr_back" class="icon" onclick="previousPhoto()">
+            </div>
+            <div class="photo">
+              <img id="photo" class="photo">
+            </div>
+            <div class="arr_forward">
+              <img id="arr_forward" class="icon" onclick="nextPhoto()">
+            </div>
+            <div class="close">
+              <img class="icon" src="icons/close.svg" onclick="closePhoto()">
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Description -->
 
       <div class="description">
@@ -192,33 +213,6 @@
           <div><a href="https://www.sony.com/" target="_blank"><img class="logo-sony" src="logos/Sony.png"></a></div>
           <div><a href="https://www.lg.com/" target="_blank"><img class="logo-lg" src="logos/LG.svg"></a></div>
         </div>
-      </div>
-
-    </div>
-
-    <!-- Photos Overlay -->
-    <div id="overlay" class="overlay">
-
-      <!-- Overlay Content -->
-      <div class="overlay-content">
-
-        <div class="overlay-grid-container">
-
-          <div class="arr_back">
-            <img id="arr_back" class="icon" onclick="previousPhoto()">
-          </div>
-          <div class="photo">
-            <img id="photo" class="photo">
-          </div>
-          <div class="arr_forward">
-            <img id="arr_forward" class="icon" onclick="nextPhoto()">
-          </div>
-          <div class="close">
-            <img class="icon" src="icons/close.svg" onclick="closePhoto()">
-          </div>
-
-        </div>
-
       </div>
 
     </div>
