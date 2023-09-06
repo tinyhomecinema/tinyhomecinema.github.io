@@ -252,11 +252,13 @@ function addPastServices() {
   var streaming = document.getElementById('streaming');
 
   var past_services_header = document.createElement('H4');
+  past_services_header.setAttribute('id', 'past-services-header');
   var header_text = document.createTextNode("Past Services");
   past_services_header.appendChild(header_text);
   streaming.appendChild(past_services_header);
 
   var past_services_list = document.createElement('UL');
+  past_services_list.setAttribute('id', 'past-services-list');
   streaming.appendChild(past_services_list);
 
   for (var i = 0; i < past_services.length; i++) {
@@ -282,10 +284,19 @@ function addPastServices() {
   }
 
   var more = document.getElementById('past-services');
-  more.setAttribute('style', 'display: none');
+  more.innerText = "LESS";
+  more.setAttribute('onclick', 'removePastServices()');
 
-  var title = document.getElementById('title-streaming');
-  title.setAttribute('style', 'width: 504px');
+}
+
+function removePastServices() {
+
+  document.getElementById('past-services-header').remove();
+  document.getElementById('past-services-list').remove();
+
+  var more = document.getElementById('past-services');
+  more.innerText = "MORE";
+  more.setAttribute('onclick', 'addPastServices()');
 
 }
 
