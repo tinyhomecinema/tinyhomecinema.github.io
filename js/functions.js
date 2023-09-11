@@ -369,7 +369,7 @@ function moreMedia(click) {
 
   var more = document.getElementById('more-media');
   more.innerText = "LESS";
-  more.setAttribute('onclick', 'lessEquipment(true)');
+  more.setAttribute('onclick', 'lessMedia(true)');
 
   if(click) {
     moreEquipment(false);
@@ -384,7 +384,7 @@ function lessMedia(click) {
 
   var more = document.getElementById('more-media');
   more.innerText = "MORE";
-  more.setAttribute('onclick', 'moreEquipment(true)');
+  more.setAttribute('onclick', 'moreMedia(true)');
 
   if(click) {
     lessEquipment(false);
