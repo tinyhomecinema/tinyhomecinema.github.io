@@ -394,6 +394,7 @@ function moreEquipment(click) {
   more_equipment_visible = true;
 
   if (click) {
+    addCurrentServices();
     if (!past_services_visible && !more_media_visible) {
       moreMedia(false);
     }
