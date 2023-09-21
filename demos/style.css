@@ -1,6 +1,11 @@
 ul {
   padding-left: 18px;
   margin-top: -10px;
+  line-height: 160%;
+}
+
+li {
+  font-size: 18px;
 }
 
 .demos-title {
