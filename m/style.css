@@ -2,7 +2,7 @@ body {
   margin: 20px;
   background-color: #0E0E0E;
   font-family: arial;
-  font-size: 24px;
+  font-size: 20px;
   color: lightgrey;
 }
 
@@ -143,7 +143,7 @@ h4 {
 }
 
 .title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   color: lightgrey;
   border-style: none none solid none;
