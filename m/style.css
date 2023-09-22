@@ -1,8 +1,255 @@
 body {
-  margin: 100px 10px 100px 10px;
+  margin: 10px;
   background-color: #0E0E0E;
   font-family: arial;
-  font-size: 17px;
+  font-size: 24px;
   color: lightgrey;
+}
+
+a:link {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 35px;
+  line-height: 125%;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+.page-title {
+  grid-area: title;
+  font-family: serif;
+  font-size: 100px;
+  font-weight: bold;
+  color: lightgrey;
+  border-style: solid none solid none;
+  border-width: thin;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-align: center;
+  margin-top: -40px;
+  width: 925px;
+}
+
+.photos {
+  grid-area: photos;
+  margin-top: 30px;
+}
+
+.photos-grid {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.description {
+  grid-area: description;
+  margin-top: -30px;
+  width: 925px;
+  line-height: 150%;
+  text-align: justify;
+}
+
+.room {
+  grid-area: room;
+  width: 925px;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.screen {
+  grid-area: screen;
+  width: 925px;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.av_tech {
+  grid-area: av_tech;
+  width: 925px;
+  text-align: left;
+}
+
+.gear {
+  grid-area: gear;
+  width: 925px;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.decor {
+  grid-area: decor;
+  width: 925px;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.streaming {
+  grid-area: streaming;
+  width: 925px;
+  text-align: left;
+}
+
+.media {
+  grid-area: media;
+  width: 925px;
+  text-align: left;
+}
+
+.stuff {
+  grid-area: stuff;
+  width: 925px;
+  text-align: left;
+}
+.room-grid {
+  display: grid;
+  grid-template-areas: 'auto';
+  justify-content: 'left';
+  line-height: 125%;
+}
+
+.screen-grid {
+  display: grid;
+  grid-template-areas: 'auto';
+  justify-content: 'left';
+  line-height: 125%;
+}
+
+.title-grid-left {
+  display: grid;
+  grid-template-areas: 'auto';
+  justify-content: 'left';
+  margin-bottom: -23px;
+}
+
+.title-grid-right {
+  display: grid;
+  grid-template-areas: 'auto';
+  justify-content: 'left';
+  margin-bottom: -23px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: lightgrey;
+  border-style: none none solid none;
+  border-width: thin;
+  margin-bottom: 23px;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.more {
+  display: none;
+  font-size: 10px;
+  color: lightgrey;
+  border-style: none none solid none;
+  border-width: thin;
+  margin-bottom: 23px;
+  padding-top: 10px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'photos'
+  'title'
+  'description'
+  'room'
+  'screen'
+  'av_tech'
+  'gear'
+  'media'
+  'streaming'
+  'decor'
+  'stuff';
+  justify-content: center;
+  width: 100%;
+  grid-gap: 50px;
+  margin: 50px 0px 100px 0px;
+}
+
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(9,9,9);
+  background-color: rgba(9,9,9, 0.95);
+  overflow-y: scroll;
+  transition: 0s;
+  cursor: normal;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay::-webkit-scrollbar {
+  display: none;
+}
+
+.overlay-grid-container {
+  display: grid;
+  grid-template-areas:
+  'arr_back photo arr_forward'
+  'close close close';
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  grid-gap: 50px;
+}
+
+.photo_thumb {
+  width: 925px;
+  cursor: pointer;
+}
+
+.icon {
+  justify-content: center;
+  width: 40px;
+  cursor: pointer;
+}
+
+.photo {
+  grid-area: photo;
+  justify-content: center;
+  width: 960px;
+}
+
+.arr_back {
+  grid-area: arr_back;
+  justify-content: center;
+}
+
+.arr_forward {
+  grid-area: arr_forward;
+  justify-content: center;
+}
+
+.close {
+  grid-area: close;
+  justify-content: center;
 }
