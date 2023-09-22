@@ -18,7 +18,7 @@ var electronics = [
 
 var wireless_audio = [
   ['Audio Transmitter Sennheiser BT T100', '', 'https://www.sennheiser-hearing.com/en-US/p/bt-t100/ckyjzynhs0nli0b47vnwp9wu6/'],
-  ['Headphones Sennheiser HD 350BT', '', 'https://www.sennheiser-hearing.com/en-US/p/hd-350bt/ckykctw6w08fk0c01dupih1fh/']
+  ['Headphones Sennheiser HD 350BT', '(2)', 'https://www.sennheiser-hearing.com/en-US/p/hd-350bt/ckykctw6w08fk0c01dupih1fh/']
 ]
 
 var power_and_automation = [
