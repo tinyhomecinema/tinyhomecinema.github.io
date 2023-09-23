@@ -9,12 +9,14 @@ body {
   font-size: 30px;
   font-weight: bold;
   color: #4F4F4F;
-  border-style: solid solid solid solid;
+  background-color: white;
+  border-style: none;
   border-color: #4F4F4F;
   border-width: thin;
+  box-shadow: 5px 5px 5px lightgrey;
   padding: 10px 0px 10px 0px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   text-align: center;
 }
 

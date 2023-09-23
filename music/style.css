@@ -9,9 +9,11 @@ body {
   font-size: 50px;
   font-weight: bold;
   color: #4F4F4F;
-  border-style: solid solid solid solid;
+  background-color: white;
+  border-style: none;
   border-color: #4F4F4F;
   border-width: thin;
+  box-shadow: 5px 5px 5px lightgrey;
   padding: 5px 0px 5px 0px;
   margin-top: 10px;
   margin-bottom: 50px;
@@ -20,7 +22,6 @@ body {
 
 .covers {
   grid-area: covers;
-  padding: 5px;
 }
 
 .covers-grid {
