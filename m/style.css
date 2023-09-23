@@ -48,7 +48,7 @@ h4 {
 
 .photos {
   grid-area: photos;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 .photos-grid {
@@ -61,7 +61,7 @@ h4 {
   margin-top: -30px;
   width: 100%;
   line-height: 150%;
-  font-size: 16px;
+  font-size: 14px;
   text-align: justify;
 }
 
@@ -225,7 +225,7 @@ h4 {
 
 .bottom-links {
   font-weight: normal;
-  font-size: 17px;
+  font-size: 10px;
   color: darkgrey;
   margin-top: -40px;
   text-align: center;
@@ -235,7 +235,7 @@ h4 {
   grid-area: logos;
   display: grid;
   justify: center;
-  height: 40px;
+  height: 30px;
   grid-template-columns: auto;
   border-style: solid none solid none;
   border-color: grey;
@@ -257,15 +257,15 @@ h4 {
 
 .logo-dolby {
   justify-content: center;
-  padding-top: 5px;
-  height: 30px;
+  padding-top: 7px;
+  height: 15px;
   width: 100%;
 }
 
 .logo-dts {
   justify-content: center;
-  padding-top: 4px;
-  height: 35px;
+  padding-top: 6px;
+  height: 17px;
   width: 100%;
 }
 
