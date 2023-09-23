@@ -6,27 +6,26 @@ body {
 
 .page-title {
   grid-area: title;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
   color: #4F4F4F;
   border-style: solid solid solid solid;
   border-color: #4F4F4F;
   border-width: thin;
-  padding: 5px 0px 5px 0px;
+  padding: 10px 0px 10px 0px;
   margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
 .covers {
   grid-area: covers;
-  padding: 5px;
 }
 
 .covers-grid {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
   grid-gap: 30px;
 }
 
