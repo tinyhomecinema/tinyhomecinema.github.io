@@ -229,7 +229,7 @@ h4 {
   font-size: 12px;
   color: darkgrey;
   margin-top: -40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -237,7 +237,7 @@ h4 {
   grid-area: logos;
   display: grid;
   justify: center;
-  height: 25px;
+  height: 20px;
   grid-template-columns: auto;
   border-style: solid none solid none;
   border-color: grey;
@@ -259,14 +259,14 @@ h4 {
 
 .logo-dolby {
   justify-content: center;
-  padding-top: 6px;
+  padding-top: 4px;
   height: 12px;
   width: 100%;
 }
 
 .logo-dts {
   justify-content: center;
-  padding-top: 5px;
+  padding-top: 3px;
   height: 14px;
   width: 100%;
 }
