@@ -306,8 +306,8 @@
 
     for (var i = 0; i < 10; i++) {
 
-      var url = films[i][0];
-      var img = films[i][1];
+      var url = films[i][1];
+      var img = films[i][2];
       var film = document.createElement('DIV');
       var link = document.createElement('A');
       link.setAttribute('href', url);
@@ -319,7 +319,7 @@
       film.appendChild(link);
       film_posters.append(film);
 
-      var txt = films[i][2];
+      var txt = films[i][3];
       var rate = document.createElement('DIV');
       rate.setAttribute('class', 'rating');
       rate.innerText = txt;
