@@ -306,6 +306,7 @@
 
     for (var i = 0; i < 10; i++) {
 
+      var title = films[i][0];
       var url = films[i][1];
       var img = films[i][2];
       var film = document.createElement('DIV');
@@ -315,6 +316,8 @@
       poster.setAttribute('src', img);
       poster.setAttribute('width', '85');
       poster.setAttribute('style', 'border-radius: 3px');
+      poster.setAttribute('alt', title);
+      poster.setAttribute('title', title);
       link.appendChild(poster);
       film.appendChild(link);
       film_posters.append(film);
