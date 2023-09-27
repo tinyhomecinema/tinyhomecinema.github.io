@@ -228,7 +228,7 @@ while (my $line = <RSS>) {
 
         for (@film_ids) {
             if ($id == $_) {
-		my $line_to_print = "  [\'$title\', \'$link\', \'$img\', \'$rating\'],\n";
+		            my $line_to_print = "  [\'$title\', \'$link\', \'$img\', \'$rating\'],\n";
                 print FILMS_DATA $line_to_print;
 		if ($line_to_print ne $last_film_line && $new_film) {
 			push @new_films, $title;
@@ -251,4 +251,3 @@ while (@new_films) {
 	$title = pop @new_films;
 	system("echo \"The film \'$title\' has been added to \'LATEST RELEASES\'.\" | mail -s \"Cineminha web page update\" \"tinyhomecinema\@gmail.com\"");
 }
-
