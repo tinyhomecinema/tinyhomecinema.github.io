@@ -212,6 +212,7 @@ my $id;
 my $img;
 
 my $new_film = 1;
+my @new_films;
 
 while (my $line = <RSS>) {
     if ($line =~ /.*<title>(.*)\s-\s(.*)<\/title>\s<link>(.*)<\/link> <guid\s.*letterboxd-.*-(.*)<\/guid>.*<img src=\"(.*)\?v.*/) {
@@ -230,12 +231,13 @@ while (my $line = <RSS>) {
 		my $line_to_print = "  [\'$title\', \'$link\', \'$img\', \'$rating\'],\n";
                 print FILMS_DATA $line_to_print;
 		if ($line_to_print ne $last_film_line && $new_film) {
-			system("echo \"The film \'$title\' has been added to \'LATEST RELEASES\'.\" | mail -s \"Cineminha web page update\" \"tinyhomecinema\@gmail.com\"");
+			push @new_films, $title;
 		} else {
 			$new_film = 0;
 		}
             }
         }
+
     }
 }
 
@@ -244,3 +246,9 @@ print FILMS_DATA "]\n";
 close(RSS);
 close(DIARY);
 close(FILMS_DATA);
+
+while (@new_films) {
+	$title = pop @new_films;
+	system("echo \"The film \'$title\' has been added to \'LATEST RELEASES\'.\" | mail -s \"Cineminha web page update\" \"tinyhomecinema\@gmail.com\"");
+}
+
