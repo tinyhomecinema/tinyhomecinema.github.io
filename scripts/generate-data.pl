@@ -222,6 +222,8 @@ while (my $line = <RSS>) {
         $id = $4;
         $img = $5;
 
+	$title =~ s/&#039;/\\\'/;
+
         if ($rating =~ /(.*)\s\(.*/) {
             $rating = $2;
         }
