@@ -233,6 +233,7 @@ while (my $line = <RSS>) {
 			my $line_to_print = "  [\'$title\', \'$link\', \'$img\', \'$rating\'],\n";
                 	print FILMS_DATA $line_to_print;
 		if ($line_to_print ne $last_film_line && $new_film) {
+		        $title =~ s/\\//;
 			push @new_films, $title;
 		} else {
 			$new_film = 0;
