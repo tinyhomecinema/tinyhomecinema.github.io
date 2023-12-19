@@ -9,5 +9,4 @@ var films = [
   ['No One Will Save You', '2023', 'https://letterboxd.com/tinyhomecinema/film/no-one-will-save-you/', 'https://a.ltrbxd.com/resized/film-poster/7/3/6/8/2/1/736821-no-one-will-save-you-0-600-0-900-crop.jpg'],
   ['Fall', '2022', 'https://letterboxd.com/tinyhomecinema/film/fall-2022/', 'https://a.ltrbxd.com/resized/film-poster/8/8/7/6/2/1/887621-fall-0-600-0-900-crop.jpg'],
   ['Holy Spider', '2022', 'https://letterboxd.com/tinyhomecinema/film/holy-spider/', 'https://a.ltrbxd.com/resized/film-poster/8/0/0/8/4/8/800848-holy-spider-0-600-0-900-crop.jpg'],
-  ['EO', '2022', 'https://letterboxd.com/tinyhomecinema/film/eo/', 'https://a.ltrbxd.com/resized/film-poster/7/0/3/9/4/3/703943-eo-0-600-0-900-crop.jpg'],
 ]
