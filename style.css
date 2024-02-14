@@ -194,6 +194,17 @@ sup {
   grid-template-columns: auto auto auto;
 }
 
+.logos-social-mobile {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  column-gap: 40%;
+}
+
+.logo-social-mobile {
+  height: 20px;
+}
+
 .logo-dolby {
   justify-content: center;
   padding-top: 5px;
