@@ -194,44 +194,6 @@ sup {
   grid-template-columns: auto auto auto;
 }
 
-.logos-mobile {
-  grid-area: logos;
-  display: grid;
-  justify: center;
-  height: 20px;
-  grid-template-columns: auto auto auto;
-  column-gap: 70px;
-  border-style: solid none solid none;
-  border-color: grey;
-  border-width: thin;
-  padding: 10px 70px 10px 70px;
-}
-
-.logos-techs-mobile {
-  display: grid;
-  align-items: left;
-  grid-template-columns: auto auto;
-  column-gap: 50%;
-}
-
-.separator-mobile {
-  display: block;
-  margin-top: -1px;
-  color: grey;
-  margin-left: 95%;
-}
-
-.logos-social-mobile {
-  display: grid;
-  justify-content: right;
-  grid-template-columns: auto auto;
-  column-gap: 50%;
-}
-
-.logo-social-mobile {
-  height: 20px;
-}
-
 .logo-dolby {
   justify-content: center;
   padding-top: 5px;
