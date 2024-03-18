@@ -50,7 +50,7 @@ open(ATMOS, $atmos) or die("File $atmos not found");
 my $dtsx = 'html/dtsx.html';
 open(DTSX, $dtsx) or die("File $dtsx not found");
 
-my $media_data_file = '../data/media.js';
+my $media_data_file = '../../data/media.js';
 open(MEDIA_DATA, '>', $media_data_file) or die("File $media_data_file not found");
 
 
@@ -245,7 +245,7 @@ open(RSS, $rss) or die("File $rss not found");
 my $diary = 'html/diary.html';
 open(DIARY, $diary) or die("File $diary not found");
 
-my $films_data_file = '../data/films.js';
+my $films_data_file = '../../data/films.js';
 open(FILMS_DATA, $films_data_file) or die("File $films_data_file not found");
 
 my @film_data_lines;
