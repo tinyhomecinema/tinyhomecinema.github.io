@@ -54,7 +54,7 @@ mv index.html rss.html
 wget 'https://letterboxd.com/tinyhomecinema/tag/first-showing/diary/'
 mv index.html diary.html
 
-cd /home/pi/github/tinyhomecinema.github.io/scripts
+cd /home/pi/github/tinyhomecinema.github.io/scripts/data_updater
 
 ./generate-data.pl
 
