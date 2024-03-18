@@ -63,11 +63,3 @@ git add ../../data/films.js
 git commit -m "[auto] Updated data"
 git push origin main
 
-#cd /home/pi/github/haraldofilho.github.io/pages/tinyhomecinema
-
-#cp -r /home/pi/github/tinyhomecinema.github.io/* .
-
-#git pull origin master
-#git add *
-#git commit -m "[auto] Updated tinyhomecinema page"
-#git push origin master
