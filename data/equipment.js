@@ -15,7 +15,7 @@ var electronics = [
   ['HDMI Dongle Google Chromecast 3', '', ''],
   ['Audio Transmitter Sennheiser BT T100', '', 'https://www.sennheiser-hearing.com/en-US/p/bt-t100/'],
   ['Headphones Sennheiser HD 350BT', '(2)', 'https://www.sennheiser-hearing.com/en-US/p/hd-350bt/'],
-  ['Tablet Samsung Galaxy Tab A7 Lite', '', '']
+  ['Tablet Samsung Galaxy Tab A7 Lite', '', 'https://www.samsung.com/pt/tablets/galaxy-tab-a/galaxy-tab-a7-lite-gray-32gb-sm-t220nzaaeub/']
 ]
 
 var power_and_automation = [
