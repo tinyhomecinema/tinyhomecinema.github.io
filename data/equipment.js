@@ -21,6 +21,7 @@ var electronics = [
 var power_and_automation = [
   ['Power Conditioner AAT PWC-1', '', ''],
   ['Plug NovaDigital Smart Home WiFi WK-BR', '', ''],
+  ['USB Smart Adapter Sonoff WiFi Micro', '', ''],
   ['Universal IR Control Steck WiFi SMDCUPS1', '', ''],
   ['Light Switch Smarteck Touch WiFi SMCI1PS1', '', ''],
   ['Light Switch Smarteck Touch Dimmer WiFi SMCD1PS1', '', '']
