@@ -27,7 +27,7 @@ mv index.html first-showing.html
 wget 'https://letterboxd.com/tinyhomecinema/tag/rewatch/diary/'
 mv index.html rewatch.html
 
-wget 'https://letterboxd.com/tinyhomecinema/tag/blu-ray/diary/'
+wget 'https://letterboxd.com/tinyhomecinema/tag/watched-blu-ray/diary/'
 mv index.html blu-ray.html
 
 cd /home/pi/github/tinyhomecinema.github.io/scripts/milestones
