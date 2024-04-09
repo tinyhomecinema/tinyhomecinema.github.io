@@ -52,14 +52,40 @@ function closePhoto() {
   document.getElementById('overlay').style.height = "0%";
 }
 
-function addSpeakers(speakers, items) {
+function addTechs(tech, items) {
 
-  for (var i = 0; i < speakers.length; i++) {
+  for (var i = 0; i < tech.length; i++) {
 
     var item = document.createElement('LI');
-    var type = document.createTextNode(speakers[i][0].concat(": "));
-    var text = document.createTextNode(speakers[i][1]);
-    var url = speakers[i][2];
+    var text = document.createTextNode(tech[i][0]);
+    var url = tech[i][1];
+
+    if (url.length > 0) {
+      var link = document.createElement('A');
+      link.setAttribute('href', url);
+      link.setAttribute('target', '_blank');
+      link.appendChild(text);
+      item.appendChild(link);
+    } else {
+      item.appendChild(text);
+    }
+    items.appendChild(item);
+
+  }
+
+}
+
+function addSpeakers(speakers, items) {
+
+  var title = document.getElementById('speakers-title');
+  title.append(" (".concat(speakers[0]).concat(")"));
+
+  for (var i = 0; i < speakers[1].length; i++) {
+
+    var item = document.createElement('LI');
+    var type = document.createTextNode(speakers[1][i][0].concat(": "));
+    var text = document.createTextNode(speakers[1][i][1]);
+    var url = speakers[1][i][2];
 
     var bold_type = document.createElement('B');
     bold_type.appendChild(type);
