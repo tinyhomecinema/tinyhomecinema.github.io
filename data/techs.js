@@ -5,5 +5,5 @@ var audio = [
 
 var video = [
   ['Dolby Vision', 'https://www.dolby.com/technologies/dolby-vision'],
-  ['DR10 Pro', ''],
+  ['HDR10 Pro', ''],
 ]
