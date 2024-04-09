@@ -10,6 +10,7 @@
 
   <script src="../js/functions.js"></script>
 
+  <script src="../data/techs.js"></script>
   <script src="../data/equipment.js"></script>
   <script src="../data/media.js"></script>
   <script src="../data/services.js"></script>
@@ -77,15 +78,11 @@
         <div class="title">A/V Technologies</div>
 
         <h4>Audio</h4>
-        <ul>
-          <li><a href="https://www.dolby.com/technologies/dolby-atmos/" target="_blank">Dolby Atmos</a></li>
-          <li><a href="https://dts.com/dtsx/" target="_blank">DTS:X</a></li>
+        <ul id="techs-audio">
         </ul>
 
         <h4>Video</h4>
-        <ul>
-          <li><a href="https://www.dolby.com/technologies/dolby-vision" target="_blank">Dolby Vision</a></li>
-          <li>HDR10 Pro</li>
+        <ul id="techs-video">
         </ul>
 
       </div>
@@ -98,7 +95,7 @@
 
         <div id="gear-list">
 
-          <h4>Speakers (5.1.2 ch)</h4>
+          <h4 id="speakers-title">Speakers</h4>
           <ul id="speakers-list">
           </ul>
 
@@ -109,10 +106,7 @@
         </div>
 
         <br>
-        <p style="font-size:8px;color:darkgrey;margin-top:-5px">
-          <i>* for BD/DVD playback</i>,
-          <i>** only for CD playback</i>,<br>
-          <i>*** only clock and VU meter (on CD playback)</i>
+        <p id="gear-footnote" style="font-size:10px;color:darkgrey">
         </p>
 
       </div>
@@ -210,6 +204,12 @@
     }
 
     //------- SECTIONS --------
+
+    var audio_list = document.getElementById('techs-audio');
+    addTechs(audio, audio_list);
+
+    var video_list = document.getElementById('techs-video');
+    addTechs(video, video_list);
 
     var speakers_list = document.getElementById('speakers-list');
     addSpeakers(speakers, speakers_list);
