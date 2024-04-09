@@ -78,7 +78,7 @@ function addTechs(tech, items) {
 function addSpeakers(speakers, items) {
 
   var title = document.getElementById('speakers-title');
-  title.append(" (".concat(speakers[0]).concat(")"));
+  title.append(" (".concat(speakers[0]).concat(" ch)"));
 
   for (var i = 0; i < speakers[1].length; i++) {
 
