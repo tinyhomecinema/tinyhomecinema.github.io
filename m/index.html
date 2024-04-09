@@ -225,6 +225,14 @@
     addCurrentServices();
     addPastServices();
 
+    if (electronics_footnote.length > 0) {
+        var p = document.getElementById("gear-footnote");
+        var i = document.createElement('I');
+        var footnote = document.createTextNode(electronics_footnote);
+        var pi = p.appendChild(i);
+        pi.appendChild(footnote);
+    }
+
     //------- FILM POSTERS --------
 
     var film_posters = document.getElementById('film-posters');
