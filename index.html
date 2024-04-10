@@ -137,7 +137,7 @@
         </div>
 
         <br>
-        <p id="gear-footnote" style="font-size:10px;color:darkgrey">
+        <p id="gear-footnote" style="font-size:10px;font-style:italic;color:darkgrey">
         </p>
 
       </div>
@@ -308,10 +308,8 @@
 
     if (electronics_footnote.length > 0) {
         var p = document.getElementById("gear-footnote");
-        var i = document.createElement('I');
         var footnote = document.createTextNode(electronics_footnote);
-        var pi = p.appendChild(i);
-        pi.appendChild(footnote);
+        p.appendChild(footnote);
     }
 
     //------- FILM POSTERS --------

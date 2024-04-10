@@ -106,7 +106,7 @@
         </div>
 
         <br>
-        <p id="gear-footnote" style="font-size:10px;color:darkgrey">
+        <p id="gear-footnote" style="font-size:10px;font-style:italic;color:darkgrey">
         </p>
 
       </div>
@@ -229,14 +229,12 @@
 
     if (electronics_footnote.length > 0) {
         var p = document.getElementById("gear-footnote");
-        var i = document.createElement('I');
         var br = document.createElement('BR');
         var footnote_1 = document.createTextNode(electronics_footnote.slice(0,slice_index));
         var footnote_2 = document.createTextNode(electronics_footnote.slice(slice_index));
-        var pi = p.appendChild(i);
-        pi.appendChild(footnote_1);
-        pi.appendChild(br);
-        pi.appendChild(footnote_2);
+        p.appendChild(footnote_1);
+        p.appendChild(br);
+        p.appendChild(footnote_2);
     }
 
     //------- FILM POSTERS --------
