@@ -52,6 +52,15 @@ function closePhoto() {
   document.getElementById('overlay').style.height = "0%";
 }
 
+function addScreenSpecs(specs) {
+    for (var i = 0; i < specs.length; i++) {
+        var spc = document.getElementById(specs[i][0]);
+        spc.setAttribute('href', specs[i][2]);
+        spc.setAttribute('target', '_blank');
+        spc.appendChild(document.createTextNode(specs[i][1]));
+    }
+}
+
 function addTechs(tech, items) {
 
   for (var i = 0; i < tech.length; i++) {

@@ -9,6 +9,7 @@
 
   <script src="js/functions.js"></script>
 
+  <script src="data/screen.js"></script>
   <script src="data/techs.js"></script>
   <script src="data/equipment.js"></script>
   <script src="data/media.js"></script>
@@ -75,7 +76,7 @@
         A collection of a few hundred titles of Blu-ray discs and DVDs, a few dozen soundtrack CDs and some film books completes the film loving experience.
       </div>
 
-      <!-- Sections -->
+      <!-- Room -->
 
       <div class="room">
         <div class="title">Room Dimensions</div>
@@ -91,16 +92,18 @@
         </div>
       </div>
 
+      <!-- Sections -->
+
       <div class="screen">
         <div class="title">Screen Specifications</div>
         <div class="screen-grid">
           <div>
-            <b>Display Type:</b> <a href="https://en.wikipedia.org/wiki/OLED" target="_blank">OLED</a> TV<br>
-            <b>Diagonal Size:</b> <a href="https://en.wikipedia.org/wiki/Display_size" target="_blank">55 in</a><br>
+            <b>Display Type:</b> <a id="screen_type"></a><br>
+            <b>Diagonal Size:</b> <a id="screen_size"></a><br>
           </div>
           <div>
-            <b>Aspect Ratio:</b> <a href="https://en.wikipedia.org/wiki/Display_aspect_ratio" target="_blank">16:9</a><br>
-            <b>Resolution:</b> <a href="https://en.wikipedia.org/wiki/4K_resolution" target="_blank">4K UHD</a><br>
+            <b>Aspect Ratio:</b> <a id="screen_ratio"></a><br>
+            <b>Resolution:</b> <a id="screen_res"></a><br>
           </div>
         </div>
       </div>
@@ -281,6 +284,8 @@
     }
 
     //------- SECTIONS --------
+
+    addScreenSpecs(screen_spec);
 
     var audio_list = document.getElementById('techs-audio');
     addTechs(audio, audio_list);
