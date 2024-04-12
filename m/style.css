@@ -247,7 +247,7 @@ h4 {
   border-style: solid none solid none;
   border-color: grey;
   border-width: thin;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 50px 10px 50px;
 }
 
 .logos-techs {
@@ -283,12 +283,12 @@ h4 {
 
 .logo-letterboxd {
   justify-content: center;
-  padding-top: -2px;
+  padding-top: -4px;
   height: 18px;
 }
 
 .logo-spotify {
   justify-content: center;
-  padding-top: -2px;
+  padding-top: -4px;
   height: 18px;
 }
