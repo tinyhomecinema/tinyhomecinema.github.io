@@ -270,6 +270,7 @@ h4 {
 
 .separator {
   display: block;
+  width: 3px;
   margin-top: -1px;
   text-align: center;
   color: grey;
@@ -283,13 +284,12 @@ h4 {
 
 .logo-letterboxd {
   justify-content: center;
-  padding-top: -6px;
+  padding-top: -10px;
   height: 18px;
 }
 
 .logo-spotify {
   justify-content: center;
-  padding-top: -6px;
+  padding-top: -10px;
   height: 18px;
-  margin-left: 10px;
 }
