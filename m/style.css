@@ -247,14 +247,13 @@ h4 {
   border-style: solid none solid none;
   border-color: grey;
   border-width: thin;
-  padding: 10px 180px 10px 180px;
+  padding: 10px 60px 10px 60px;
 }
 
 .logos-techs {
   display: grid;
   grid-template-columns: auto auto;
-  padding-right: 80px;
-  column-gap: 60px;
+  column-gap: 40px;
 }
 
 .logo-dolby {
@@ -274,16 +273,14 @@ h4 {
 .separator {
   display: block;
   margin-top: -1px;
+  text-align: center;
   color: grey;
-  padding-left: 70px;
-  padding-right: 20px;
 }
 
 .logos-social {
   display: grid;
-  align-items: right;
   grid-template-columns: auto auto;
-  column-gap: 60px;
+  column-gap: 30px;
 }
 
 .logo-letterboxd {
