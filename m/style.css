@@ -247,13 +247,13 @@ h4 {
   border-style: solid none solid none;
   border-color: grey;
   border-width: thin;
-  padding: 10px 60px 10px 60px;
+  padding: 10px 20px 10px 20px;
 }
 
 .logos-techs {
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 40px;
+  column-gap: 0px;
 }
 
 .logo-dolby {
@@ -278,17 +278,17 @@ h4 {
 .logos-social {
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 30px;
+  column-gap: 0px;
 }
 
 .logo-letterboxd {
   justify-content: center;
   padding-top: 1px;
-  height: 18px;
+  height: 20px;
 }
 
 .logo-spotify {
   justify-content: center;
   padding-top: 1px;
-  height: 18px;
+  height: 20px;
 }
