@@ -92,7 +92,7 @@
         </div>
       </div>
 
-      <!-- Sections -->
+      <!-- Dynamic Sections -->
 
       <div class="screen">
         <div class="title">Screen Specifications</div>
@@ -194,9 +194,15 @@
       <div class="films">
         <div class="title" style="cursor:default">LATEST RELEASES</div>
         <div class="film-posters" id="film-posters"></div>
-        <div class="film-ratings" id="film-ratings"></div>
-        <div class="bottom-links"><br>| <a href="https://letterboxd.com/tinyhomecinema/list/first-watchings/">FIRST SHOWINGS</a> | <a href="https://letterboxd.com/tinyhomecinema/list/rewatchings/">RERUNS</a> | <a href="https://letterboxd.com/tinyhomecinema/films/diary/">DIARY</a> | <a href="https://letterboxd.com/tinyhomecinema/list/watched-blu-rays/">BLU-RAYS</a> | <a href="https://letterboxd.com/tinyhomecinema/tag/film/films/by/month/">FILMS</a> | <a href="https://letterboxd.com/tinyhomecinema/tag/miniseries/films/by/month/">MINISERIES</a> | <a href="https://letterboxd.com/tinyhomecinema/tag/short/films/by/month/">SHORTS</a> | <a href="https://letterboxd.com/tinyhomecinema/tag/anthology/films/by/month/">ANTHOLOGIES</a> | <a href="https://www.themoviedb.org/list/8283956-watched-tv-shows?view=grid">TV SHOWS</a> |<br>
-        <br>| <a href="https://letterboxd.com/tinyhomecinema/list/milestones/detail/">MILESTONES</a> | <a href="https://letterboxd.com/tinyhomecinema/stats/">STATS</a> | <a href="https://letterboxd.com/tinyhomecinema/year/2024/">2024</a> | <a href="https://letterboxd.com/tinyhomecinema/year/2023/">2023</a> | <a href="https://letterboxd.com/tinyhomecinema/year/2022/">2022</a> |</div>
+      </div>
+
+      <!-- Footer Links -->
+
+      <div class="links">
+        <div class="bottom-links">
+          | <a href="https://letterboxd.com/tinyhomecinema/list/first-watchings/">FIRST SHOWINGS</a> | <a href="https://letterboxd.com/tinyhomecinema/list/rewatchings/">RERUNS</a> | <a href="https://letterboxd.com/tinyhomecinema/films/diary/">DIARY</a> | <a href="https://letterboxd.com/tinyhomecinema/list/watched-blu-rays/">BLU-RAYS</a> | <a href="https://letterboxd.com/tinyhomecinema/tag/film/films/by/month/">FILMS</a> | <a href="https://letterboxd.com/tinyhomecinema/tag/miniseries/films/by/month/">MINISERIES</a> | <a href="https://letterboxd.com/tinyhomecinema/tag/short/films/by/month/">SHORTS</a> | <a href="https://letterboxd.com/tinyhomecinema/tag/anthology/films/by/month/">ANTHOLOGIES</a> | <a href="https://www.themoviedb.org/list/8283956-watched-tv-shows?view=grid">TV SHOWS</a> |<br>
+          <br>| <a href="https://letterboxd.com/tinyhomecinema/list/milestones/detail/">MILESTONES</a> | <a href="https://letterboxd.com/tinyhomecinema/stats/">STATS</a> | <a href="https://letterboxd.com/tinyhomecinema/year/2024/">2024</a> | <a href="https://letterboxd.com/tinyhomecinema/year/2023/">2023</a> | <a href="https://letterboxd.com/tinyhomecinema/year/2022/">2022</a> |
+        </div>
       </div>
 
       <!-- Footer Logos -->
@@ -271,14 +277,14 @@
     for (var i = 0; i < services.length; i++) {
       switch (services[i][2]) {
         case 'current':
-          current_services.push(services[i])
-          break;
+        current_services.push(services[i])
+        break;
         case 'past':
-          past_services.push(services[i])
-          break;
+        past_services.push(services[i])
+        break;
         case 'closed':
-          closed_services.push(services[i])
-          break;
+        closed_services.push(services[i])
+        break;
         default:
       }
     }
@@ -312,9 +318,9 @@
     addItems(furniture, stuff_furniture);
 
     if (electronics_footnote.length > 0) {
-        var p = document.getElementById("gear-footnote");
-        var footnote = document.createTextNode(electronics_footnote);
-        p.appendChild(footnote);
+      var p = document.getElementById("gear-footnote");
+      var footnote = document.createTextNode(electronics_footnote);
+      p.appendChild(footnote);
     }
 
     //------- FILM POSTERS --------

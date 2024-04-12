@@ -144,11 +144,16 @@ sup {
   text-align: center;
 }
 
+.links {
+  grid-area: links;
+}
+
 .bottom-links {
   font-weight: normal;
   font-size: 10px;
   color: darkgrey;
-  margin-top: -40px;
+  margin-top: -16px;
+  margin-bottom: -8px;
   text-align: center;
 }
 
@@ -325,6 +330,7 @@ sup {
   'gear streaming'
   'decor stuff'
   'films films'
+  'links links'
   'logos logos';
   justify-content: center;
   width: 100%;
