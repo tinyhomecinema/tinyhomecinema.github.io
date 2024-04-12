@@ -253,7 +253,7 @@ h4 {
 .logos-techs {
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 10px;
+  column-gap: 20px;
 }
 
 .logo-dolby {
@@ -278,7 +278,7 @@ h4 {
 .logos-social {
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 5px;
+  column-gap: 10px;
 }
 
 .logo-letterboxd {
