@@ -247,7 +247,7 @@ h4 {
   border-style: solid none solid none;
   border-color: grey;
   border-width: thin;
-  padding: 10px 40px 10px 40px;
+  padding: 10px 50px 10px 55px;
 }
 
 .logos-techs {
@@ -272,6 +272,7 @@ h4 {
   display: block;
   width: 3px;
   margin-top: -1px;
+  margin-left: 10px;
   text-align: center;
   color: grey;
 }
