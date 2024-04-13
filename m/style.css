@@ -253,7 +253,7 @@ h4 {
 .logos-techs {
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 30px;
+  column-gap: 20px;
 }
 
 .logo-dolby {
@@ -272,7 +272,6 @@ h4 {
   display: block;
   width: 3px;
   margin-top: -1px;
-  margin-left: 10px;
   text-align: center;
   color: grey;
 }
