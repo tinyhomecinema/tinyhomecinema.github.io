@@ -32,6 +32,8 @@
 
     <div class="grid-container">
 
+      <!-- STATIC SECTIONS ---------------------------------------------------->
+
       <!-- Header -->
 
       <div class="page-title">
@@ -40,27 +42,6 @@
 
       <div class="photos">
         <div id="header-photos" class="photos-grid"></div>
-      </div>
-
-      <!-- Photos Overlay -->
-
-      <div id="overlay" class="overlay">
-        <div class="overlay-content">
-          <div class="overlay-grid-container">
-            <div class="arr_back">
-              <img id="arr_back" class="icon" onclick="previousPhoto()">
-            </div>
-            <div class="photo">
-              <img id="photo" class="photo">
-            </div>
-            <div class="arr_forward">
-              <img id="arr_forward" class="icon" onclick="nextPhoto()">
-            </div>
-            <div class="close">
-              <img class="icon" src="res/icons/close.svg" onclick="closePhoto()">
-            </div>
-          </div>
-        </div>
       </div>
 
       <!-- Description -->
@@ -76,7 +57,7 @@
         A collection of a few hundred titles of Blu-ray discs and DVDs, a few dozen soundtrack CDs and some film books completes the film loving experience.
       </div>
 
-      <!-- Room -->
+      <!-- Room Dimensions-->
 
       <div class="room">
         <div class="title">Room Dimensions</div>
@@ -90,110 +71,6 @@
             <b>Useful Area:</b> <br>6.60 m<sup>2</sup> (70.55 sq ft)
           </div>
         </div>
-      </div>
-
-      <!-- Dynamic Sections -->
-
-      <div class="screen">
-        <div class="title">Screen Specifications</div>
-        <div class="screen-grid">
-          <div>
-            <b>Display Type:</b> <a id="screen_type"></a><br>
-            <b>Diagonal Size:</b> <a id="screen_size"></a><br>
-          </div>
-          <div>
-            <b>Aspect Ratio:</b> <a id="screen_ratio"></a><br>
-            <b>Resolution:</b> <a id="screen_res"></a><br>
-          </div>
-        </div>
-      </div>
-
-      <div class="av_tech">
-        <div class="title">A/V Technologies</div>
-
-        <h4>Audio</h4>
-        <ul id="techs-audio">
-        </ul>
-
-        <h4>Video</h4>
-        <ul id="techs-video">
-        </ul>
-
-      </div>
-
-      <div class="gear">
-        <div id="title-gear" class="title-grid-left">
-          <div class="title">Equipment</div>
-          <div id="more-gear" class="more" onclick="moreEquipment(true)">MORE</div>
-        </div>
-
-        <div id="gear-list">
-
-          <h4 id="speakers-title">Speakers</h4>
-          <ul id="speakers-list">
-          </ul>
-
-          <h4>Electronics</h4>
-          <ul id="electronics-list">
-          </ul>
-
-        </div>
-
-        <br>
-        <p id="gear-footnote" style="font-size:10px;font-style:italic;color:darkgrey">
-        </p>
-
-      </div>
-
-      <div id="streaming" class="streaming">
-        <div id="title-streaming" class="title-grid-right">
-          <div class="title">Streaming</div>
-          <div id="past-services" class="more" onclick="addPastServices(true)">MORE</div>
-        </div>
-
-      </div>
-
-      <div id="media" class="media">
-        <div id="title-media" class="title-grid-right">
-          <div class="title">Media</div>
-          <div id="more-media" class="more" onclick="moreMedia(true)">MORE</div>
-        </div>
-
-        <h4>Shelves</h4>
-        <ul id="shelves">
-        </ul>
-
-      </div>
-
-      <div id="decor" class="decor">
-        <div id="title-decor" class="title-grid-left">
-          <div class="title">Decor</div>
-          <div id="more-decor" class="more" onclick="moreDecor(true)">MORE</div>
-        </div>
-
-        <h4>Wall</h4>
-        <ul id="decor-wall">
-        </ul>
-
-      </div>
-
-      <div id="stuff" class="stuff">
-        <div id="title-stuff" class="title-grid-right">
-          <div class="title">Other Stuff</div>
-          <div id="more-stuff" class="more" onclick="moreStuff(true)">MORE</div>
-        </div>
-
-        <h4>Furniture</h4>
-        <ul id="stuff-furniture">
-        </ul>
-
-      </div>
-
-      <!-- Film Posters -->
-
-      <div class="films">
-        <div class="title" style="cursor:default">LATEST RELEASES</div>
-        <div class="film-posters" id="film-posters"></div>
       </div>
 
       <!-- Footer Links -->
@@ -229,6 +106,146 @@
         </div>
       </div>
 
+
+      <!-- DYNAMIC SECTIONS ---------------------------------------------------->
+
+      <!-- Screen Specifications -->
+
+      <div class="screen">
+        <div class="title">Screen Specifications</div>
+        <div class="screen-grid">
+          <div>
+            <b>Display Type:</b> <a id="screen_type"></a><br>
+            <b>Diagonal Size:</b> <a id="screen_size"></a><br>
+          </div>
+          <div>
+            <b>Aspect Ratio:</b> <a id="screen_ratio"></a><br>
+            <b>Resolution:</b> <a id="screen_res"></a><br>
+          </div>
+        </div>
+      </div>
+
+      <!-- A/V Technologies -->
+
+      <div class="av_tech">
+        <div class="title">A/V Technologies</div>
+
+        <h4>Audio</h4>
+        <ul id="techs-audio">
+        </ul>
+
+        <h4>Video</h4>
+        <ul id="techs-video">
+        </ul>
+
+      </div>
+
+      <!-- Equipment -->
+
+      <div class="gear">
+        <div id="title-gear" class="title-grid-left">
+          <div class="title">Equipment</div>
+          <div id="more-gear" class="more" onclick="moreEquipment(true)">MORE</div>
+        </div>
+
+        <div id="gear-list">
+
+          <h4 id="speakers-title">Speakers</h4>
+          <ul id="speakers-list">
+          </ul>
+
+          <h4>Electronics</h4>
+          <ul id="electronics-list">
+          </ul>
+
+        </div>
+
+        <br>
+        <p id="gear-footnote" style="font-size:10px;font-style:italic;color:darkgrey">
+        </p>
+
+      </div>
+
+      <!-- Streaming -->
+
+      <div id="streaming" class="streaming">
+        <div id="title-streaming" class="title-grid-right">
+          <div class="title">Streaming</div>
+          <div id="past-services" class="more" onclick="addPastServices(true)">MORE</div>
+        </div>
+
+      </div>
+
+      <!-- Media -->
+
+      <div id="media" class="media">
+        <div id="title-media" class="title-grid-right">
+          <div class="title">Media</div>
+          <div id="more-media" class="more" onclick="moreMedia(true)">MORE</div>
+        </div>
+
+        <h4>Shelves</h4>
+        <ul id="shelves">
+        </ul>
+
+      </div>
+
+      <!-- Decor -->
+
+      <div id="decor" class="decor">
+        <div id="title-decor" class="title-grid-left">
+          <div class="title">Decor</div>
+          <div id="more-decor" class="more" onclick="moreDecor(true)">MORE</div>
+        </div>
+
+        <h4>Wall</h4>
+        <ul id="decor-wall">
+        </ul>
+
+      </div>
+
+      <!-- Other Stuff -->
+
+      <div id="stuff" class="stuff">
+        <div id="title-stuff" class="title-grid-right">
+          <div class="title">Other Stuff</div>
+          <div id="more-stuff" class="more" onclick="moreStuff(true)">MORE</div>
+        </div>
+
+        <h4>Furniture</h4>
+        <ul id="stuff-furniture">
+        </ul>
+
+      </div>
+
+      <!-- Film Posters -->
+
+      <div class="films">
+        <div class="title" style="cursor:default">LATEST RELEASES</div>
+        <div class="film-posters" id="film-posters"></div>
+      </div>
+
+    </div>
+
+    <!-- Photos Overlay -->
+
+    <div id="overlay" class="overlay">
+      <div class="overlay-content">
+        <div class="overlay-grid-container">
+          <div class="arr_back">
+            <img id="arr_back" class="icon" onclick="previousPhoto()">
+          </div>
+          <div class="photo">
+            <img id="photo" class="photo">
+          </div>
+          <div class="arr_forward">
+            <img id="arr_forward" class="icon" onclick="nextPhoto()">
+          </div>
+          <div class="close">
+            <img class="icon" src="res/icons/close.svg" onclick="closePhoto()">
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
