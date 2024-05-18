@@ -89,7 +89,7 @@ while (my $line = <MUSIC>) {
     }
 }
 
-print MEDIA_DATA "  [\'Music\', $count, \'https://tinyhomecinema.page/music/\', \'shelf\'],\n";
+print MEDIA_DATA "  [\'Music\', $count, \'https://cineminha.vip/music/\', \'shelf\'],\n";
 
 $count = 27;
 
@@ -307,10 +307,10 @@ while (my $line = <RSS>) {
 
         if ($watch_month <= $treshold_month) {
             $years_back = 2;
-        } else { 
+        } else {
             $years_back = 1;
-        }        
-        
+        }
+
         for (@film_ids) {
             if ($id == $_ && $watch_year - $release_year <= $years_back) {
                 my $line_to_print = "  [\'$title\', \'$release_year\', \'$link\', \'$img\'],\n";
