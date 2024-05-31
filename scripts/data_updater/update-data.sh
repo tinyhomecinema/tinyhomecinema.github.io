@@ -1,10 +1,10 @@
 #!/bin/bash
 
-cd /home/pi/github/tinyhomecinema.github.io/
+cd /home/pi/github/cineminha_web/
 
 git pull origin main
 
-cd /home/pi/github/tinyhomecinema.github.io/scripts/data_updater/html
+cd /home/pi/github/cineminha_web/scripts/data_updater/html
 
 wget 'https://letterboxd.com/tinyhomecinema/list/physical-media-shelf/'
 mv index.html shelf.html
@@ -54,7 +54,7 @@ mv index.html rss.html
 wget 'https://letterboxd.com/tinyhomecinema/tag/first-showing/diary/'
 mv index.html diary.html
 
-cd /home/pi/github/tinyhomecinema.github.io/scripts/data_updater
+cd /home/pi/github/cineminha_web/scripts/data_updater
 
 ./generate-data.pl
 
@@ -62,4 +62,3 @@ git add ../../data/media.js
 git add ../../data/films.js
 git commit -m "[auto] Updated data"
 git push origin main
-

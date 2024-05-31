@@ -1,10 +1,10 @@
 #!/bin/bash
 
-cd /home/pi/github/tinyhomecinema.github.io/
+cd /home/pi/github/cineminha_web/
 
 git pull origin main
 
-cd /home/pi/github/tinyhomecinema.github.io/scripts/milestones/html
+cd /home/pi/github/cineminha_web/scripts/milestones/html
 
 wget 'https://letterboxd.com/tinyhomecinema/list/milestones/'
 mv index.html milestones.html
@@ -30,7 +30,6 @@ mv index.html first-showing.html
 wget 'https://letterboxd.com/tinyhomecinema/tag/rewatch/diary/'
 mv index.html rewatch.html
 
-cd /home/pi/github/tinyhomecinema.github.io/scripts/milestones
+cd /home/pi/github/cineminha_web/scripts/milestones
 
 ./get-milestones.pl
-
