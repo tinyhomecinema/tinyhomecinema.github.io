@@ -7,7 +7,7 @@ my $milestones_list_url = "https:\/\/letterboxd.com\/tinyhomecinema\/list\/miles
 my $milestones_list_name = "Milestones";
 
 my $n_milestone_film = 50;
-my $n_milestone_miniseries = 50;
+my $n_milestone_miniseries = 25;
 my $n_milestone_short = 25;
 my $n_milestone_bluray = 50;
 my $n_milestone_first_showing = 50;
