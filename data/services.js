@@ -5,7 +5,7 @@ var services = [
   ['Max', 'https://letterboxd.com/tinyhomecinema/tag/max/films/', 'current'],
   ['Globoplay', 'https://letterboxd.com/tinyhomecinema/tag/globoplay/films/', 'current'],
   ['STAR+', 'https://letterboxd.com/tinyhomecinema/tag/star-/films/', 'closed'],
-  ['Disney+', 'https://letterboxd.com/tinyhomecinema/tag/disney-/films/', 'current'],
+  ['Disney+', 'https://letterboxd.com/tinyhomecinema/tag/disney-/films/', 'past'],
   ['Filmicca', 'https://letterboxd.com/tinyhomecinema/tag/filmicca/films/', 'current'],
   ['MUBI', 'https://letterboxd.com/tinyhomecinema/tag/mubi/films/', 'past'],
   ['Belas Artes', 'https://letterboxd.com/tinyhomecinema/tag/belas-artes/films/', 'past'],
