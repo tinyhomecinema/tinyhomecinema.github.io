@@ -106,7 +106,7 @@ while (my $line = <FILM>) {
     if ($line =~ /data-viewing-id=\"(.*)\"\n/) {
         my @film_info = &get_film_info($1);
         if (&not_in_milestones($film_info[0]) && ($n_films > $count_film)) {
-            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"$film_info[1]\"\>$film_info[0]\<\/a\> is the ".$n_films."th film watched at Cineminha.\<\/p\>\<br\><img src=\"$film_info[2]\" width=\"200\" \/\><br><br>Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<br\>\<br\>\<br\>tinyhomecinema.page\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
+            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"$film_info[1]\"\>$film_info[0]\<\/a\> is the ".$n_films."th film watched at Cineminha.\<\/p\>\<br\><img src=\"$film_info[2]\" width=\"200\" \/\><br><br>Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<br\>\<br\>\<br\>cineminha.vip\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
         }
         last;
     }
@@ -129,7 +129,7 @@ while (my $line = <MINISERIES>) {
     if ($line =~ /data-viewing-id=\"(.*)\"\n/) {
         my @film_info = &get_film_info($1);
         if (&not_in_milestones($film_info[0]) && ($n_miniseries > $count_miniseries)) {
-            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"$film_info[1]\"\>$film_info[0]\<\/a\> is the ".$n_miniseries."th miniseries watched at Cineminha.\<\/p\>\<br\><img src=\"$film_info[2]\" width=\"200\" \/\><br><br>Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<br\>\<br\>\<br\>tinyhomecinema.page\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
+            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"$film_info[1]\"\>$film_info[0]\<\/a\> is the ".$n_miniseries."th miniseries watched at Cineminha.\<\/p\>\<br\><img src=\"$film_info[2]\" width=\"200\" \/\><br><br>Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<br\>\<br\>\<br\>cineminha.vip\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
         }
         last;
     }
@@ -152,7 +152,7 @@ while (my $line = <SHORT>) {
     if ($line =~ /data-viewing-id=\"(.*)\"\n/) {
         my @film_info = &get_film_info($1);
         if (&not_in_milestones($film_info[0]) && ($n_shorts > $count_short)) {
-            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"$film_info[1]\"\>$film_info[0]\<\/a\> is the ".$n_shorts."th short film watched at Cineminha.\<\/p\>\<br\><img src=\"$film_info[2]\" width=\"200\" \/\><br><br>Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<br\>\<br\>\<br\>tinyhomecinema.page\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
+            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"$film_info[1]\"\>$film_info[0]\<\/a\> is the ".$n_shorts."th short film watched at Cineminha.\<\/p\>\<br\><img src=\"$film_info[2]\" width=\"200\" \/\><br><br>Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<br\>\<br\>\<br\>cineminha.vip\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
         }
         last;
     }
@@ -175,7 +175,7 @@ while (my $line = <BLURAY>) {
     if ($line =~ /data-viewing-id=\"(.*)\"\n/) {
         my @film_info = &get_film_info($1);
         if (&not_in_milestones($film_info[0]) && ($n_blurays > $count_bluray)) {
-            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"$film_info[1]\"\>$film_info[0]\<\/a\> is the ".$n_blurays."th blu-ray disc watched at Cineminha.\<\/p\>\<br\><img src=\"$film_info[2]\" width=\"200\" \/\><br><br>Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<br\>\<br\>\<br\>tinyhomecinema.page\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
+            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"$film_info[1]\"\>$film_info[0]\<\/a\> is the ".$n_blurays."th blu-ray disc watched at Cineminha.\<\/p\>\<br\><img src=\"$film_info[2]\" width=\"200\" \/\><br><br>Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<br\>\<br\>\<br\>cineminha.vip\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
         }
         last;
     }
@@ -198,7 +198,7 @@ while (my $line = <FIRST_SHOWING>) {
     if ($line =~ /data-viewing-id=\"(.*)\"\n/) {
         my @film_info = &get_film_info($1);
         if (&not_in_milestones($film_info[0]) && ($n_first_showings > $count_first_showing)) {
-            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"$film_info[1]\"\>$film_info[0]\<\/a\> is the ".$n_first_showings."th film watched for the first time at Cineminha.\<\/p\>\<br\><img src=\"$film_info[2]\" width=\"200\" \/\><br><br>Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<br\>\<br\>\<br\>tinyhomecinema.page\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
+            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"$film_info[1]\"\>$film_info[0]\<\/a\> is the ".$n_first_showings."th film watched for the first time at Cineminha.\<\/p\>\<br\><img src=\"$film_info[2]\" width=\"200\" \/\><br><br>Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<br\>\<br\>\<br\>cineminha.vip\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
         }
         last;
     }
@@ -221,7 +221,7 @@ while (my $line = <REWATCH>) {
     if ($line =~ /data-viewing-id=\"(.*)\"\n/) {
         my @film_info = &get_film_info($1);
         if (&not_in_milestones($film_info[0]) && ($n_rewatches > $count_rewatch)) {
-            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"$film_info[1]\"\>$film_info[0]\<\/a\> is the ".$n_rewatches."th film rewatched at Cineminha.\<\/p\>\<br\><img src=\"$film_info[2]\" width=\"200\" \/\><br><br>Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<br\>\<br\>\<br\>tinyhomecinema.page\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
+            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"$film_info[1]\"\>$film_info[0]\<\/a\> is the ".$n_rewatches."th film rewatched at Cineminha.\<\/p\>\<br\><img src=\"$film_info[2]\" width=\"200\" \/\><br><br>Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<br\>\<br\>\<br\>cineminha.vip\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
         }
         last;
     }
