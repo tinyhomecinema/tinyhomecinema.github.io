@@ -13,7 +13,7 @@ var services = [
   ['Looke', 'https://letterboxd.com/tinyhomecinema/tag/looke/films/', ''],
   ['Oldflix', 'https://letterboxd.com/tinyhomecinema/tag/oldflix/films/', ''],
   ['Telecine', 'https://letterboxd.com/tinyhomecinema/tag/telecine/films/', 'past'],
-  ['MGM', 'https://letterboxd.com/tinyhomecinema/tag/mgm/films/', ''],
+  ['MGM+', 'https://letterboxd.com/tinyhomecinema/tag/mgm-/films/', 'current'],
   ['HBO Max', 'https://letterboxd.com/tinyhomecinema/tag/hbo-max/films/', 'closed'],
   ['Lionsgate+', 'https://letterboxd.com/tinyhomecinema/tag/lionsgate-/films/', 'closed'],
 ]
