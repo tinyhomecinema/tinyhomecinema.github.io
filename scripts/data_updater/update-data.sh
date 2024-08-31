@@ -4,6 +4,13 @@ cd /home/pi/github/tinyhomecinema.github.io
 
 git pull origin main
 
+cd /home/pi/github/tinyhomecinema.github.io/scripts/data_updater
+
+if [ ! -d "html" ]; 
+  then
+    mkdir html
+fi
+
 cd /home/pi/github/tinyhomecinema.github.io/scripts/data_updater/html
 
 wget 'https://letterboxd.com/tinyhomecinema/list/physical-media-shelf/'

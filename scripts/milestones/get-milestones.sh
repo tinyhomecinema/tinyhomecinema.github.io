@@ -4,6 +4,13 @@ cd /home/pi/github/tinyhomecinema.github.io/
 
 git pull origin main
 
+cd /home/pi/github/tinyhomecinema.github.io/scripts/milestones
+
+if [ ! -d "html" ];
+  then
+    mkdir html
+fi
+
 cd /home/pi/github/tinyhomecinema.github.io/scripts/milestones/html
 
 wget 'https://letterboxd.com/tinyhomecinema/list/milestones/'
