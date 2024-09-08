@@ -6,7 +6,7 @@ git pull origin main
 
 cd /home/pi/github/tinyhomecinema.github.io/scripts/data_updater
 
-if [ ! -d "html" ]; 
+if [ ! -d "html" ];
   then
     mkdir html
 fi
