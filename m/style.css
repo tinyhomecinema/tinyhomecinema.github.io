@@ -238,58 +238,60 @@ h4 {
   text-align: center;
 }
 
-.logos {
+.m-logos {
   grid-area: logos;
   display: grid;
   justify: center;
-  height: 18px;
-  grid-template-columns: auto auto auto;
+  height: 20px;
+  grid-template-columns: 55% 10% 35%;
   border-style: solid none solid none;
   border-color: grey;
   border-width: thin;
-  padding: 10px 40px 10px 40px;
+  padding: 10px 5% 10px 5%;
+  align-items: center;
 }
 
-.logos-techs {
+.m-logos-techs {
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 20px;
+  column-gap: 20%;
+  justify-content: center;
+  padding: 0px 20% 0px 20%;
 }
 
-.logo-dolby {
-  justify-content: center;
-  padding-top: 2px;
+.m-logo-dolby {
+  padding-top: 4px;
   height: 16px;
 }
 
-.logo-dts {
-  justify-content: center;
-  padding-top: 1px;
+.m-logo-dts {
+  padding-top: 3px;
   height: 14px;
 }
 
-.separator {
+.m-separator {
   display: block;
   width: 3px;
-  margin-top: -1px;
-  text-align: center;
+  margin-top: -7px;
+  justify-self: center;
   color: grey;
 }
 
-.logos-social {
+.m-logos-social {
   display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 10px;
+  grid-template-columns: auto auto auto;
+  column-gap: 10%;
+  justify-content: center;
 }
 
-.logo-letterboxd {
-  justify-content: center;
-  padding-top: -10px;
+.m-logo-letterboxd {
   height: 18px;
 }
 
-.logo-spotify {
-  justify-content: center;
-  padding-top: -10px;
+.m-logo-tvtime {
+  height: 18px;
+}
+
+.m-logo-spotify {
   height: 18px;
 }
