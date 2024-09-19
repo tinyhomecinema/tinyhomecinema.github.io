@@ -50,6 +50,15 @@ open(ATMOS, $atmos) or die("File $atmos not found");
 my $dtsx = 'html/dtsx.html';
 open(DTSX, $dtsx) or die("File $dtsx not found");
 
+my $tv_bluray = 'html/tv_blu-ray.html';
+open(TV_BLURAY, $tv_bluray) or die("File $tv_bluray not found");
+
+my $tv_dvd = 'html/tv_dvd.html';
+open(TV_DVD, $tv_dvd) or die("File $tv_dvd not found");
+
+my $tv_atmos = 'html/tv_atmos.html';
+open(TV_ATMOS, $tv_atmos) or die("File $tv_atmos not found");
+
 my $media_data_file = '../../data/media.js';
 open(MEDIA_DATA, '>', $media_data_file) or die("File $media_data_file not found");
 
@@ -71,15 +80,15 @@ while (my $line = <SHELF>) {
 print MEDIA_DATA "  [\'Movies\', $count, \'$url\', \'shelf\'],\n";
 
 while (my $line = <TV_SHOWS>) {
-    if ($line =~ /meta property=\"og\:url\" content=\"(.*)\"/) {
-        $url = $1;
+    if ($line =~ /meta content=\"(https\:\/\/trakt\.tv\/users\/.*)\" itemprop=\"url\"><section/) {
+        $url = $1."\?sort=added,asc";
     }
-    if ($line =~ /\<h3 class\=\"text\-2xl md\:text\-4xl\/8 leading-5 p\-0\"\>([0-9]+)\<\/h3\>/) {
+    if ($line =~ /itemprop=\"numberOfItems\">([0-9]+)</) {
         $count = $1;
     }
 }
 
-print MEDIA_DATA "  [\'TV Shows\', $count, \'$url?view=grid&sort_by=primary_release_date.desc\', \'shelf\'],\n";
+print MEDIA_DATA "  [\'TV Shows\', $count, \'$url\', \'shelf\'],\n";
 
 $count = 0;
 
@@ -219,6 +228,43 @@ print MEDIA_DATA "  [\'DTS X\', $count, \'$url\', \'audio\'],\n";
 
 print MEDIA_DATA "]\n";
 
+print MEDIA_DATA "\nvar tv_collection = [\n";
+
+while (my $line = <TV_BLURAY>) {
+    if ($line =~ /meta content=\"(https\:\/\/trakt\.tv\/users\/.*)\" itemprop=\"url\"><section/) {
+        $url = $1."\?sort=added,asc";
+    }
+    if ($line =~ /itemprop=\"numberOfItems\">([0-9]+)</) {
+        $count = $1;
+    }
+}
+
+print MEDIA_DATA "  [\'Blu-ray\', $count, \'$url\', \'media\'],\n";
+
+while (my $line = <TV_DVD>) {
+    if ($line =~ /meta content=\"(https\:\/\/trakt\.tv\/users\/.*)\" itemprop=\"url\"><section/) {
+        $url = $1."\?sort=added,asc";
+    }
+    if ($line =~ /itemprop=\"numberOfItems\">([0-9]+)</) {
+        $count = $1;
+    }
+}
+
+print MEDIA_DATA "  [\'DVD\', $count, \'$url\', \'media\'],\n";
+
+while (my $line = <TV_ATMOS>) {
+    if ($line =~ /meta content=\"(https\:\/\/trakt\.tv\/users\/.*)\" itemprop=\"url\"><section/) {
+        $url = $1."\?sort=added,asc";
+    }
+    if ($line =~ /itemprop=\"numberOfItems\">([0-9]+)</) {
+        $count = $1;
+    }
+}
+
+print MEDIA_DATA "  [\'Dolby Atmos\', $count, \'$url\', \'audio\'],\n";
+
+print MEDIA_DATA "]\n";
+
 close(SHELF);
 close(TV_SHOWS);
 close(MUSIC);
@@ -233,6 +279,9 @@ close(VHS);
 close(DIG);
 close(ATMOS);
 close(DTSX);
+close(TV_BLURAY);
+close(TV_DVD);
+close(TV_ATMOS);
 
 close(MEDIA_DATA);
 
