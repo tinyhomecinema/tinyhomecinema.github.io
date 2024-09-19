@@ -1,6 +1,6 @@
 var shelves = [
   ['Movies', 409, 'https://letterboxd.com/tinyhomecinema/list/movies-shelf/', 'shelf'],
-  ['TV Shows', 8, 'https://www.themoviedb.org/list/8283859-tv-shows-collection?view=grid&sort_by=primary_release_date.desc', 'shelf'],
+  ['TV Shows', 17, 'https://trakt.tv/users/cineminha/lists/tv-shows-collection?sort=added,asc', 'shelf'],
   ['Music', 35, 'https://cineminha.vip/music/', 'shelf'],
   ['Books', 27, 'https://www.librarything.com/catalog.php?view=hpfilho&collection=794026&shelf=shelf&sort=title&previousOffset=0&shelf_rows=3&collection=794026', 'shelf']
 ]
@@ -16,4 +16,10 @@ var collection = [
   ['Digital', 11, 'https://letterboxd.com/tinyhomecinema/list/digital/', 'media'],
   ['Dolby Atmos', 27, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'audio'],
   ['DTS X', 8, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'audio'],
+]
+
+var tv_collection = [
+  ['Blu-ray', 15, 'https://trakt.tv/users/cineminha/lists/tv-shows-blu-rays?sort=added,asc', 'media'],
+  ['DVD', 2, 'https://trakt.tv/users/cineminha/lists/tv-shows-dvds?sort=added,asc', 'media'],
+  ['Dolby Atmos', 5, 'https://trakt.tv/users/cineminha/lists/dolby-atmos-tv-shows?sort=added,asc', 'audio'],
 ]
