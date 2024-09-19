@@ -19,7 +19,7 @@ mv index.html shelf.html
 wget 'https://tinyhomecinema.page/music/'
 mv index.html music.html
 
-wget 'https://trakt.tv/users/cineminha/lists/tv-shows-collection?sort=added,asc'
+wget 'https://trakt.tv/users/tinyhomecinema/lists/tv-shows-collection?sort=added,asc'
 mv tv-shows-collection?sort=added,asc tv_shows.html
 
 wget 'https://www.librarything.com/catalog_bottom.php?view=hpfilho&collection=794026&shelf=shelf&sort=title&previousOffset=0&shelf_rows=3'
@@ -55,13 +55,13 @@ mv index.html atmos.html
 wget 'https://letterboxd.com/tinyhomecinema/list/dts-x/'
 mv index.html dtsx.html
 
-wget 'https://trakt.tv/users/cineminha/lists/tv-shows-blu-rays?sort=added,asc'
+wget 'https://trakt.tv/users/tinyhomecinema/lists/tv-shows-blu-rays?sort=added,asc'
 mv tv-shows-blu-rays?sort=added,asc tv_blu-ray.html
 
-wget 'https://trakt.tv/users/cineminha/lists/tv-shows-dvds?sort=added,asc'
+wget 'https://trakt.tv/users/tinyhomecinema/lists/tv-shows-dvds?sort=added,asc'
 mv tv-shows-dvds?sort=added,asc tv_dvd.html
 
-wget 'https://trakt.tv/users/cineminha/lists/dolby-atmos-tv-shows?sort=added,asc'
+wget 'https://trakt.tv/users/tinyhomecinema/lists/dolby-atmos-tv-shows?sort=added,asc'
 mv dolby-atmos-tv-shows?sort=added,asc tv_atmos.html
 
 wget 'https://letterboxd.com/tinyhomecinema/rss/'
