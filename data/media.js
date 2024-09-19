@@ -14,12 +14,12 @@ var collection = [
   ['DVD', 240, 'https://letterboxd.com/tinyhomecinema/list/dvd/', 'media'],
   ['VHS', 5, 'https://letterboxd.com/tinyhomecinema/list/decor-vhs-tapes/', 'media'],
   ['Digital', 11, 'https://letterboxd.com/tinyhomecinema/list/digital/', 'media'],
-  // ['Dolby Atmos', 27, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'audio'],
-  // ['DTS X', 8, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'audio'],
+  ['Dolby Atmos', 27, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'audio'],
+  ['DTS X', 8, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'audio'],
 ]
 
 var tv_collection = [
   ['Blu-ray', 15, 'https://trakt.tv/users/cineminha/lists/tv-shows-blu-rays?sort=added,asc', 'media'],
   ['DVD', 2, 'https://trakt.tv/users/cineminha/lists/tv-shows-dvds?sort=added,asc', 'media'],
-  // ['Dolby Atmos', 5, 'https://trakt.tv/users/cineminha/lists/dolby-atmos-tv-shows?sort=added,asc', 'audio'],
+  ['Dolby Atmos', 5, 'https://trakt.tv/users/cineminha/lists/dolby-atmos-tv-shows?sort=added,asc', 'audio'],
 ]
