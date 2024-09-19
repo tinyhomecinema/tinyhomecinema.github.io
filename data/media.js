@@ -20,6 +20,6 @@ var collection = [
 
 var tv_collection = [
   ['Blu-ray', 15, 'https://trakt.tv/users/tinyhomecinema/lists/tv-shows-blu-rays?sort=added,asc', 'media'],
-  ['DVD', 2, 'https://trakt.tv/users/tinyhomecinema/lists/tv-shows-dvds?sort=added,asc', 'media'],
+  ['DVD', 3, 'https://trakt.tv/users/tinyhomecinema/lists/tv-shows-dvds?sort=added,asc', 'media'],
   ['Dolby Atmos', 5, 'https://trakt.tv/users/tinyhomecinema/lists/dolby-atmos-tv-shows?sort=added,asc', 'audio'],
 ]
