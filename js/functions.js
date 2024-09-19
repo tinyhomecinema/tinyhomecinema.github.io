@@ -204,7 +204,7 @@ function addMediaItems(media, items, initial_type) {
 
 }
 
-function addCurrentServices() {
+function addCurrentServices(mobile) {
 
   if (document.getElementById('current-services-header') != null) {
     document.getElementById('current-services-header').remove();
@@ -212,6 +212,14 @@ function addCurrentServices() {
   }
 
   initial_number_of_services = max_initial_number_of_services;
+
+  if (more_media_visible) {
+    initial_number_of_services = 2;
+  }
+
+  if (mobile) {
+    initial_number_of_services = 100;
+  }
 
   var streaming = document.getElementById('streaming');
 
@@ -319,9 +327,13 @@ function moreCurrentServices() {
 
   var more = document.getElementById('past-services');
   more.innerText = "LESS";
-  more.setAttribute('onclick', 'addCurrentServices()');
+  more.setAttribute('onclick', 'addCurrentServices(false)');
   more.setAttribute('style', 'display: solid');
 
+  if (more_media_visible) {
+    lessMedia(false);
+    lessEquipment(false);
+  }
 
 }
 
@@ -410,7 +422,7 @@ function removePastServices(click) {
 
   document.getElementById('past-services-header').remove();
   document.getElementById('past-services-list').remove();
-  addCurrentServices();
+  addCurrentServices(false);
 
   var more = document.getElementById('past-services');
   more.innerText = "MORE";
@@ -456,7 +468,7 @@ function moreEquipment(click) {
   more_equipment_visible = true;
 
   if (click) {
-    addCurrentServices();
+    addCurrentServices(false);
     if (!past_services_visible && !more_media_visible) {
       moreMedia(false);
     }
@@ -479,7 +491,7 @@ function lessEquipment(click) {
   more_equipment_visible = false;
 
   if(click) {
-    addCurrentServices();
+    addCurrentServices(false);
     if (more_media_visible) {
       lessMedia(false);
     }
@@ -523,7 +535,7 @@ function moreMedia(click) {
   more_media_visible = true;
 
   if (click) {
-      addCurrentServices();
+      addCurrentServices(false);
       if (past_services_visible) {
         removePastServices(false);
       }
@@ -548,7 +560,7 @@ function lessMedia(click) {
   more_media_visible = false;
 
   if(click) {
-    addCurrentServices();
+    addCurrentServices(false);
     lessEquipment(false);
   }
 
