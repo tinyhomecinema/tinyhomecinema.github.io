@@ -213,7 +213,7 @@ while (my $line = <ATMOS>) {
     }
 }
 
-print MEDIA_DATA "  [\'Dolby Atmos\', $count, \'$url\', \'audio\'],\n";
+print MEDIA_DATA "  \/\/ [\'Dolby Atmos\', $count, \'$url\', \'audio\'],\n";
 
 while (my $line = <DTSX>) {
     if ($line =~ /meta property=\"og\:url\" content=\"(.*)\"/) {
@@ -224,7 +224,7 @@ while (my $line = <DTSX>) {
     }
 }
 
-print MEDIA_DATA "  [\'DTS X\', $count, \'$url\', \'audio\'],\n";
+print MEDIA_DATA "  \/\/ [\'DTS X\', $count, \'$url\', \'audio\'],\n";
 
 print MEDIA_DATA "]\n";
 
@@ -261,7 +261,7 @@ while (my $line = <TV_ATMOS>) {
     }
 }
 
-print MEDIA_DATA "  [\'Dolby Atmos\', $count, \'$url\', \'audio\'],\n";
+print MEDIA_DATA "  \/\/ [\'Dolby Atmos\', $count, \'$url\', \'audio\'],\n";
 
 print MEDIA_DATA "]\n";
 
