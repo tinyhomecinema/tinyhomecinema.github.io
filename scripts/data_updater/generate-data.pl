@@ -108,7 +108,7 @@ while (my $line = <BOOKS>) {
     }
 }
 
-$url = 'https://www.librarything.com/catalog.php?view=hpfilho&collection=794026&shelf=shelf&sort=title&previousOffset=0&shelf_rows=3&collection=794026';
+$url = 'https://www.librarything.com/catalog.php?view=cineminha&shelf=shelf&shelf_rows=3&sort=title';
 
 print MEDIA_DATA "  [\'Books\', $count, \'$url\', \'shelf\']\n";
 
