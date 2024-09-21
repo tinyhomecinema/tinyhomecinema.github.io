@@ -81,7 +81,7 @@ print MEDIA_DATA "  [\'Movies\', $count, \'$url\', \'shelf\'],\n";
 
 while (my $line = <TV_SHOWS>) {
     if ($line =~ /meta content=\"(https\:\/\/trakt\.tv\/users\/.*)\" itemprop=\"url\"><section/) {
-        $url = $1."\?sort=added,asc";
+        $url = $1."\?sort=watched,asc";
     }
     if ($line =~ /itemprop=\"numberOfItems\">([0-9]+)</) {
         $count = $1;
@@ -232,7 +232,7 @@ print MEDIA_DATA "\nvar tv_collection = [\n";
 
 while (my $line = <TV_BLURAY>) {
     if ($line =~ /meta content=\"(https\:\/\/trakt\.tv\/users\/.*)\" itemprop=\"url\"><section/) {
-        $url = $1."\?sort=added,asc";
+        $url = $1."\?sort=watched,asc";
     }
     if ($line =~ /itemprop=\"numberOfItems\">([0-9]+)</) {
         $count = $1;
@@ -243,7 +243,7 @@ print MEDIA_DATA "  [\'Blu-ray\', $count, \'$url\', \'media\'],\n";
 
 while (my $line = <TV_DVD>) {
     if ($line =~ /meta content=\"(https\:\/\/trakt\.tv\/users\/.*)\" itemprop=\"url\"><section/) {
-        $url = $1."\?sort=added,asc";
+        $url = $1."\?sort=watched,asc";
     }
     if ($line =~ /itemprop=\"numberOfItems\">([0-9]+)</) {
         $count = $1;
@@ -254,7 +254,7 @@ print MEDIA_DATA "  [\'DVD\', $count, \'$url\', \'media\'],\n";
 
 while (my $line = <TV_ATMOS>) {
     if ($line =~ /meta content=\"(https\:\/\/trakt\.tv\/users\/.*)\" itemprop=\"url\"><section/) {
-        $url = $1."\?sort=added,asc";
+        $url = $1."\?sort=watched,asc";
     }
     if ($line =~ /itemprop=\"numberOfItems\">([0-9]+)</) {
         $count = $1;
