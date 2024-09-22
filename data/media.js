@@ -1,7 +1,7 @@
 var shelves = [
   ['Movies', 409, 'https://letterboxd.com/tinyhomecinema/list/movies-shelf/', 'shelf'],
   ['TV Shows', 17, 'https://trakt.tv/users/tinyhomecinema/lists/tv-show-collection', 'shelf'],
-  ['Music', 5, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898678&shelf=shelf&sort=stampREV', 'shelf'],
+  ['Music', 10, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898678&shelf=shelf&sort=stampREV', 'shelf'],
   ['Books', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'shelf']
 ]
 
