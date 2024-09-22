@@ -53,12 +53,12 @@ function closePhoto() {
 }
 
 function addScreenSpecs(specs) {
-    for (var i = 0; i < specs.length; i++) {
-        var spc = document.getElementById(specs[i][0]);
-        spc.setAttribute('href', specs[i][2]);
-        spc.setAttribute('target', '_blank');
-        spc.appendChild(document.createTextNode(specs[i][1]));
-    }
+  for (var i = 0; i < specs.length; i++) {
+    var spc = document.getElementById(specs[i][0]);
+    spc.setAttribute('href', specs[i][2]);
+    spc.setAttribute('target', '_blank');
+    spc.appendChild(document.createTextNode(specs[i][1]));
+  }
 }
 
 function addTechs(tech, items) {
@@ -470,7 +470,7 @@ function moreEquipment(click) {
   if (click) {
     addCurrentServices(false);
     if (!past_services_visible && !more_media_visible) {
-      moreMedia(false);
+      moreMedia();
     }
   }
 
@@ -491,18 +491,18 @@ function lessEquipment(click) {
   more_equipment_visible = false;
 
   if(click) {
-    addCurrentServices(false);
     if (more_media_visible) {
       lessMedia(false);
     }
     if (past_services_visible) {
       removePastServices(false);
     }
+    addCurrentServices(false);
   }
 
 }
 
-function moreMedia(click) {
+function moreMedia() {
 
   var media = document.getElementById('media');
 
@@ -534,14 +534,12 @@ function moreMedia(click) {
 
   more_media_visible = true;
 
-  if (click) {
-      addCurrentServices(false);
-      if (past_services_visible) {
-        removePastServices(false);
-      }
-      if (!more_equipment_visible) {
-        moreEquipment(false);
-      }
+  addCurrentServices(false);
+  if (past_services_visible) {
+    removePastServices(false);
+  }
+  if (!more_equipment_visible) {
+    moreEquipment(false);
   }
 
 }
@@ -555,7 +553,7 @@ function lessMedia(click) {
 
   var more = document.getElementById('more-media');
   more.innerText = "MORE";
-  more.setAttribute('onclick', 'moreMedia(true)');
+  more.setAttribute('onclick', 'moreMedia()');
 
   more_media_visible = false;
 
