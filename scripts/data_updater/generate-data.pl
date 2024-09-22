@@ -96,9 +96,9 @@ while (my $line = <MUSIC>) {
     }
 }
 
-$url = 'https://www.librarything.com/catalog_bottom.php?view=cineminha&collection=898678&shelf=shelf&sort=stampREV';
+$url = 'https://www.librarything.com/catalog.php?view=cineminha&collection=898678&shelf=shelf&sort=stampREV';
 
-print MEDIA_DATA "  [\'Music\', $count, \'$url\', \'shelf\']\n";
+print MEDIA_DATA "  [\'Music\', $count, \'$url\', \'shelf\'],\n";
 
 while (my $line = <BOOKS>) {
     if ($line =~ /\"totalBooks\"\:([0-9]*)/) {
