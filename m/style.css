@@ -102,6 +102,7 @@ h4 {
 .streaming {
   grid-area: streaming;
   width: 100%;
+  margin-top: 0px;
   text-align: left;
 }
 

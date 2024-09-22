@@ -22,8 +22,11 @@ mv index.html music.html
 wget 'https://trakt.tv/users/tinyhomecinema/lists/tv-shows-collection'
 mv tv-shows-collection tv_shows.html
 
-wget 'https://www.librarything.com/catalog_bottom.php?view=cineminha&shelf=shelf'
-mv catalog_bottom\.php\?view\=cineminha\&shelf\=shelf books.html
+wget 'https://www.librarything.com/catalog_bottom.php?view=cineminha&collection=898678&shelf=shelf&sort=stampREV'
+mv catalog_bottom\.php\?view\=cineminha\&collection\=898678\&shelf\=shelf\&sort\=stampREV music.html
+
+wget 'https://www.librarything.com/catalog_bottom.php?view=cineminha&collection=898806&shelf=shelf'
+mv catalog_bottom\.php\?view\=cineminha\&collection\=898806\&shelf\=shelf books.html
 
 wget 'https://letterboxd.com/tinyhomecinema/list/film-collection/'
 mv index.html films.html

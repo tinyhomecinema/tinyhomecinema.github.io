@@ -90,15 +90,15 @@ while (my $line = <TV_SHOWS>) {
 
 print MEDIA_DATA "  [\'TV Shows\', $count, \'$url\', \'shelf\'],\n";
 
-$count = 0;
-
 while (my $line = <MUSIC>) {
-    if ($line =~ /cover_([0-9]*)\.jpg/) {
-        $count += 1;
+    if ($line =~ /\"totalBooks\"\:([0-9]*)/) {
+        $count = $1;
     }
 }
 
-print MEDIA_DATA "  [\'Music\', $count, \'https://cineminha.vip/music/\', \'shelf\'],\n";
+$url = 'https://www.librarything.com/catalog_bottom.php?view=cineminha&collection=898678&shelf=shelf&sort=stampREV';
+
+print MEDIA_DATA "  [\'Music\', $count, \'$url\', \'shelf\']\n";
 
 while (my $line = <BOOKS>) {
     if ($line =~ /\"totalBooks\"\:([0-9]*)/) {
@@ -106,7 +106,7 @@ while (my $line = <BOOKS>) {
     }
 }
 
-$url = 'https://www.librarything.com/catalog.php?view=cineminha&shelf=shelf';
+$url = 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf';
 
 print MEDIA_DATA "  [\'Books\', $count, \'$url\', \'shelf\']\n";
 
