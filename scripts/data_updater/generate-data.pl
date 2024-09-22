@@ -100,15 +100,15 @@ while (my $line = <MUSIC>) {
 
 print MEDIA_DATA "  [\'Music\', $count, \'https://cineminha.vip/music/\', \'shelf\'],\n";
 
-$count = 27;
+#$count = 27;
 
-#while (my $line = <BOOKS>) {
-#    if ($line =~ /\"totalBooks\"\:([0-9]*)/) {
-#        $count = $1;
-#    }
-#}
+while (my $line = <BOOKS>) {
+    if ($line =~ /\"totalBooks\"\:([0-9]*)/) {
+        $count = $1;
+    }
+}
 
-$url = 'https://www.librarything.com/catalog.php?view=hpfilho&collection=794026&shelf=shelf&sort=title';
+$url = 'https://www.librarything.com/catalog.php?view=cineminha&shelf=shelf';
 
 print MEDIA_DATA "  [\'Books\', $count, \'$url\', \'shelf\']\n";
 
