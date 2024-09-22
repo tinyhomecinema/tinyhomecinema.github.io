@@ -17,8 +17,8 @@ open(TV_SHOWS, $tv_shows) or die("File $tv_shows not found");
 my $music = 'html/music.html';
 open(MUSIC, $music) or die("File $music not found");
 
-#my $books = 'html/books.html';
-#open(BOOKS, $books) or die("File $books not found");
+my $books = 'html/books.html';
+open(BOOKS, $books) or die("File $books not found");
 
 my $films = 'html/films.html';
 open(FILMS, $films) or die("File $films not found");
@@ -99,8 +99,6 @@ while (my $line = <MUSIC>) {
 }
 
 print MEDIA_DATA "  [\'Music\', $count, \'https://cineminha.vip/music/\', \'shelf\'],\n";
-
-#$count = 27;
 
 while (my $line = <BOOKS>) {
     if ($line =~ /\"totalBooks\"\:([0-9]*)/) {
@@ -268,7 +266,7 @@ print MEDIA_DATA "]\n";
 close(SHELF);
 close(TV_SHOWS);
 close(MUSIC);
-#close(BOOKS);
+close(BOOKS);
 close(FILMS);
 close(SHORTS);
 close(DOCS);
