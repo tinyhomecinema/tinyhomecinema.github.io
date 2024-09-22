@@ -16,9 +16,6 @@ cd /home/pi/github/tinyhomecinema.github.io/scripts/data_updater/html
 wget 'https://letterboxd.com/tinyhomecinema/list/physical-media-shelf/'
 mv index.html shelf.html
 
-wget 'https://tinyhomecinema.page/music/'
-mv index.html music.html
-
 wget 'https://trakt.tv/users/tinyhomecinema/lists/tv-shows-collection'
 mv tv-shows-collection tv_shows.html
 
