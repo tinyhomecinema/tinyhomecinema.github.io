@@ -2,7 +2,7 @@ var shelves = [
   ['Movies', 409, 'https://letterboxd.com/tinyhomecinema/list/movies-shelf/', 'shelf'],
   ['TV Shows', 17, 'https://trakt.tv/users/tinyhomecinema/lists/tv-show-collection', 'shelf'],
   ['Music', 35, 'https://cineminha.vip/music/', 'shelf'],
-  ['Books', 27, 'https://www.librarything.com/catalog.php?view=hpfilho&collection=794026&shelf=shelf&sort=title', 'shelf']
+  ['Books', 35, 'https://www.librarything.com/catalog.php?view=cineminha&shelf=shelf', 'shelf']
 ]
 
 var collection = [
