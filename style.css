@@ -129,6 +129,7 @@ sup {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
   column-gap: 7px;
+  margin-top: 23px;
 }
 
 .links {
