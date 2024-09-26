@@ -16,7 +16,7 @@ cd /home/pi/github/tinyhomecinema.github.io/scripts/data_updater/html
 wget 'https://letterboxd.com/tinyhomecinema/list/physical-media-shelf/'
 mv index.html shelf.html
 
-wget 'https://trakt.tv/users/cineminha_shelf/lists/tv-shows-collection'
+wget 'https://trakt.tv/users/cineminha_shelf/lists/tv-show-collection'
 mv tv-shows-collection tv_shows.html
 
 wget 'https://www.librarything.com/catalog_bottom.php?view=cineminha&collection=898678&shelf=shelf&sort=stampREV'
@@ -55,13 +55,13 @@ mv index.html atmos.html
 wget 'https://letterboxd.com/tinyhomecinema/list/dts-x/'
 mv index.html dtsx.html
 
-wget 'https://trakt.tv/users/cineminha_shelf/lists/tv-shows-blu-rays'
+wget 'https://trakt.tv/users/cineminha_shelf/lists/tv-show-blu-rays'
 mv tv-shows-blu-rays tv_blu-ray.html
 
-wget 'https://trakt.tv/users/cineminha_shelf/lists/tv-shows-dvds'
+wget 'https://trakt.tv/users/cineminha_shelf/lists/tv-show-dvds'
 mv tv-shows-dvds tv_dvd.html
 
-wget 'https://trakt.tv/users/cineminha_shelf/lists/dolby-atmos-tv-shows'
+wget 'https://trakt.tv/users/cineminha_shelf/lists/dolby-atmos'
 mv dolby-atmos-tv-shows tv_atmos.html
 
 wget 'https://letterboxd.com/tinyhomecinema/rss/'
