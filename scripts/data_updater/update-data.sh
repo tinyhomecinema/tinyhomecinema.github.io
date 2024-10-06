@@ -46,8 +46,8 @@ mv index.html dvd.html
 wget 'https://letterboxd.com/tinyhomecinema/list/decor-vhs-tapes/'
 mv index.html vhs.html
 
-wget 'https://letterboxd.com/tinyhomecinema/list/digital/'
-mv index.html digital.html
+#wget 'https://letterboxd.com/tinyhomecinema/list/digital/'
+#mv index.html digital.html
 
 wget 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/'
 mv index.html atmos.html
