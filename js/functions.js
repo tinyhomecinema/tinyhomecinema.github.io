@@ -214,7 +214,7 @@ function addCurrentServices(mobile) {
   initial_number_of_services = max_initial_number_of_services;
 
   if (more_media_visible) {
-    initial_number_of_services = 2;
+    initial_number_of_services = 3;
   }
 
   if (mobile) {
