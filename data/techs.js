@@ -1,6 +1,6 @@
 var audio = [
   ['Dolby Atmos', 'https://www.dolby.com/technologies/dolby-atmos/'],
-  ['DTS:X', 'https://dts.com/dtsx/'],
+  ['DTS:X', 'https://dts.com/listen/'],
 ]
 
 var video = [
