@@ -8,7 +8,7 @@ var speakers = [
 ]]
 
 var electronics = [
-  ['Smart TV OLED 55" LG OLED55A1', '', 'https://www.lg.com/africa/tvs/lg-oled55a1pva-55-inch-oled-tv'],
+  ['Smart TV OLED 55" LG OLED55A1', '', ''],
   ['Receiver Onkyo 7.2-ch TX-SR494', '', 'https://onkyo.com/intl/receivers/av-receivers/tx-sr494'],
   ['Blu-ray Player Sony BDP-S1700', '*', 'https://electronics.sony.com/tv-video/blu-ray-dvd-players/blu-ray/p/bdps1700/'],
   ['DVD Player Pioneer DV-414', '**', ''],
