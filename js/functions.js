@@ -680,3 +680,7 @@ function lessStuff(click) {
   }
 
 }
+
+function addListenerToPoster(poster, url) {
+  poster.addEventListener('click', function() { window.open(url, '_self'); });
+}

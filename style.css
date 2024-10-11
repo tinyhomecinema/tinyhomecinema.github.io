@@ -20,6 +20,7 @@ a:visited {
 a:hover {
   color: white;
   text-decoration: none;
+  filter: brightness(180%);
 }
 
 ul {
