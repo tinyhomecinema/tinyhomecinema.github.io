@@ -5,7 +5,7 @@ var wall = [
   ['Custom DVD/Blu-ray Frame NoTimeLikeTheGift "Now Showing"', 'https://www.etsy.com/listing/962767013/dvd-frame-blu-ray-frame-now-playing-now', '_blank'],
   ['Poster PersonifiedInPrint "Famous Film Quotes"', 'https://www.etsy.com/listing/826247167/famous-iconic-film-quotes-a2-poster', '_blank'],
   ['Poster TheGeekMonkey "Blade Runner - Roy Batty\'s Monologue"', 'https://www.etsy.com/listing/526999053/roy-batty-blade-runner-custom-soundwave', '_blank'],
-  ['Film Posters', 'https://boxd.it/imfd2$AMC0T1gelm4HfekC', '']
+  ['Film Posters', 'https://letterboxd.com/tinyhomecinema/list/film-posters/', '']
 ]
 
 var door = [
