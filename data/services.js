@@ -9,7 +9,7 @@ var services = [
   ['Filmicca', 'https://letterboxd.com/tinyhomecinema/tag/filmicca/films/', 'current'],
   ['MUBI', 'https://letterboxd.com/tinyhomecinema/tag/mubi/films/', 'past'],
   ['Belas Artes', 'https://letterboxd.com/tinyhomecinema/tag/belas-artes/films/', 'past'],
-  ['Paramount+', 'https://letterboxd.com/tinyhomecinema/tag/paramount-/films/', 'past'],
+  ['Paramount+', 'https://letterboxd.com/tinyhomecinema/tag/paramount-/films/', ''],
   ['Looke', 'https://letterboxd.com/tinyhomecinema/tag/looke/films/', ''],
   ['Oldflix', 'https://letterboxd.com/tinyhomecinema/tag/oldflix/films/', ''],
   ['Telecine', 'https://letterboxd.com/tinyhomecinema/tag/telecine/films/', 'past'],
