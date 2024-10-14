@@ -325,10 +325,12 @@ function moreCurrentServices() {
 
   all_current_services_visible = true;
 
-  var more = document.getElementById('past-services');
-  more.innerText = "LESS";
-  more.setAttribute('onclick', 'addCurrentServices(false)');
-  more.setAttribute('style', 'display: solid');
+  if (current_services.length > max_initial_number_of_services) {
+    var more = document.getElementById('past-services');
+    more.innerText = "LESS";
+    more.setAttribute('onclick', 'addCurrentServices(false)');
+    more.setAttribute('style', 'display: solid');
+  }
 
   if (more_media_visible) {
     lessMedia(false);
