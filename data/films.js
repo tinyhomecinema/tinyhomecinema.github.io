@@ -1,4 +1,5 @@
 var films = [
+  ['Ghostbusters: Frozen Empire', '2024', 'https://letterboxd.com/tinyhomecinema/film/ghostbusters-frozen-empire/', 'https://a.ltrbxd.com/resized/film-poster/8/7/1/0/4/1/871041-ghostbusters-frozen-empire-0-600-0-900-crop.jpg'],
   ['Monkey Man', '2024', 'https://letterboxd.com/tinyhomecinema/film/monkey-man/', 'https://a.ltrbxd.com/resized/film-poster/4/8/8/7/5/1/488751-monkey-man-0-600-0-900-crop.jpg'],
   ['Caddo Lake', '2024', 'https://letterboxd.com/tinyhomecinema/film/caddo-lake/', 'https://a.ltrbxd.com/resized/film-poster/7/7/7/9/7/9/777979-caddo-lake-0-600-0-900-crop.jpg'],
   ['Late Night with the Devil', '2023', 'https://letterboxd.com/tinyhomecinema/film/late-night-with-the-devil/', 'https://a.ltrbxd.com/resized/film-poster/8/4/3/4/1/5/843415-late-night-with-the-devil-0-600-0-900-crop.jpg'],
@@ -8,5 +9,4 @@ var films = [
   ['The Holdovers', '2023', 'https://letterboxd.com/tinyhomecinema/film/the-holdovers/', 'https://a.ltrbxd.com/resized/film-poster/7/5/5/5/6/4/755564-the-holdovers-0-600-0-900-crop.jpg'],
   ['Past Lives', '2023', 'https://letterboxd.com/tinyhomecinema/film/past-lives/', 'https://a.ltrbxd.com/resized/film-poster/5/9/1/0/5/3/591053-past-lives-0-600-0-900-crop.jpg'],
   ['When Evil Lurks', '2023', 'https://letterboxd.com/tinyhomecinema/film/when-evil-lurks/', 'https://a.ltrbxd.com/resized/film-poster/6/6/6/3/9/6/666396-when-evil-lurks-0-600-0-900-crop.jpg'],
-  ['Cocaine Bear', '2023', 'https://letterboxd.com/tinyhomecinema/film/cocaine-bear/', 'https://a.ltrbxd.com/resized/film-poster/7/2/1/3/3/3/721333-cocaine-bear-0-600-0-900-crop.jpg'],
 ]
