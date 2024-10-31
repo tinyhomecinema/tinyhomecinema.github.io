@@ -391,6 +391,15 @@ function addPastServices(click) {
     if (url.length > 0) {
       var link = document.createElement('A');
       link.setAttribute('href', url);
+      switch (closed_services[i][2]) {
+        case 'rebranded':
+          link.setAttribute('title', "Rebranded to \'" + closed_services[i][3] + "\'");
+          break;
+        case 'closed':
+          link.setAttribute('title', "Service closed");
+          break;
+        default:
+      }
       link.appendChild(textNode);
       line.appendChild(link);
     } else {
