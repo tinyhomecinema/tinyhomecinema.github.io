@@ -25,7 +25,7 @@ mv index.html film.html
 wget 'https://letterboxd.com/tinyhomecinema/list/watched-miniseries/'
 mv index.html miniseries.html
 
-wget 'https://letterboxd.com/tinyhomecinema/tag/short/diary/'
+wget 'https://letterboxd.com/tinyhomecinema/list/watched-shorts/'
 mv index.html short.html
 
 wget 'https://letterboxd.com/tinyhomecinema/tag/watched-blu-ray/diary/'

@@ -142,7 +142,7 @@ my $n_shorts = 1;
 
 while (my $line = <SHORT>) {
 
-    if ($line =~ /title=\"([0-9]+)\&nbsp\;films\"/) {
+    if ($line =~ /A list of ([0-9]*) film/) {
         $n_shorts = $1;
         if ($n_shorts%$n_milestone_short != 0) {
             last;
