@@ -22,7 +22,7 @@ mv index.html rss.html
 wget 'https://letterboxd.com/tinyhomecinema/tag/film/diary/'
 mv index.html film.html
 
-wget 'https://letterboxd.com/tinyhomecinema/tag/miniseries/diary/'
+wget 'https://letterboxd.com/tinyhomecinema/list/watched-miniseries/'
 mv index.html miniseries.html
 
 wget 'https://letterboxd.com/tinyhomecinema/tag/short/diary/'
