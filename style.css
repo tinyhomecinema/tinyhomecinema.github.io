@@ -133,6 +133,11 @@ sup {
   margin-top: 23px;
 }
 
+.poster {
+  cursor: pointer;
+  border-radius: 3px;
+}
+
 .links {
   grid-area: links;
 }

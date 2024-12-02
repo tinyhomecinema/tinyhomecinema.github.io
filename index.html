@@ -364,8 +364,7 @@
       var alt_text = title.concat(" (").concat(year).concat(")");
       poster.setAttribute('src', img);
       poster.setAttribute('width', '85');
-      poster.setAttribute('style', 'border-radius: 3px');
-      poster.setAttribute('style', 'cursor: pointer');
+      poster.setAttribute('class', 'poster');
       poster.setAttribute('alt', alt_text);
       poster.setAttribute('title', alt_text);
       addListenerToPoster(poster, url);
