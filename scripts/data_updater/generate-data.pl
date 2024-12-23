@@ -41,9 +41,6 @@ open(DVD, $dvd) or die("File $dvd not found");
 my $vhs = 'html/vhs.html';
 open(VHS, $vhs) or die("File $vhs not found");
 
-#my $dig = 'html/digital.html';
-#open(DIG, $dig) or die("File $dig not found");
-
 my $atmos = 'html/atmos.html';
 open(ATMOS, $atmos) or die("File $atmos not found");
 
@@ -191,17 +188,6 @@ while (my $line = <VHS>) {
 
 print MEDIA_DATA "  [\'VHS\', $count, \'$url\', \'media\'],\n";
 
-#while (my $line = <DIG>) {
-#    if ($line =~ /meta property=\"og\:url\" content=\"(.*)\"/) {
-#        $url = $1;
-#    }
-#    if ($line =~ /A list of ([0-9]*) film/) {
-#        $count = $1;
-#    }
-#}
-
-#print MEDIA_DATA "  [\'Digital\', $count, \'$url\', \'media\'],\n";
-
 while (my $line = <ATMOS>) {
     if ($line =~ /meta property=\"og\:url\" content=\"(.*)\"/) {
         $url = $1;
@@ -274,7 +260,6 @@ close(MINISERIES);
 close(BLURAY);
 close(DVD);
 close(VHS);
-#close(DIG);
 close(ATMOS);
 close(DTSX);
 close(TV_BLURAY);
@@ -316,7 +301,7 @@ print FILMS_DATA "var films = [\n";
 my @film_ids;
 
 while (my $line = <DIARY>) {
-    if ($line =~ /data-viewing-id=\"(.*)\"\n/) {
+    if ($line =~ /data-viewing-id=\"(.*)\"\sdata-owner/) {
         push @film_ids, $1;
     }
 }
