@@ -9,7 +9,7 @@ my $milestones_list_name = "Milestones";
 my $n_milestone_film = 50;
 my $n_milestone_miniseries = 25;
 my $n_milestone_short = 25;
-my $n_milestone_bluray = 50;
+my $n_milestone_bluray = 25;
 my $n_milestone_first_showing = 50;
 my $n_milestone_rewatch = 25;
 
