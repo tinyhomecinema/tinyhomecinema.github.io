@@ -1,4 +1,5 @@
 var films = [
+  ['MaXXXine', '2024', 'https://letterboxd.com/tinyhomecinema/film/maxxxine/', 'https://a.ltrbxd.com/resized/film-poster/9/2/2/8/5/8/922858-maxxxine-0-600-0-900-crop.jpg'],
   ['Fancy Dance', '2023', 'https://letterboxd.com/tinyhomecinema/film/fancy-dance-2023/', 'https://a.ltrbxd.com/resized/film-poster/9/5/4/4/6/8/954468-fancy-dance-0-600-0-900-crop.jpg'],
   ['Wallace &amp; Gromit: Vengeance Most Fowl', '2024', 'https://letterboxd.com/tinyhomecinema/film/wallace-gromit-vengeance-most-fowl/', 'https://a.ltrbxd.com/resized/film-poster/8/3/4/5/6/1/834561-wallace-gromit-vengeance-most-fowl-0-600-0-900-crop.jpg'],
   ['The Boy and the Heron', '2023', 'https://letterboxd.com/tinyhomecinema/film/the-boy-and-the-heron/', 'https://a.ltrbxd.com/resized/film-poster/4/3/8/6/9/2/438692-the-boy-and-the-heron-0-600-0-900-crop.jpg'],
@@ -8,5 +9,4 @@ var films = [
   ['Trap', '2024', 'https://letterboxd.com/tinyhomecinema/film/trap-2024/', 'https://a.ltrbxd.com/resized/film-poster/9/3/1/1/6/4/931164-trap-0-600-0-900-crop.jpg'],
   ['Wicked Little Letters', '2023', 'https://letterboxd.com/tinyhomecinema/film/wicked-little-letters/1/', 'https://a.ltrbxd.com/resized/film-poster/8/7/8/3/4/1/878341-wicked-little-letters-0-600-0-900-crop.jpg'],
   ['A Mother\'s Embrace', '2024', 'https://letterboxd.com/tinyhomecinema/film/a-mothers-embrace/', 'https://a.ltrbxd.com/resized/film-poster/9/5/0/9/3/3/950933-a-mothers-embrace-0-600-0-900-crop.jpg'],
-  ['Ghostbusters: Frozen Empire', '2024', 'https://letterboxd.com/tinyhomecinema/film/ghostbusters-frozen-empire/', 'https://a.ltrbxd.com/resized/film-poster/8/7/1/0/4/1/871041-ghostbusters-frozen-empire-0-600-0-900-crop.jpg'],
 ]
