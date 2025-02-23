@@ -1,4 +1,5 @@
 var films = [
+  ['The Girl with the Needle', '2024', 'https://letterboxd.com/tinyhomecinema/film/the-girl-with-the-needle/', 'https://a.ltrbxd.com/resized/film-poster/1/1/1/6/3/2/1/1116321-the-girl-with-the-needle-0-600-0-900-crop.jpg'],
   ['The Substance', '2024', 'https://letterboxd.com/tinyhomecinema/film/the-substance/', 'https://a.ltrbxd.com/resized/film-poster/8/3/8/1/4/0/838140-the-substance-0-600-0-900-crop.jpg'],
   ['MaXXXine', '2024', 'https://letterboxd.com/tinyhomecinema/film/maxxxine/', 'https://a.ltrbxd.com/resized/film-poster/9/2/2/8/5/8/922858-maxxxine-0-600-0-900-crop.jpg'],
   ['Fancy Dance', '2023', 'https://letterboxd.com/tinyhomecinema/film/fancy-dance-2023/', 'https://a.ltrbxd.com/resized/film-poster/9/5/4/4/6/8/954468-fancy-dance-0-600-0-900-crop.jpg'],
@@ -8,5 +9,4 @@ var films = [
   ['Fly Me to the Moon', '2024', 'https://letterboxd.com/tinyhomecinema/film/fly-me-to-the-moon-2024/', 'https://a.ltrbxd.com/resized/film-poster/8/6/1/0/3/9/861039-fly-me-to-the-moon-0-600-0-900-crop.jpg'],
   ['Asteroid City', '2023', 'https://letterboxd.com/tinyhomecinema/film/asteroid-city/', 'https://a.ltrbxd.com/resized/film-poster/6/6/8/5/5/5/668555-asteroid-city-0-600-0-900-crop.jpg'],
   ['Trap', '2024', 'https://letterboxd.com/tinyhomecinema/film/trap-2024/', 'https://a.ltrbxd.com/resized/film-poster/9/3/1/1/6/4/931164-trap-0-600-0-900-crop.jpg'],
-  ['Wicked Little Letters', '2023', 'https://letterboxd.com/tinyhomecinema/film/wicked-little-letters/1/', 'https://a.ltrbxd.com/resized/film-poster/8/7/8/3/4/1/878341-wicked-little-letters-0-600-0-900-crop.jpg'],
 ]
