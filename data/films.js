@@ -1,4 +1,5 @@
 var films = [
+  ['The Gorge', '2025', 'https://letterboxd.com/tinyhomecinema/film/the-gorge-2025/', 'https://a.ltrbxd.com/resized/film-poster/8/5/4/6/8/7/854687-the-gorge-2025-0-600-0-900-crop.jpg'],
   ['The Girl with the Needle', '2024', 'https://letterboxd.com/tinyhomecinema/film/the-girl-with-the-needle/', 'https://a.ltrbxd.com/resized/film-poster/1/1/1/6/3/2/1/1116321-the-girl-with-the-needle-0-600-0-900-crop.jpg'],
   ['The Substance', '2024', 'https://letterboxd.com/tinyhomecinema/film/the-substance/', 'https://a.ltrbxd.com/resized/film-poster/8/3/8/1/4/0/838140-the-substance-0-600-0-900-crop.jpg'],
   ['MaXXXine', '2024', 'https://letterboxd.com/tinyhomecinema/film/maxxxine/', 'https://a.ltrbxd.com/resized/film-poster/9/2/2/8/5/8/922858-maxxxine-0-600-0-900-crop.jpg'],
@@ -8,5 +9,4 @@ var films = [
   ['Juror #2', '2024', 'https://letterboxd.com/tinyhomecinema/film/juror-2/1/', 'https://a.ltrbxd.com/resized/film-poster/9/9/7/7/2/2/997722-juror-2-0-600-0-900-crop.jpg'],
   ['Fly Me to the Moon', '2024', 'https://letterboxd.com/tinyhomecinema/film/fly-me-to-the-moon-2024/', 'https://a.ltrbxd.com/resized/film-poster/8/6/1/0/3/9/861039-fly-me-to-the-moon-0-600-0-900-crop.jpg'],
   ['Asteroid City', '2023', 'https://letterboxd.com/tinyhomecinema/film/asteroid-city/', 'https://a.ltrbxd.com/resized/film-poster/6/6/8/5/5/5/668555-asteroid-city-0-600-0-900-crop.jpg'],
-  ['Trap', '2024', 'https://letterboxd.com/tinyhomecinema/film/trap-2024/', 'https://a.ltrbxd.com/resized/film-poster/9/3/1/1/6/4/931164-trap-0-600-0-900-crop.jpg'],
 ]
