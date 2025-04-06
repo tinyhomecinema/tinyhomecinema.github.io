@@ -22,6 +22,7 @@ var electronics = [
 var power_and_automation = [
   ['Power Conditioner AAT PWC-1', '', ''],
   ['Plug NovaDigital Smart Home WiFi WK-BR', '', ''],
+  ['USB Charger Baseus Speed Mini Dual 10.5W', '', ''],
   ['USB Smart Adapter Tuya WiFi HC-5050-WIFI', '(2)', ''],
   ['USB Smart Adapter Sonoff WiFi Micro', '', ''],
   ['Universal IR Control Steck WiFi SMDCUPS1', '', ''],
