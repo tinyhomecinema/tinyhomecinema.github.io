@@ -1,4 +1,5 @@
 var films = [
+  ['A Different Man', '2024', 'https://letterboxd.com/tinyhomecinema/film/a-different-man/', 'https://a.ltrbxd.com/resized/film-poster/8/9/1/2/9/1/891291-a-different-man-0-600-0-900-crop.jpg'],
   ['Conclave', '2024', 'https://letterboxd.com/tinyhomecinema/film/conclave/', 'https://a.ltrbxd.com/resized/film-poster/8/7/7/2/5/3/877253-conclave-0-600-0-900-crop.jpg'],
   ['My Penguin Friend', '2024', 'https://letterboxd.com/tinyhomecinema/film/my-penguin-friend/', 'https://a.ltrbxd.com/resized/film-poster/1/0/4/5/4/5/4/1045454-my-penguin-friend-0-600-0-900-crop.jpg'],
   ['The Wild Robot', '2024', 'https://letterboxd.com/tinyhomecinema/film/the-wild-robot/', 'https://a.ltrbxd.com/resized/film-poster/1/0/7/1/1/9/6/1071196-the-wild-robot-0-600-0-900-crop.jpg'],
@@ -8,5 +9,4 @@ var films = [
   ['The Substance', '2024', 'https://letterboxd.com/tinyhomecinema/film/the-substance/', 'https://a.ltrbxd.com/resized/film-poster/8/3/8/1/4/0/838140-the-substance-0-600-0-900-crop.jpg'],
   ['MaXXXine', '2024', 'https://letterboxd.com/tinyhomecinema/film/maxxxine/', 'https://a.ltrbxd.com/resized/film-poster/9/2/2/8/5/8/922858-maxxxine-0-600-0-900-crop.jpg'],
   ['Fancy Dance', '2023', 'https://letterboxd.com/tinyhomecinema/film/fancy-dance-2023/', 'https://a.ltrbxd.com/resized/film-poster/9/5/4/4/6/8/954468-fancy-dance-0-600-0-900-crop.jpg'],
-  ['Wallace &amp; Gromit: Vengeance Most Fowl', '2024', 'https://letterboxd.com/tinyhomecinema/film/wallace-gromit-vengeance-most-fowl/', 'https://a.ltrbxd.com/resized/film-poster/8/3/4/5/6/1/834561-wallace-gromit-vengeance-most-fowl-0-600-0-900-crop.jpg'],
 ]
