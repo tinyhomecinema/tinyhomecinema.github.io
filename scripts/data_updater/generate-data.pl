@@ -14,11 +14,11 @@ open(SHELF, $shelf) or die("File $shelf not found");
 my $tv_shows = 'html/tv_shows.html';
 open(TV_SHOWS, $tv_shows) or die("File $tv_shows not found");
 
-my $music = 'html/music.html';
-open(MUSIC, $music) or die("File $music not found");
+#my $music = 'html/music.html';
+#open(MUSIC, $music) or die("File $music not found");
 
-my $books = 'html/books.html';
-open(BOOKS, $books) or die("File $books not found");
+#my $books = 'html/books.html';
+#open(BOOKS, $books) or die("File $books not found");
 
 my $films = 'html/films.html';
 open(FILMS, $films) or die("File $films not found");
@@ -87,21 +87,25 @@ while (my $line = <TV_SHOWS>) {
 
 print MEDIA_DATA "  [\'TV Shows\', $count, \'$url\', \'shelf\'],\n";
 
-while (my $line = <MUSIC>) {
-    if ($line =~ /\"totalBooks\"\:([0-9]*)/) {
-        $count = $1;
-    }
-}
+#while (my $line = <MUSIC>) {
+#    if ($line =~ /\"totalBooks\"\:([0-9]*)/) {
+#        $count = $1;
+#    }
+#}
+
+$count = 35;
 
 $url = 'https://www.librarything.com/catalog.php?view=cineminha&collection=898678&shelf=shelf&sort=stampREV';
 
 print MEDIA_DATA "  [\'Music\', $count, \'$url\', \'shelf\'],\n";
 
-while (my $line = <BOOKS>) {
-    if ($line =~ /\"totalBooks\"\:([0-9]*)/) {
-        $count = $1;
-    }
-}
+#while (my $line = <BOOKS>) {
+#    if ($line =~ /\"totalBooks\"\:([0-9]*)/) {
+#        $count = $1;
+#    }
+#}
+
+$count = 27;
 
 $url = 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf';
 
@@ -251,8 +255,8 @@ print MEDIA_DATA "]\n";
 
 close(SHELF);
 close(TV_SHOWS);
-close(MUSIC);
-close(BOOKS);
+#close(MUSIC);
+#close(BOOKS);
 close(FILMS);
 close(SHORTS);
 close(DOCS);
