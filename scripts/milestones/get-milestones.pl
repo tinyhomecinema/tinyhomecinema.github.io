@@ -7,8 +7,8 @@ my $milestones_list_url = "https:\/\/letterboxd.com\/tinyhomecinema\/list\/miles
 my $milestones_list_name = "Milestones";
 
 my $n_milestone_film = 50;
-my $n_milestone_miniseries = 25;
-my $n_milestone_short = 25;
+my $n_milestone_miniseries = 10;
+my $n_milestone_short = 10;
 my $n_milestone_bluray = 25;
 my $n_milestone_first_showing = 50;
 my $n_milestone_rewatch = 25;
@@ -126,10 +126,11 @@ while (my $line = <MINISERIES>) {
         }
     }
  
-    if ($line =~ /data-viewing-id=\"(.+)\"\sdata-owner=\"tinyhomecinema\"/) {
-        my @film_info = &get_film_info($1);
-        if (&not_in_milestones($film_info[0]) && ($n_miniseries > $count_miniseries)) {
-            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"$film_info[1]\"\>$film_info[0]\<\/a\> is the ".$n_miniseries."th miniseries watched at Cineminha.\<\/p\>\<br\><img src=\"$film_info[2]\" width=\"200\" \/\><br><br>Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<br\>\<br\>\<br\>\<a href=\"https:\/\/cineminha.vip\"\>cineminha.vip\<\/a\>\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
+    if ($line =~ /data-target-link=\"(.+)\" data-target-link-target.*alt=\"(.+)\"\/\> \<span/) {
+        my $link = $1;
+        my $title = $2;
+        if (&not_in_milestones($title) && ($n_miniseries > $count_miniseries)) {
+            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"https:\/\/letterboxd.com$link\"\>$title\<\/a\> is the ".$n_miniseries."th miniseries watched at Cineminha. Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<\/p\>\<br\>\<a href=\"https:\/\/cineminha.vip\"\>cineminha.vip\<\/a\>\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
         }
         last;
     }
@@ -149,10 +150,11 @@ while (my $line = <SHORT>) {
         }
     }
  
-    if ($line =~ /data-viewing-id=\"(.+)\"\sdata-owner=\"tinyhomecinema\"/) {
-        my @film_info = &get_film_info($1);
-        if (&not_in_milestones($film_info[0]) && ($n_shorts > $count_short)) {
-            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"$film_info[1]\"\>$film_info[0]\<\/a\> is the ".$n_shorts."th short film watched at Cineminha.\<\/p\>\<br\><img src=\"$film_info[2]\" width=\"200\" \/\><br><br>Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<br\>\<br\>\<br\>\<a href=\"https:\/\/cineminha.vip\"\>cineminha.vip\<\/a\>\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
+    if ($line =~ /data-target-link=\"(.+)\" data-target-link-target.*alt=\"(.+)\"\/\> \<span/) {
+        my $link = $1;
+        my $title = $2;
+        if (&not_in_milestones($title) && ($n_shorts > $count_short)) {
+            system("echo \"\<p style=\"font-size:16px\"\>\<a href=\"https:\/\/letterboxd.com$link\"\>$title\<\/a\> is the ".$n_shorts."th short film watched at Cineminha. Add it to \<a href=\"$milestones_list_url\">$milestones_list_name\<\/a\> list.\<\/p\>\<br\>\<a href=\"https:\/\/cineminha.vip\"\>cineminha.vip\<\/a\>\<br\>\<br\>\" | mail -s \"Cineminha milestone reached\" -a \"Content-type: text\/html\" -aFrom:\"Milestones Collector\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
         }
         last;
     }
