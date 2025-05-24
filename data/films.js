@@ -1,5 +1,6 @@
 var films = [
-  ['Longlegs', '2024', 'https://letterboxd.com/tinyhomecinema/film/longlegs/', 'https://a.ltrbxd.com/resized/film-poster/1/1/1/0/0/5/9/1110059-longlegs-0-600-0-900-crop.jpg'],
+]
+['Longlegs', '2024', 'https://letterboxd.com/tinyhomecinema/film/longlegs/', 'https://a.ltrbxd.com/resized/film-poster/1/1/1/0/0/5/9/1110059-longlegs-0-600-0-900-crop.jpg'],
   ['A Different Man', '2024', 'https://letterboxd.com/tinyhomecinema/film/a-different-man/', 'https://a.ltrbxd.com/resized/film-poster/8/9/1/2/9/1/891291-a-different-man-0-600-0-900-crop.jpg'],
   ['Conclave', '2024', 'https://letterboxd.com/tinyhomecinema/film/conclave/', 'https://a.ltrbxd.com/resized/film-poster/8/7/7/2/5/3/877253-conclave-0-600-0-900-crop.jpg'],
   ['My Penguin Friend', '2024', 'https://letterboxd.com/tinyhomecinema/film/my-penguin-friend/', 'https://a.ltrbxd.com/resized/film-poster/1/0/4/5/4/5/4/1045454-my-penguin-friend-0-600-0-900-crop.jpg'],
