@@ -1,6 +1,6 @@
 var shelves = [
-  ['Movies', , '', 'shelf'],
-  ['TV Shows', , '', 'shelf'],
+  ['Movies', 415, 'https://letterboxd.com/tinyhomecinema/list/movies-shelf/', 'shelf'],
+  ['TV Shows', 415, 'https://letterboxd.com/tinyhomecinema/list/movies-shelf/', 'shelf'],
   ['Music', 35, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898678&shelf=shelf&sort=stampREV', 'shelf'],
   ['Books', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'shelf']
 ]
@@ -12,13 +12,13 @@ var collection = [
   ['Documentaries', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
   ['Blu-ray', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
   ['DVD', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
-  ['VHS', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
-  ['Dolby Atmos', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'audio'],
-  ['DTS X', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'audio'],
+  ['VHS', 5, 'https://letterboxd.com/tinyhomecinema/list/decor-vhs-tapes/', 'media'],
+  ['Dolby Atmos', 27, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'audio'],
+  ['DTS X', 27, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'audio'],
 ]
 
 var tv_collection = [
-  ['Blu-ray', 16, 'https://trakt.tv/users/cineminha_shelf/lists/tv-show-blu-rays', 'media'],
-  ['DVD', 16, 'https://trakt.tv/users/cineminha_shelf/lists/tv-show-blu-rays', 'media'],
-  ['Dolby Atmos', 16, 'https://trakt.tv/users/cineminha_shelf/lists/tv-show-blu-rays', 'audio'],
+  ['Blu-ray', 27, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'media'],
+  ['DVD', 27, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'media'],
+  ['Dolby Atmos', 27, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'audio'],
 ]
