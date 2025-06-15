@@ -13,12 +13,12 @@ var collection = [
   ['Blu-ray', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
   ['DVD', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
   ['VHS', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
-  ['Dolby Atmos', 27, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'audio'],
-  ['DTS X', 27, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'audio'],
+  ['Dolby Atmos', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'audio'],
+  ['DTS X', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'audio'],
 ]
 
 var tv_collection = [
-  ['Blu-ray', 27, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'media'],
-  ['DVD', 3, 'https://trakt.tv/users/cineminha_shelf/lists/tv-show-dvds', 'media'],
-  ['Dolby Atmos', 3, 'https://trakt.tv/users/cineminha_shelf/lists/tv-show-dvds', 'audio'],
+  ['Blu-ray', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
+  ['DVD', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
+  ['Dolby Atmos', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'audio'],
 ]
