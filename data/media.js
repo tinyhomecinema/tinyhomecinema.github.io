@@ -9,7 +9,7 @@ var collection = [
   ['Films', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
   ['Miniseries', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
   ['Shorts', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
-  ['Documentaries', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
+  ['Documentaries', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'collection'],
   ['Blu-ray', 151, 'https://letterboxd.com/tinyhomecinema/list/blu-ray/', 'media'],
   ['DVD', 239, 'https://letterboxd.com/tinyhomecinema/list/dvd/', 'media'],
   ['VHS', 5, 'https://letterboxd.com/tinyhomecinema/list/decor-vhs-tapes/', 'media'],
