@@ -18,7 +18,7 @@ var collection = [
 ]
 
 var tv_collection = [
-  ['Blu-ray', 16, 'https://trakt.tv/users/cineminha_shelf/lists/tv-show-blu-rays', 'media'],
-  ['DVD', 16, 'https://trakt.tv/users/cineminha_shelf/lists/tv-show-blu-rays', 'media'],
-  ['Dolby Atmos', 16, 'https://trakt.tv/users/cineminha_shelf/lists/tv-show-blu-rays', 'audio'],
+  ['Blu-ray', 13, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'media'],
+  ['DVD', 13, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'media'],
+  ['Dolby Atmos', 13, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'audio'],
 ]
