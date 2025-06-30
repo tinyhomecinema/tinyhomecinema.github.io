@@ -1,6 +1,6 @@
 var services = [
   ['Netflix', 'https://letterboxd.com/tinyhomecinema/tag/netflix/films/', 'current'],
-  ['Prime Video', 'https://letterboxd.com/tinyhomecinema/tag/prime-video/films/', 'current'],
+  ['Prime Video', 'https://letterboxd.com/tinyhomecinema/tag/prime-video/films/', 'past'],
   ['Max', 'https://letterboxd.com/tinyhomecinema/tag/max/films/', 'current'],
   ['Apple TV+', 'https://letterboxd.com/tinyhomecinema/tag/apple-tv-/films/', 'current'],
   ['Globoplay', 'https://letterboxd.com/tinyhomecinema/tag/globoplay/films/', 'current'],
