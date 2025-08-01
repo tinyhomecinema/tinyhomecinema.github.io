@@ -6,7 +6,7 @@ var shelves = [
 ]
 
 var collection = [
-  ['Films', 344, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'collection'],
+  ['Films', 345, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'collection'],
   ['Miniseries', 6, 'https://letterboxd.com/tinyhomecinema/list/miniseries-collection/', 'collection'],
   ['Shorts', 68, 'https://letterboxd.com/tinyhomecinema/list/short-films/', 'collection'],
   ['Documentaries', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'collection'],
