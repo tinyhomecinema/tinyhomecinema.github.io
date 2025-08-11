@@ -332,7 +332,7 @@ while (my $line = <RSS>) {
         }
 
         for (@film_ids) {
-            if ($id == $_ && $watch_year - $release_year <= $years_back) {
+            if ($id eq $_ && $watch_year - $release_year <= $years_back) {
                 my $line_to_print = "  [\'$title\', \'$release_year\', \'$link\', \'$img\'],\n";
                 if ($title ne $last_film_title && $new_film) {
                     print FILMS_DATA $line_to_print;
@@ -363,11 +363,12 @@ close(RSS);
 close(DIARY);
 close(FILMS_DATA);
 
-
-while (@new_films_titles) {
-    $title = pop @new_films_titles;
-    $release_year = pop @new_films_years;
-    $link = pop @new_films_links;
-    $img = pop @new_films_imgs;
-    system("echo \"\<p style=\"font-size:16px\"\>The film \<a href=\"$link\"\>$title\<\/a\> has been added to \'LATEST RELEASES\'.\<\/p\>\<br\><img src=\"$img\" width=\"200\" \/\>\<br\>\<br\>\<br\>\<a href=\"https:\/\/cineminha.vip\"\>cineminha.vip\<\/a\>\<br\>\<br\>\" | mail -s \"Cineminha webpage update\" -a \"Content-type: text\/html\" -aFrom:\"Webpage Updater\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
+if (@new_films_titles < 5) {
+    while (@new_films_titles) {
+        $title = pop @new_films_titles;
+        $release_year = pop @new_films_years;
+        $link = pop @new_films_links;
+        $img = pop @new_films_imgs;
+        system("echo \"\<p style=\"font-size:16px\"\>The film \<a href=\"$link\"\>$title\<\/a\> has been added to \'LATEST RELEASES\'.\<\/p\>\<br\><img src=\"$img\" width=\"200\" \/\>\<br\>\<br\>\<br\>\<a href=\"https:\/\/cineminha.vip\"\>cineminha.vip\<\/a\>\<br\>\<br\>\" | mail -s \"Cineminha webpage update\" -a \"Content-type: text\/html\" -aFrom:\"Webpage Updater\<wozniak.iot\@gmail.com\>\" \"tinyhomecinema\@gmail.com\"");
+    }
 }
