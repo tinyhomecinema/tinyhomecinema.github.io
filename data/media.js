@@ -14,7 +14,7 @@ var collection = [
   ['DVD', 239, 'https://letterboxd.com/tinyhomecinema/list/dvd/', 'media'],
   ['VHS', 5, 'https://letterboxd.com/tinyhomecinema/list/decor-vhs-tapes/', 'media'],
   ['Dolby Atmos', 28, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'audio'],
-  ['DTS X', 13, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'audio'],
+  ['DTS X', 28, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'audio'],
 ]
 
 var tv_collection = [
