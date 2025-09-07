@@ -1,6 +1,7 @@
 var services = [
   ['Netflix', 'https://letterboxd.com/tinyhomecinema/tag/netflix/films/', 'current'],
   ['Prime Video', 'https://letterboxd.com/tinyhomecinema/tag/prime-video/films/', 'past'],
+  ['HBO Max', 'https://letterboxd.com/tinyhomecinema/tag/hbo-max/films/', 'current'],
   ['Max', 'https://letterboxd.com/tinyhomecinema/tag/max/films/', 'rebranded', 'HBO Max'],
   ['Apple TV+', 'https://letterboxd.com/tinyhomecinema/tag/apple-tv-/films/', 'current'],
   ['Globoplay', 'https://letterboxd.com/tinyhomecinema/tag/globoplay/films/', 'current'],
@@ -13,7 +14,6 @@ var services = [
   ['MGM+', 'https://letterboxd.com/tinyhomecinema/tag/mgm-/films/', ''],
   ['Looke', 'https://letterboxd.com/tinyhomecinema/tag/looke/films/', ''],
   ['Oldflix', 'https://letterboxd.com/tinyhomecinema/tag/oldflix/films/', ''],
-  ['HBO Max', 'https://letterboxd.com/tinyhomecinema/tag/hbo-max/films/', 'current'],
   ['STAR+', 'https://letterboxd.com/tinyhomecinema/tag/star-/films/', 'rebranded', 'Disney+'],
   ['Lionsgate+', 'https://letterboxd.com/tinyhomecinema/tag/lionsgate-/films/', 'closed'],
 ]
