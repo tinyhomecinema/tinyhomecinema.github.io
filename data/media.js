@@ -19,6 +19,6 @@ var collection = [
 
 var tv_collection = [
   ['Blu-ray', 16, 'https://trakt.tv/users/cineminha_shelf/lists/tv-show-blu-rays', 'media'],
-  ['DVD', 16, 'https://trakt.tv/users/cineminha_shelf/lists/tv-show-blu-rays', 'media'],
-  ['Dolby Atmos', 16, 'https://trakt.tv/users/cineminha_shelf/lists/tv-show-blu-rays', 'audio'],
+  ['DVD', 3, 'https://trakt.tv/users/cineminha_shelf/lists/tv-show-dvds', 'media'],
+  ['Dolby Atmos', 6, 'https://trakt.tv/users/cineminha_shelf/lists/dolby-atmos', 'audio'],
 ]
