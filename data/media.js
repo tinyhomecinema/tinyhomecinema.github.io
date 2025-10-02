@@ -1,6 +1,6 @@
 var shelves = [
-  ['Movies', 420, 'https://letterboxd.com/tinyhomecinema/list/movies-shelf/', 'shelf'],
-  ['TV Shows', 420, 'https://letterboxd.com/tinyhomecinema/list/movies-shelf/', 'shelf'],
+  ['Movies', , '', 'shelf'],
+  ['TV Shows', , '', 'shelf'],
   ['Music', 35, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898678&shelf=shelf&sort=stampREV', 'shelf'],
   ['Books', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'shelf']
 ]
