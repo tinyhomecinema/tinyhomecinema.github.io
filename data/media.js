@@ -6,19 +6,19 @@ var shelves = [
 ]
 
 var collection = [
-  ['Films', 345, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'collection'],
-  ['Miniseries', 345, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'collection'],
-  ['Shorts', 345, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'collection'],
-  ['Documentaries', 345, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'collection'],
-  ['Blu-ray', 345, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'media'],
-  ['DVD', 345, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'media'],
-  ['VHS', 345, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'media'],
-  ['Dolby Atmos', 345, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'audio'],
-  ['DTS X', 345, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'audio'],
+  ['Films', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
+  ['Miniseries', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
+  ['Shorts', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
+  ['Documentaries', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
+  ['Blu-ray', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
+  ['DVD', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
+  ['VHS', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
+  ['Dolby Atmos', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'audio'],
+  ['DTS X', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'audio'],
 ]
 
 var tv_collection = [
-  ['Blu-ray', 345, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'media'],
-  ['DVD', 345, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'media'],
-  ['Dolby Atmos', 345, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'audio'],
+  ['Blu-ray', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
+  ['DVD', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
+  ['Dolby Atmos', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'audio'],
 ]
