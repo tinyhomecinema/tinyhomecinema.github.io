@@ -15,9 +15,3 @@ var collection = [
   ['Dolby Atmos', 29, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'audio'],
   ['DTS X', 13, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'audio'],
 ]
-
-var tv_collection = [
-  ['Blu-ray', 13, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'media'],
-  ['DVD', 13, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'media'],
-  ['Dolby Atmos', 13, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'audio'],
-]
