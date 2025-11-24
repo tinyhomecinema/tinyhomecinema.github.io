@@ -528,16 +528,16 @@ function moreMedia() {
   addMediaItems(collection, film_collection, 'collection');
   media.appendChild(film_collection);
 
-  var tv_collection_header = document.createElement('H4');
-  tv_collection_header.setAttribute('id', 'tv-collection-header');
-  var tv_header_text = document.createTextNode("TV Show Collection");
-  tv_collection_header.appendChild(tv_header_text);
-  media.appendChild(tv_collection_header);
-
-  var tv_shows_collection = document.createElement('UL');
-  tv_shows_collection.setAttribute('id', 'tv-collection');
-  addMediaItems(tv_collection, tv_shows_collection, 'media');
-  media.appendChild(tv_shows_collection);
+  // var tv_collection_header = document.createElement('H4');
+  // tv_collection_header.setAttribute('id', 'tv-collection-header');
+  // var tv_header_text = document.createTextNode("TV Show Collection");
+  // tv_collection_header.appendChild(tv_header_text);
+  // media.appendChild(tv_collection_header);
+  //
+  // var tv_shows_collection = document.createElement('UL');
+  // tv_shows_collection.setAttribute('id', 'tv-collection');
+  // addMediaItems(tv_collection, tv_shows_collection, 'media');
+  // media.appendChild(tv_shows_collection);
 
   var more = document.getElementById('more-media');
   more.innerText = "LESS";
@@ -559,8 +559,8 @@ function lessMedia(click) {
 
   document.getElementById('collection-header').remove();
   document.getElementById('film-collection').remove();
-  document.getElementById('tv-collection-header').remove();
-  document.getElementById('tv-collection').remove();
+  // document.getElementById('tv-collection-header').remove();
+  // document.getElementById('tv-collection').remove();
 
   var more = document.getElementById('more-media');
   more.innerText = "MORE";
