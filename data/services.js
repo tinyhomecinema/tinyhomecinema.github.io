@@ -11,6 +11,7 @@ var services = [
   ['Telecine', 'https://letterboxd.com/tinyhomecinema/tag/telecine/films/', 'past'],
   ['Disney+', 'https://letterboxd.com/tinyhomecinema/tag/disney-/films/', 'past'],
   ['Paramount+', 'https://letterboxd.com/tinyhomecinema/tag/paramount-/films/', 'current'],
+  ['Filmelier+', 'https://letterboxd.com/tinyhomecinema/tag/filmelier-/films/', 'current'],
   ['MGM+', 'https://letterboxd.com/tinyhomecinema/tag/mgm-/films/', ''],
   ['Looke', 'https://letterboxd.com/tinyhomecinema/tag/looke/films/', ''],
   ['Oldflix', 'https://letterboxd.com/tinyhomecinema/tag/oldflix/films/', ''],
