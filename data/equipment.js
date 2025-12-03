@@ -8,12 +8,12 @@ var speakers = [
 ]]
 
 var electronics = [
-  ['Smart TV OLED 55" LG OLED55A1', '', ''],
+  ['Smart TV OLED 55" LG OLED55A1', '', 'https://www.lg.com/ca_en/tv-soundbars/oled/oled55a1pua/'],
   ['Receiver Onkyo 7.2-ch TX-SR494', '', 'https://onkyo.com/intl/receivers/av-receivers/tx-sr494'],
   ['Blu-ray Player Sony BDP-S1700', '*', 'https://electronics.sony.com/tv-video/blu-ray-dvd-players/blu-ray/p/bdps1700/'],
   ['DVD Player Pioneer DV-414', '**', ''],
   ['VHS VCR Philips VR755', '***', ''],
-  // ['HDMI Dongle Google Chromecast 3', '', ''],
+  ['Roku Streaming Stick', '', 'https://www.roku.com/products/players/roku-streaming-stick'],
   ['Audio Transmitter Sennheiser BT T100', '', 'https://www.sennheiser-hearing.com/en-US/p/bt-t100/'],
   ['Headphones Sennheiser HD 350BT', '(2)', 'https://www.sennheiser-hearing.com/en-US/p/hd-350bt/'],
   ['Tablet Samsung Galaxy Tab A7 Lite', '', 'https://www.samsung.com/pt/tablets/galaxy-tab-a/galaxy-tab-a7-lite-gray-32gb-sm-t220nzaaeub/']
