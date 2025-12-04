@@ -14,8 +14,8 @@ var electronics = [
   ['DVD Player Pioneer DV-414', '**', ''],
   ['VHS VCR Philips VR755', '***', ''],
   ['Roku Streaming Stick', '', 'https://www.roku.com/products/players/roku-streaming-stick'],
-  ['Audio Transmitter Sennheiser BT T100', '', 'https://www.sennheiser-hearing.com/en-US/p/bt-t100/'],
-  ['Headphones Sennheiser HD 350BT', '(2)', 'https://www.sennheiser-hearing.com/en-US/p/hd-350bt/'],
+  ['Audio Transmitter Sennheiser BT T100', '', 'https://www.sennheiser-hearing.com/pt-BR/p/bt-t100/'],
+  ['Headphones Sennheiser HD 350BT', '(2)', 'https://www.sennheiser-hearing.com/pt-BR/p/hd-350bt/'],
   ['Tablet Samsung Galaxy Tab A7 Lite', '', 'https://www.samsung.com/pt/tablets/galaxy-tab-a/galaxy-tab-a7-lite-gray-32gb-sm-t220nzaaeub/']
 ]
 
