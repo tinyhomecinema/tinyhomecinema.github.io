@@ -5,7 +5,7 @@ var services = [
   ['Max', 'https://letterboxd.com/tinyhomecinema/tag/max/films/', 'rebranded', 'HBO Max'],
   ['Apple TV', 'https://letterboxd.com/tinyhomecinema/tag/apple-tv/films/', 'current'],
   ['Globoplay', 'https://letterboxd.com/tinyhomecinema/tag/globoplay/films/', 'current'],
-  ['Filmicca', 'https://letterboxd.com/tinyhomecinema/tag/filmicca/films/', 'current'],
+  ['Filmicca', 'https://letterboxd.com/tinyhomecinema/tag/filmicca/films/', 'past'],
   ['MUBI', 'https://letterboxd.com/tinyhomecinema/tag/mubi/films/', 'past'],
   ['Belas Artes', 'https://letterboxd.com/tinyhomecinema/tag/belas-artes/films/', 'past'],
   ['Telecine', 'https://letterboxd.com/tinyhomecinema/tag/telecine/films/', 'past'],
