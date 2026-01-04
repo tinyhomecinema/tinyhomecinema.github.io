@@ -1,5 +1,5 @@
 var shelves = [
-  ['Movies', , '', 'shelf'],
+  ['Movies', 421, 'https://letterboxd.com/tinyhomecinema/list/movies-shelf/', 'shelf'],
   ['Music', 35, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898678&shelf=shelf&sort=stampREV', 'shelf'],
   ['Books', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'shelf']
 ]
@@ -13,5 +13,5 @@ var collection = [
   ['DVD', 239, 'https://letterboxd.com/tinyhomecinema/list/dvd/', 'media'],
   ['VHS', 5, 'https://letterboxd.com/tinyhomecinema/list/decor-vhs-tapes/', 'media'],
   ['Dolby Atmos', 29, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'audio'],
-  ['DTS X', 13, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'audio'],
+  ['DTS X', 29, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'audio'],
 ]
