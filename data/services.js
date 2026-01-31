@@ -7,7 +7,7 @@ var services = [
   ['Paramount+', 'https://letterboxd.com/tinyhomecinema/tag/paramount-/films/', 'current'],
   ['Globoplay', 'https://letterboxd.com/tinyhomecinema/tag/globoplay/films/', 'current'],
   ['Telecine', 'https://letterboxd.com/tinyhomecinema/tag/telecine/films/', 'past'],
-  ['MUBI', 'https://letterboxd.com/tinyhomecinema/tag/mubi/films/', 'past'],
+  ['MUBI', 'https://letterboxd.com/tinyhomecinema/tag/mubi/films/', 'current'],
   ['Belas Artes', 'https://letterboxd.com/tinyhomecinema/tag/belas-artes/films/', 'past'],
   ['Imovision', 'https://letterboxd.com/tinyhomecinema/tag/reserva-imovision/films/', 'current'],
   ['Filmelier+', 'https://letterboxd.com/tinyhomecinema/tag/filmelier-/films/', 'past'],
