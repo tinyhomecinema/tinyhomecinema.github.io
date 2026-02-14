@@ -11,9 +11,6 @@ my $base_url = "https://letterboxd.com";
 my $shelf = 'html/shelf.html';
 open(SHELF, $shelf) or die("File $shelf not found");
 
-#my $tv_shows = 'html/tv_shows.html';
-#open(TV_SHOWS, $tv_shows) or die("File $tv_shows not found");
-
 my $films = 'html/films.html';
 open(FILMS, $films) or die("File $films not found");
 
@@ -41,15 +38,6 @@ open(ATMOS, $atmos) or die("File $atmos not found");
 my $dtsx = 'html/dtsx.html';
 open(DTSX, $dtsx) or die("File $dtsx not found");
 
-#my $tv_bluray = 'html/tv_blu-ray.html';
-#open(TV_BLURAY, $tv_bluray) or die("File $tv_bluray not found");
-
-#my $tv_dvd = 'html/tv_dvd.html';
-#open(TV_DVD, $tv_dvd) or die("File $tv_dvd not found");
-
-#my $tv_atmos = 'html/tv_atmos.html';
-#open(TV_ATMOS, $tv_atmos) or die("File $tv_atmos not found");
-
 my $media_data_file = '../../data/media.js';
 open(MEDIA_DATA, '>', $media_data_file) or die("File $media_data_file not found");
 
@@ -69,17 +57,6 @@ while (my $line = <SHELF>) {
 }
 
 print MEDIA_DATA "  [\'Movies\', $count, \'$url\', \'shelf\'],\n";
-
-#while (my $line = <TV_SHOWS>) {
-#    if ($line =~ /meta content=\"(https\:\/\/trakt\.tv\/users\/.*)\" itemprop=\"url\"><section/) {
-#        $url = $1;
-#    }
-#    if ($line =~ /itemprop=\"numberOfItems\">([0-9]+)</) {
-#        $count = $1;
-#    }
-#}
-
-#print MEDIA_DATA "  [\'TV Shows\', $count, \'$url\', \'shelf\'],\n";
 
 $count = 35;
 
@@ -198,45 +175,7 @@ print MEDIA_DATA "  [\'DTS X\', $count, \'$url\', \'audio\'],\n";
 
 print MEDIA_DATA "]\n";
 
-#print MEDIA_DATA "\nvar tv_collection = [\n";
-
-#while (my $line = <TV_BLURAY>) {
-#    if ($line =~ /meta content=\"(https\:\/\/trakt\.tv\/users\/.*)\" itemprop=\"url\"><section/) {
-#        $url = $1;
-#    }
-#    if ($line =~ /itemprop=\"numberOfItems\">([0-9]+)</) {
-#        $count = $1;
-#    }
-#}
-
-#print MEDIA_DATA "  [\'Blu-ray\', $count, \'$url\', \'media\'],\n";
-
-#while (my $line = <TV_DVD>) {
-#    if ($line =~ /meta content=\"(https\:\/\/trakt\.tv\/users\/.*)\" itemprop=\"url\"><section/) {
-#        $url = $1;
-#    }
-#    if ($line =~ /itemprop=\"numberOfItems\">([0-9]+)</) {
-#        $count = $1;
-#    }
-#}
-
-#print MEDIA_DATA "  [\'DVD\', $count, \'$url\', \'media\'],\n";
-
-#while (my $line = <TV_ATMOS>) {
-#    if ($line =~ /meta content=\"(https\:\/\/trakt\.tv\/users\/.*)\" itemprop=\"url\"><section/) {
-#        $url = $1;
-#    }
-#    if ($line =~ /itemprop=\"numberOfItems\">([0-9]+)</) {
-#        $count = $1;
-#    }
-#}
-
-#print MEDIA_DATA "  [\'Dolby Atmos\', $count, \'$url\', \'audio\'],\n";
-
-#print MEDIA_DATA "]\n";
-
 close(SHELF);
-#close(TV_SHOWS);
 close(FILMS);
 close(SHORTS);
 close(DOCS);
@@ -246,9 +185,6 @@ close(DVD);
 close(VHS);
 close(ATMOS);
 close(DTSX);
-#close(TV_BLURAY);
-#close(TV_DVD);
-#close(TV_ATMOS);
 
 close(MEDIA_DATA);
 
@@ -289,7 +225,7 @@ print FILMS_DATA "var films = [\n";
 my @film_ids;
 
 while (my $line = <DIARY>) {
-    if ($line =~ /data-viewing-id=\"(.*)\"\sdata-owner/) {
+    if ($line =~ /alt=\"(.*)\"\/\>/) {
         push @film_ids, $1;
     }
 }
@@ -332,7 +268,7 @@ while (my $line = <RSS>) {
         }
 
         for (@film_ids) {
-            if ($id eq $_ && $watch_year - $release_year <= $years_back) {
+            if ($title eq $_ && $watch_year - $release_year <= $years_back) {
                 my $line_to_print = "  [\'$title\', \'$release_year\', \'$link\', \'$img\'],\n";
                 if ($title ne $last_film_title && $new_film) {
                     print FILMS_DATA $line_to_print;
