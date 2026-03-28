@@ -1,4 +1,5 @@
 var films = [
+  ['Anaconda', '2025', 'https://letterboxd.com/tinyhomecinema/film/anaconda-2025/', 'https://a.ltrbxd.com/resized/film-poster/1/1/1/8/2/7/7/1118277-anaconda-2025-0-600-0-900-crop.jpg'],
   ['Peaky Blinders: The Immortal Man', '2026', 'https://letterboxd.com/tinyhomecinema/film/peaky-blinders-the-immortal-man/', 'https://a.ltrbxd.com/resized/film-poster/7/8/7/8/4/9/787849-peaky-blinders-the-immortal-man-0-600-0-900-crop.jpg'],
   ['Predator: Badlands', '2025', 'https://letterboxd.com/tinyhomecinema/film/predator-badlands/', 'https://a.ltrbxd.com/resized/film-poster/1/1/2/5/8/0/9/1125809-predator-badlands-0-600-0-900-crop.jpg'],
   ['The First Omen', '2024', 'https://letterboxd.com/tinyhomecinema/film/the-first-omen/', 'https://a.ltrbxd.com/resized/film-poster/3/7/0/1/7/8/370178-the-first-omen-0-600-0-900-crop.jpg'],
@@ -8,5 +9,4 @@ var films = [
   ['U Are the Universe', '2024', 'https://letterboxd.com/tinyhomecinema/film/u-are-the-universe/', 'https://a.ltrbxd.com/resized/film-poster/9/1/2/5/1/7/912517-u-are-the-universe-0-600-0-900-crop.jpg'],
   ['Frankenstein', '2025', 'https://letterboxd.com/tinyhomecinema/film/frankenstein-2025/', 'https://a.ltrbxd.com/resized/film-poster/9/5/8/1/0/0/958100-frankenstein-2025-0-600-0-900-crop.jpg'],
   ['Superman', '2025', 'https://letterboxd.com/tinyhomecinema/film/superman-2025/', 'https://a.ltrbxd.com/resized/film-poster/9/5/7/0/5/0/957050-superman-2025-0-600-0-900-crop.jpg'],
-  ['The Shadow Strays', '2024', 'https://letterboxd.com/tinyhomecinema/film/the-shadow-strays/', 'https://a.ltrbxd.com/resized/film-poster/1/0/3/8/2/1/8/1038218-the-shadow-strays-0-600-0-900-crop.jpg'],
 ]
