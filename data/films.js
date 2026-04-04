@@ -1,4 +1,5 @@
 var films = [
+  ['28 Years Later: The Bone Temple', '2026', 'https://letterboxd.com/tinyhomecinema/film/28-years-later-the-bone-temple/', 'https://a.ltrbxd.com/resized/film-poster/1/1/5/6/4/0/9/1156409-28-years-later-the-bone-temple-0-600-0-900-crop.jpg'],
   ['The Running Man', '2025', 'https://letterboxd.com/tinyhomecinema/film/the-running-man-2025/', 'https://a.ltrbxd.com/resized/film-poster/7/1/6/1/7/8/716178-the-running-man-2025-0-600-0-900-crop.jpg'],
   ['Anaconda', '2025', 'https://letterboxd.com/tinyhomecinema/film/anaconda-2025/', 'https://a.ltrbxd.com/resized/film-poster/1/1/1/8/2/7/7/1118277-anaconda-2025-0-600-0-900-crop.jpg'],
   ['Peaky Blinders: The Immortal Man', '2026', 'https://letterboxd.com/tinyhomecinema/film/peaky-blinders-the-immortal-man/', 'https://a.ltrbxd.com/resized/film-poster/7/8/7/8/4/9/787849-peaky-blinders-the-immortal-man-0-600-0-900-crop.jpg'],
@@ -8,5 +9,4 @@ var films = [
   ['Stranger Things 5: The Finale', '2025', 'https://letterboxd.com/tinyhomecinema/film/stranger-things-5-the-finale/', 'https://a.ltrbxd.com/resized/film-poster/1/4/4/0/3/3/4/1440334-stranger-things-5-the-finale-0-600-0-900-crop.jpg'],
   ['Flow', '2024', 'https://letterboxd.com/tinyhomecinema/film/flow-2024/', 'https://a.ltrbxd.com/resized/film-poster/7/3/9/4/5/1/739451-flow-2024-0-600-0-900-crop.jpg'],
   ['U Are the Universe', '2024', 'https://letterboxd.com/tinyhomecinema/film/u-are-the-universe/', 'https://a.ltrbxd.com/resized/film-poster/9/1/2/5/1/7/912517-u-are-the-universe-0-600-0-900-crop.jpg'],
-  ['Frankenstein', '2025', 'https://letterboxd.com/tinyhomecinema/film/frankenstein-2025/', 'https://a.ltrbxd.com/resized/film-poster/9/5/8/1/0/0/958100-frankenstein-2025-0-600-0-900-crop.jpg'],
 ]
