@@ -3,7 +3,7 @@ var services = [
   ['Prime Video', 'https://letterboxd.com/tinyhomecinema/tag/prime-video/films/', 'past'],
   ['HBO Max', 'https://letterboxd.com/tinyhomecinema/tag/hbo-max/films/', 'current'],
   ['Apple TV', 'https://letterboxd.com/tinyhomecinema/tag/apple-tv/films/', 'current'],
-  ['Disney+', 'https://letterboxd.com/tinyhomecinema/tag/disney-/films/', 'current'],
+  ['Disney+', 'https://letterboxd.com/tinyhomecinema/tag/disney-/films/', 'past'],
   ['Paramount+', 'https://letterboxd.com/tinyhomecinema/tag/paramount-/films/', 'current'],
   ['Globoplay', 'https://letterboxd.com/tinyhomecinema/tag/globoplay/films/', 'current'],
   ['Telecine', 'https://letterboxd.com/tinyhomecinema/tag/telecine/films/', 'past'],
