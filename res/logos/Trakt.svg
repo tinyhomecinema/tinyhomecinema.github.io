@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 48 48"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="Trakt.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="37.8125"
+     inkscape:cx="23.986777"
+     inkscape:cy="24"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <circle
+     cx="24"
+     cy="24"
+     r="24"
+     fill="transparent"
+     id="circle1"
+     style="fill:#333333" />
+  <path
+     fill="#fff"
+     d="M45.99 14.39 30.17 30.22l-1.46-1.46 16.31-16.32c-.15-.3-.32-.58-.5-.87l-17.2 17.2 2.16 2.16-1.46 1.46-3.62-3.62L43.34 9.82c-.18-.27-.38-.53-.6-.78L23.01 28.78l4.31 4.31-1.46 1.46-14.4-14.4 1.46-1.46 8.62 8.62L41.37 7.46c-.12-.14-.26-.28-.4-.42C36.62 2.69 30.62 0 24 0S11.38 2.69 7.03 7.03C2.69 11.37 0 17.37 0 24c0 13.25 10.75 24 24 24 6.62 0 12.62-2.69 16.97-7.03C45.31 36.64 48 30.64 48 24c0-3.42-.71-6.67-2.01-9.61ZM21.54 25.9l-7.93-7.92 1.46-1.46L23 24.44l-1.46 1.46Zm2.16-2.16-7.93-7.92 1.46-1.46 7.93 7.92-1.46 1.46Zm.3 19.65c-10.7 0-19.39-8.7-19.39-19.39S13.3 4.61 24 4.61c2.91 0 5.72.63 8.33 1.88l-.89 1.88c-2.33-1.11-4.84-1.68-7.43-1.68-9.55 0-17.33 7.77-17.33 17.32s7.78 17.33 17.33 17.33c6.82 0 13.03-4.03 15.82-10.25l1.89.84C38.6 38.9 31.65 43.41 24.01 43.41Z"
+     id="path1"
+     style="fill:#777777;fill-opacity:1" />
+</svg>
