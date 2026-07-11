@@ -58,6 +58,12 @@ while (my $line = <SHELF>) {
 
 print MEDIA_DATA "  [\'Movies\', $count, \'$url\', \'shelf\'],\n";
 
+$count = 12;
+
+$url = 'https://app.trakt.tv/users/tinyhomecinema/lists/tv-shows-shelf?mode=show';
+
+print MEDIA_DATA "  [\'TV Shows\', $count, \'$url\', \'shelf\'],\n";
+
 $count = 35;
 
 $url = 'https://www.librarything.com/catalog.php?view=cineminha&collection=898678&shelf=shelf&sort=stampREV';
