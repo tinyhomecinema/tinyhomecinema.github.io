@@ -14,5 +14,5 @@ var collection = [
   ['DVD', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'media'],
   ['VHS', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'media'],
   ['Dolby Atmos', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'audio'],
-  ['DTS X', 13, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'audio'],
+  ['DTS X', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'audio'],
 ]
