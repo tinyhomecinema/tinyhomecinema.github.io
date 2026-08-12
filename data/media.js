@@ -6,13 +6,13 @@ var shelves = [
 ]
 
 var collection = [
-  ['Films', 353, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'collection'],
-  ['Miniseries', 6, 'https://letterboxd.com/tinyhomecinema/list/miniseries-collection/', 'collection'],
-  ['Shorts', 68, 'https://letterboxd.com/tinyhomecinema/list/short-films/', 'collection'],
-  ['Documentaries', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'collection'],
-  ['Blu-ray', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'media'],
-  ['DVD', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'media'],
-  ['VHS', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'media'],
-  ['Dolby Atmos', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'audio'],
-  ['DTS X', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'audio'],
+  ['Films', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
+  ['Miniseries', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
+  ['Shorts', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
+  ['Documentaries', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
+  ['Blu-ray', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
+  ['DVD', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
+  ['VHS', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'media'],
+  ['Dolby Atmos', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'audio'],
+  ['DTS X', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'audio'],
 ]
