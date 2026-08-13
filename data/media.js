@@ -8,11 +8,11 @@ var shelves = [
 var collection = [
   ['Films', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
   ['Miniseries', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
-  ['Shorts', 68, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'collection'],
+  ['Shorts', 68, 'https://letterboxd.com/tinyhomecinema/list/short-films/', 'collection'],
   ['Documentaries', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'collection'],
   ['Blu-ray', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'media'],
   ['DVD', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'media'],
   ['VHS', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'media'],
   ['Dolby Atmos', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'audio'],
-  ['DTS X', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'audio'],
+  ['DTS X', 13, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'audio'],
 ]
