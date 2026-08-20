@@ -1,5 +1,5 @@
 var shelves = [
-  ['Movies', , '', 'shelf'],
+  ['Movies', 422, 'https://letterboxd.com/tinyhomecinema/list/movies-shelf/', 'shelf'],
   ['TV Shows', 12, 'https://app.trakt.tv/users/tinyhomecinema/lists/tv-shows-shelf?mode=show', 'shelf'],
   ['Music', 35, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898678&shelf=shelf&sort=stampREV', 'shelf'],
   ['Books', 27, 'https://www.librarything.com/catalog.php?view=cineminha&collection=898806&shelf=shelf', 'shelf']
@@ -8,11 +8,11 @@ var shelves = [
 var collection = [
   ['Films', 353, 'https://letterboxd.com/tinyhomecinema/list/film-collection/', 'collection'],
   ['Miniseries', 6, 'https://letterboxd.com/tinyhomecinema/list/miniseries-collection/', 'collection'],
-  ['Shorts', 68, 'https://letterboxd.com/tinyhomecinema/list/short-films/', 'collection'],
-  ['Documentaries', 19, 'https://letterboxd.com/tinyhomecinema/list/special-feature-documentaries/', 'collection'],
-  ['Blu-ray', 158, 'https://letterboxd.com/tinyhomecinema/list/blu-ray/', 'media'],
-  ['DVD', 239, 'https://letterboxd.com/tinyhomecinema/list/dvd/', 'media'],
-  ['VHS', 5, 'https://letterboxd.com/tinyhomecinema/list/decor-vhs-tapes/', 'media'],
-  ['Dolby Atmos', 29, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'audio'],
-  ['DTS X', 13, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'audio'],
+  ['Shorts', 6, 'https://letterboxd.com/tinyhomecinema/list/miniseries-collection/', 'collection'],
+  ['Documentaries', 6, 'https://letterboxd.com/tinyhomecinema/list/miniseries-collection/', 'collection'],
+  ['Blu-ray', 6, 'https://letterboxd.com/tinyhomecinema/list/miniseries-collection/', 'media'],
+  ['DVD', 6, 'https://letterboxd.com/tinyhomecinema/list/miniseries-collection/', 'media'],
+  ['VHS', 6, 'https://letterboxd.com/tinyhomecinema/list/miniseries-collection/', 'media'],
+  ['Dolby Atmos', 6, 'https://letterboxd.com/tinyhomecinema/list/miniseries-collection/', 'audio'],
+  ['DTS X', 6, 'https://letterboxd.com/tinyhomecinema/list/miniseries-collection/', 'audio'],
 ]
