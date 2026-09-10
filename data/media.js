@@ -13,6 +13,6 @@ var collection = [
   ['Blu-ray', 159, 'https://letterboxd.com/tinyhomecinema/list/blu-ray/', 'media'],
   ['DVD', 239, 'https://letterboxd.com/tinyhomecinema/list/dvd/', 'media'],
   ['VHS', 5, 'https://letterboxd.com/tinyhomecinema/list/decor-vhs-tapes/', 'media'],
-  ['Dolby Atmos', 30, 'https://letterboxd.com/tinyhomecinema/list/dolby-atmos/', 'audio'],
+  ['Dolby Atmos', 5, 'https://letterboxd.com/tinyhomecinema/list/decor-vhs-tapes/', 'audio'],
   ['DTS X', 13, 'https://letterboxd.com/tinyhomecinema/list/dts-x/', 'audio'],
 ]
