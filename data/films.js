@@ -1,4 +1,5 @@
 var films = [
+  ['The End of Oak Street', '2026', 'https://letterboxd.com/tinyhomecinema/film/the-end-of-oak-street/', 'https://a.ltrbxd.com/resized/film-poster/9/9/2/9/6/2/992962-the-end-of-oak-street-0-600-0-900-crop.jpg'],
   ['The Sheep Detectives', '2026', 'https://letterboxd.com/tinyhomecinema/film/the-sheep-detectives/', 'https://a.ltrbxd.com/resized/film-poster/1/1/8/3/1/3/5/1183135-the-sheep-detectives-0-600-0-900-crop.jpg'],
   ['Bugonia', '2025', 'https://letterboxd.com/tinyhomecinema/film/bugonia/', 'https://a.ltrbxd.com/resized/film-poster/6/2/5/4/0/0/625400-bugonia-0-600-0-900-crop.jpg'],
   ['It Was Just an Accident', '2025', 'https://letterboxd.com/tinyhomecinema/film/it-was-just-an-accident/', 'https://a.ltrbxd.com/resized/film-poster/1/3/3/3/4/9/8/1333498-it-was-just-an-accident-0-600-0-900-crop.jpg'],
@@ -8,5 +9,4 @@ var films = [
   ['Anaconda', '2025', 'https://letterboxd.com/tinyhomecinema/film/anaconda-2025/', 'https://a.ltrbxd.com/resized/film-poster/1/1/1/8/2/7/7/1118277-anaconda-2025-0-600-0-900-crop.jpg'],
   ['Peaky Blinders: The Immortal Man', '2026', 'https://letterboxd.com/tinyhomecinema/film/peaky-blinders-the-immortal-man/', 'https://a.ltrbxd.com/resized/film-poster/7/8/7/8/4/9/787849-peaky-blinders-the-immortal-man-0-600-0-900-crop.jpg'],
   ['Predator: Badlands', '2025', 'https://letterboxd.com/tinyhomecinema/film/predator-badlands/', 'https://a.ltrbxd.com/resized/film-poster/1/1/2/5/8/0/9/1125809-predator-badlands-0-600-0-900-crop.jpg'],
-  ['The First Omen', '2024', 'https://letterboxd.com/tinyhomecinema/film/the-first-omen/', 'https://a.ltrbxd.com/resized/film-poster/3/7/0/1/7/8/370178-the-first-omen-0-600-0-900-crop.jpg'],
 ]
